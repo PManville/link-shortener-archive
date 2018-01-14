@@ -1,0 +1,2838 @@
+@charset "UTF-8";
+html {
+  font-size: 16px; }
+  @media (max-width: 600px) {
+    html {
+      font-size: 14px; } }
+
+.container {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  .container #root {
+    background: black;
+    width: 100%;
+    height: 100%; }
+    .container #root .loader {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 50px;
+      height: 50px;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      -webkit-animation: opacity-in 0.75s 1s linear 1 normal forwards running;
+      -moz-animation: opacity-in 0.75s 1s linear 1 normal forwards running;
+      -ms-animation: opacity-in 0.75s 1s linear 1 normal forwards running;
+      -o-animation: opacity-in 0.75s 1s linear 1 normal forwards running;
+      animation: opacity-in 0.75s 1s linear 1 normal forwards running; }
+      .container #root .loader hr {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        margin: 0; }
+        .container #root .loader hr:before {
+          content: "";
+          width: 10px;
+          height: 10px;
+          border-radius: 100px;
+          top: 0;
+          left: 0;
+          position: absolute;
+          background: white;
+          -webkit-animation: loading 800ms infinite;
+          -moz-animation: loading 800ms infinite;
+          -ms-animation: loading 800ms infinite;
+          -o-animation: loading 800ms infinite;
+          animation: loading 800ms infinite; }
+        .container #root .loader hr:nth-child(1) {
+          transform: rotateZ(30deg); }
+          .container #root .loader hr:nth-child(1):before {
+            animation-delay: 0.0625s; }
+        .container #root .loader hr:nth-child(2) {
+          transform: rotateZ(60deg); }
+          .container #root .loader hr:nth-child(2):before {
+            animation-delay: 0.125s; }
+        .container #root .loader hr:nth-child(3) {
+          transform: rotateZ(90deg); }
+          .container #root .loader hr:nth-child(3):before {
+            animation-delay: 0.1875s; }
+        .container #root .loader hr:nth-child(4) {
+          transform: rotateZ(120deg); }
+          .container #root .loader hr:nth-child(4):before {
+            animation-delay: 0.25s; }
+        .container #root .loader hr:nth-child(5) {
+          transform: rotateZ(150deg); }
+          .container #root .loader hr:nth-child(5):before {
+            animation-delay: 0.3125s; }
+        .container #root .loader hr:nth-child(6) {
+          transform: rotateZ(180deg); }
+          .container #root .loader hr:nth-child(6):before {
+            animation-delay: 0.375s; }
+        .container #root .loader hr:nth-child(7) {
+          transform: rotateZ(210deg); }
+          .container #root .loader hr:nth-child(7):before {
+            animation-delay: 0.4375s; }
+        .container #root .loader hr:nth-child(8) {
+          transform: rotateZ(240deg); }
+          .container #root .loader hr:nth-child(8):before {
+            animation-delay: 0.5s; }
+        .container #root .loader hr:nth-child(9) {
+          transform: rotateZ(270deg); }
+          .container #root .loader hr:nth-child(9):before {
+            animation-delay: 0.5625s; }
+        .container #root .loader hr:nth-child(10) {
+          transform: rotateZ(300deg); }
+          .container #root .loader hr:nth-child(10):before {
+            animation-delay: 0.625s; }
+        .container #root .loader hr:nth-child(11) {
+          transform: rotateZ(330deg); }
+          .container #root .loader hr:nth-child(11):before {
+            animation-delay: 0.6875s; }
+        .container #root .loader hr:nth-child(12) {
+          transform: rotateZ(360deg); }
+          .container #root .loader hr:nth-child(12):before {
+            animation-delay: 0.75s; }
+    .container #root .root-inner.loaded {
+      display: block; }
+      .container #root .root-inner.loaded .loader {
+        display: none; }
+      .container #root .root-inner.loaded .app {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        height: auto;
+        max-height: 200%;
+        min-height: 100%;
+        overflow: hidden;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%); }
+        .container #root .root-inner.loaded .app:not(.active) {
+          position: absolute;
+          width: 35px;
+          max-height: 0%;
+          min-height: 0%;
+          top: 50px;
+          padding-top: 35px;
+          overflow: visible;
+          cursor: pointer;
+          transition: 0s 0.6s;
+          -webkit-animation: change-z-index 0.75s 0s linear 1 normal forwards running;
+          -moz-animation: change-z-index 0.75s 0s linear 1 normal forwards running;
+          -ms-animation: change-z-index 0.75s 0s linear 1 normal forwards running;
+          -o-animation: change-z-index 0.75s 0s linear 1 normal forwards running;
+          animation: change-z-index 0.75s 0s linear 1 normal forwards running;
+          border-radius: 200px;
+          z-index: 2;
+          box-shadow: 0 0 5px #ccc;
+          font-size: 1em; }
+          .container #root .root-inner.loaded .app:not(.active) i {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0%;
+            width: 60px;
+            height: 80px;
+            transform: translate(-50%, 0);
+            font-style: normal;
+            z-index: 1; }
+            .container #root .root-inner.loaded .app:not(.active) i:before {
+              font-size: 0.875em;
+              color: black;
+              font-family: lineAwesome;
+              position: absolute;
+              top: calc(50% - 22.5px);
+              left: 50%;
+              -webkit-transform: translate(-50%, -50%) rotateY(0deg);
+              -moz-transform: translate(-50%, -50%) rotateY(0deg);
+              -ms-transform: translate(-50%, -50%) rotateY(0deg);
+              -o-transform: translate(-50%, -50%) rotateY(0deg);
+              transform: translate(-50%, -50%) rotateY(0deg); }
+            .container #root .root-inner.loaded .app:not(.active) i:hover:before {
+              -webkit-animation: 0.75s menuRotate linear 0s infinite;
+              -moz-animation: 0.75s menuRotate linear 0s infinite;
+              -ms-animation: 0.75s menuRotate linear 0s infinite;
+              -o-animation: 0.75s menuRotate linear 0s infinite;
+              animation: 0.75s menuRotate linear 0s infinite; }
+          .container #root .root-inner.loaded .app:not(.active) .text-section {
+            padding-top: 20px; }
+          .container #root .root-inner.loaded .app:not(.active) h1, .container #root .root-inner.loaded .app:not(.active) h2, .container #root .root-inner.loaded .app:not(.active) h3, .container #root .root-inner.loaded .app:not(.active) h4, .container #root .root-inner.loaded .app:not(.active) h5, .container #root .root-inner.loaded .app:not(.active) p, .container #root .root-inner.loaded .app:not(.active) img, .container #root .root-inner.loaded .app:not(.active) .button {
+            display: none; }
+            .container #root .root-inner.loaded .app:not(.active) h1.header, .container #root .root-inner.loaded .app:not(.active) h2.header, .container #root .root-inner.loaded .app:not(.active) h3.header, .container #root .root-inner.loaded .app:not(.active) h4.header, .container #root .root-inner.loaded .app:not(.active) h5.header, .container #root .root-inner.loaded .app:not(.active) p.header, .container #root .root-inner.loaded .app:not(.active) img.header, .container #root .root-inner.loaded .app:not(.active) .button.header {
+              display: block;
+              font-size: 15px;
+              text-transform: none;
+              position: absolute;
+              left: 50%;
+              -webkit-transform: translateX(-50%);
+              -moz-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+              -o-transform: translateX(-50%);
+              transform: translateX(-50%);
+              -webkit-animation: 1s page-header-exit 0s linear;
+              -moz-animation: 1s page-header-exit 0s linear;
+              -ms-animation: 1s page-header-exit 0s linear;
+              -o-animation: 1s page-header-exit 0s linear;
+              animation: 1s page-header-exit 0s linear; }
+          .container #root .root-inner.loaded .app:not(.active) .skill {
+            display: none; }
+          .container #root .root-inner.loaded .app:not(.active):hover .header {
+            font-size: 16px;
+            font-weight: bold; }
+          .container #root .root-inner.loaded .app:not(.active) .works {
+            opacity: 0; }
+        .container #root .root-inner.loaded .app.active {
+          z-index: 1;
+          cursor: default;
+          width: 100%;
+          top: 0;
+          border-radius: 0px;
+          left: 50%;
+          transition: 0.5s;
+          font-size: 0;
+          min-height: 100%;
+          padding: 0 20px;
+          box-sizing: border-box; }
+          .container #root .root-inner.loaded .app.active .text-section {
+            padding-top: 140px !important;
+            padding-bottom: 35px !important;
+            max-width: 1180px;
+            margin: 0 auto;
+            transform: none;
+            top: 0 !important; }
+          .container #root .root-inner.loaded .app.active h1.header, .container #root .root-inner.loaded .app.active h2.header, .container #root .root-inner.loaded .app.active h3.header, .container #root .root-inner.loaded .app.active h4.header, .container #root .root-inner.loaded .app.active h5.header, .container #root .root-inner.loaded .app.active p.header {
+            opacity: 0;
+            font-size: 16px;
+            -webkit-animation: 0.5s header-grow 0.25s forwards;
+            -moz-animation: 0.5s header-grow 0.25s forwards;
+            -ms-animation: 0.5s header-grow 0.25s forwards;
+            -o-animation: 0.5s header-grow 0.25s forwards;
+            animation: 0.5s header-grow 0.25s forwards; }
+            @media (max-width: 500px) {
+              .container #root .root-inner.loaded .app.active h1.header, .container #root .root-inner.loaded .app.active h2.header, .container #root .root-inner.loaded .app.active h3.header, .container #root .root-inner.loaded .app.active h4.header, .container #root .root-inner.loaded .app.active h5.header, .container #root .root-inner.loaded .app.active p.header {
+                line-height: 4.25em;
+                margin-bottom: 20px; } }
+          @media (max-width: 500px) {
+            .container #root .root-inner.loaded .app.active h2 span {
+              opacity: 0;
+              -webkit-animation: opacity-in 0.5s forwards;
+              -moz-animation: opacity-in 0.5s forwards;
+              -ms-animation: opacity-in 0.5s forwards;
+              -o-animation: opacity-in 0.5s forwards;
+              animation: opacity-in 0.5s forwards; } }
+        .container #root .root-inner.loaded .app.page-0 {
+          background: black; }
+          .container #root .root-inner.loaded .app.page-0:not(.active) {
+            left: 50%;
+            top: 0;
+            border-radius: 0 0 200px 200px;
+            width: 10%;
+            width: 130px;
+            overflow: hidden;
+            box-shadow: 0px 0px 3px #555; }
+            .container #root .root-inner.loaded .app.page-0:not(.active) i {
+              width: 130px;
+              height: 35px; }
+              .container #root .root-inner.loaded .app.page-0:not(.active) i:before {
+                content: "";
+                left: 50%;
+                z-index: 1;
+                top: 50%; }
+            .container #root .root-inner.loaded .app.page-0:not(.active) .text-wrapper {
+              display: none; }
+          .container #root .root-inner.loaded .app.page-0.active h2:not(.header) {
+            margin-bottom: 0; }
+          .container #root .root-inner.loaded .app.page-0.active .text-wrapper {
+            position: relative; }
+          .container #root .root-inner.loaded .app.page-0.active .paragraph {
+            opacity: 0;
+            -webkit-animation: 0.75s opacity-in 1.5s forwards;
+            -moz-animation: 0.75s opacity-in 1.5s forwards;
+            -ms-animation: 0.75s opacity-in 1.5s forwards;
+            -o-animation: 0.75s opacity-in 1.5s forwards;
+            animation: 0.75s opacity-in 1.5s forwards; }
+          .container #root .root-inner.loaded .app.page-0:after {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 150%;
+            height: 150%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            border-radius: 1000000px;
+            -webkit-animation: page-0 15s ease infinite, page-0-in 1s ease 1;
+            -moz-animation: page-0 15s ease infinite, page-0-in 1s ease 1;
+            -ms-animation: page-0 15s ease infinite, page-0-in 1s ease 1;
+            -o-animation: page-0 15s ease infinite, page-0-in 1s ease 1;
+            animation: page-0 15s ease infinite, page-0-in 1s ease 1;
+            background: linear-gradient(301deg, #feffcb, #dcd0ff, #ffd2d2, #d2ffd2);
+            background-size: 1500%; }
+        .container #root .root-inner.loaded .app.page-1 {
+          background: khaki; }
+          .container #root .root-inner.loaded .app.page-1:not(.active) {
+            left: calc(50% - 60px); }
+            .container #root .root-inner.loaded .app.page-1:not(.active) i:before {
+              content: "";
+              content: ""; }
+          .container #root .root-inner.loaded .app.page-1.active .text-section {
+            top: 55%; }
+            .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper {
+              max-width: 600px;
+              margin: 0 auto; }
+              .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience {
+                margin: 20px auto 0;
+                vertical-align: top;
+                font-size: 0;
+                -webkit-animation: 0.75s opacity-in 1.5s forwards;
+                -moz-animation: 0.75s opacity-in 1.5s forwards;
+                -ms-animation: 0.75s opacity-in 1.5s forwards;
+                -o-animation: 0.75s opacity-in 1.5s forwards;
+                animation: 0.75s opacity-in 1.5s forwards;
+                opacity: 0; }
+                .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience:nth-of-type(2) {
+                  -webkit-animation: 0.75s opacity-in 1.6s forwards;
+                  -moz-animation: 0.75s opacity-in 1.6s forwards;
+                  -ms-animation: 0.75s opacity-in 1.6s forwards;
+                  -o-animation: 0.75s opacity-in 1.6s forwards;
+                  animation: 0.75s opacity-in 1.6s forwards; }
+                .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience:nth-of-type(3) {
+                  -webkit-animation: 0.75s opacity-in 1.7s forwards;
+                  -moz-animation: 0.75s opacity-in 1.7s forwards;
+                  -ms-animation: 0.75s opacity-in 1.7s forwards;
+                  -o-animation: 0.75s opacity-in 1.7s forwards;
+                  animation: 0.75s opacity-in 1.7s forwards; }
+                .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience:nth-of-type(4) {
+                  -webkit-animation: 0.75s opacity-in 1.8s forwards;
+                  -moz-animation: 0.75s opacity-in 1.8s forwards;
+                  -ms-animation: 0.75s opacity-in 1.8s forwards;
+                  -o-animation: 0.75s opacity-in 1.8s forwards;
+                  animation: 0.75s opacity-in 1.8s forwards; }
+                .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience.one-col {
+                  width: 50%;
+                  display: inline-block; }
+                  .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience.one-col .left-section {
+                    width: 100%; }
+                .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section {
+                  display: inline-block;
+                  vertical-align: top; }
+                  @media (max-width: 500px) {
+                    .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section {
+                      width: 100% !important;
+                      margin-bottom: 10px; }
+                      .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p {
+                        text-align: center; } }
+                  .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p {
+                    width: 100%;
+                    margin: 0; }
+                    .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p.date, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p.date {
+                      color: grey; }
+                    .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p.position, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p.position {
+                      font-weight: bold; }
+                    .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p.message, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p.message {
+                      font-size: 1rem; }
+                .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section {
+                  width: 33%; }
+                .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section {
+                  width: 67%; }
+        .container #root .root-inner.loaded .app.page-2 {
+          background: antiquewhite; }
+          .container #root .root-inner.loaded .app.page-2:not(.active) {
+            left: 50%; }
+            .container #root .root-inner.loaded .app.page-2:not(.active) i:before {
+              content: ""; }
+          .container #root .root-inner.loaded .app.page-2.active .text-section {
+            top: 45%;
+            max-width: 1180px;
+            margin: 0 auto; }
+            .container #root .root-inner.loaded .app.page-2.active .text-section .skill {
+              opacity: 0;
+              -webkit-animation: 0.5s opacity-in 1.5s forwards;
+              -moz-animation: 0.5s opacity-in 1.5s forwards;
+              -ms-animation: 0.5s opacity-in 1.5s forwards;
+              -o-animation: 0.5s opacity-in 1.5s forwards;
+              animation: 0.5s opacity-in 1.5s forwards;
+              font-size: 0px;
+              transition: 1s;
+              width: 33%;
+              display: inline-block; }
+              @media (max-width: 750px) {
+                .container #root .root-inner.loaded .app.page-2.active .text-section .skill {
+                  width: 50%; } }
+              @media (max-width: 500px) {
+                .container #root .root-inner.loaded .app.page-2.active .text-section .skill {
+                  width: 100%; } }
+              .container #root .root-inner.loaded .app.page-2.active .text-section .skill .text-center span {
+                animation-delay: 0s !important; }
+              .container #root .root-inner.loaded .app.page-2.active .text-section .skill p {
+                margin: 0;
+                width: 50%; }
+              .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars {
+                width: 25%;
+                display: inline-block; }
+                .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star {
+                  opacity: 0;
+                  -webkit-animation: 0.5s opacity-in 2s forwards;
+                  -moz-animation: 0.5s opacity-in 2s forwards;
+                  -ms-animation: 0.5s opacity-in 2s forwards;
+                  -o-animation: 0.5s opacity-in 2s forwards;
+                  animation: 0.5s opacity-in 2s forwards;
+                  font-family: lineAwesome;
+                  display: inline;
+                  text-shadow: 0px 0px 1px #666;
+                  color: #ffed8e; }
+                  .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star:after {
+                    content: "\f318"; }
+                  .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star.inactive:after {
+                    opacity: 0.3; }
+                  .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star:nth-child(2) {
+                    -webkit-animation: 0.5s opacity-in 2.1s forwards;
+                    -moz-animation: 0.5s opacity-in 2.1s forwards;
+                    -ms-animation: 0.5s opacity-in 2.1s forwards;
+                    -o-animation: 0.5s opacity-in 2.1s forwards;
+                    animation: 0.5s opacity-in 2.1s forwards; }
+                  .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star:nth-child(3) {
+                    -webkit-animation: 0.5s opacity-in 2.2s forwards;
+                    -moz-animation: 0.5s opacity-in 2.2s forwards;
+                    -ms-animation: 0.5s opacity-in 2.2s forwards;
+                    -o-animation: 0.5s opacity-in 2.2s forwards;
+                    animation: 0.5s opacity-in 2.2s forwards; }
+                  .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star:nth-child(4) {
+                    -webkit-animation: 0.5s opacity-in 2.3s forwards;
+                    -moz-animation: 0.5s opacity-in 2.3s forwards;
+                    -ms-animation: 0.5s opacity-in 2.3s forwards;
+                    -o-animation: 0.5s opacity-in 2.3s forwards;
+                    animation: 0.5s opacity-in 2.3s forwards; }
+                  .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star:nth-child(5) {
+                    -webkit-animation: 0.5s opacity-in 2.4s forwards;
+                    -moz-animation: 0.5s opacity-in 2.4s forwards;
+                    -ms-animation: 0.5s opacity-in 2.4s forwards;
+                    -o-animation: 0.5s opacity-in 2.4s forwards;
+                    animation: 0.5s opacity-in 2.4s forwards; }
+        .container #root .root-inner.loaded .app.page-3 {
+          background: aliceblue; }
+          .container #root .root-inner.loaded .app.page-3:not(.active) {
+            left: calc(50% + 60px); }
+            .container #root .root-inner.loaded .app.page-3:not(.active) i:before {
+              content: ""; }
+          .container #root .root-inner.loaded .app.page-3.active .text-section {
+            top: 60%; }
+          .container #root .root-inner.loaded .app.page-3.active .works {
+            font-size: 1rem;
+            opacity: 0;
+            -webkit-animation: 1s opacity-in 1.7s forwards;
+            -moz-animation: 1s opacity-in 1.7s forwards;
+            -ms-animation: 1s opacity-in 1.7s forwards;
+            -o-animation: 1s opacity-in 1.7s forwards;
+            animation: 1s opacity-in 1.7s forwards;
+            margin: 24px auto;
+            box-shadow: 0px 0px 39px #dbecfd; }
+            .container #root .root-inner.loaded .app.page-3.active .works .works-inner {
+              max-width: 1220px;
+              margin: 0 auto;
+              padding: 30px 0; }
+              .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work {
+                display: inline-block;
+                width: 20%;
+                margin: 1% 1% 1%;
+                cursor: pointer;
+                position: relative; }
+                @media (max-width: 700px) {
+                  .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work {
+                    width: 40%; } }
+                .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .front {
+                  transition: 0.5s;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden;
+                  border: 10px solid white;
+                  border-radius: 6px;
+                  box-sizing: border-box;
+                  box-shadow: 0px 0px 39px #dbecfd;
+                  -webkit-transform: rotateY(0deg);
+                  -moz-transform: rotateY(0deg);
+                  -ms-transform: rotateY(0deg);
+                  -o-transform: rotateY(0deg);
+                  transform: rotateY(0deg); }
+                  .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .front .image {
+                    width: 100%;
+                    max-height: 110px;
+                    padding-top: 0;
+                    z-index: 1000;
+                    display: inline-block;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 50%; }
+                .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .back {
+                  transition: 0.5s;
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden;
+                  border: 10px solid white;
+                  border-radius: 6px;
+                  box-sizing: border-box;
+                  box-shadow: 0px 0px 39px #dbecfd;
+                  -webkit-transform: rotateY(-180deg);
+                  -moz-transform: rotateY(-180deg);
+                  -ms-transform: rotateY(-180deg);
+                  -o-transform: rotateY(-180deg);
+                  transform: rotateY(-180deg);
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background: white; }
+                  .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .back .back-inner {
+                    top: 50%;
+                    position: absolute;
+                    -webkit-transform: translateY(-50%);
+                    -moz-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -o-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    width: 100%; }
+                  .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .back .name, .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .back .description {
+                    margin: 0;
+                    color: black; }
+                .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work:hover .front {
+                  -webkit-transform: rotateY(180deg);
+                  -moz-transform: rotateY(180deg);
+                  -ms-transform: rotateY(180deg);
+                  -o-transform: rotateY(180deg);
+                  transform: rotateY(180deg); }
+                .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work:hover .back {
+                  -webkit-transform: rotateY(0deg);
+                  -moz-transform: rotateY(0deg);
+                  -ms-transform: rotateY(0deg);
+                  -o-transform: rotateY(0deg);
+                  transform: rotateY(0deg); }
+        .container #root .root-inner.loaded .app .text-section {
+          box-sizing: border-box;
+          text-align: center;
+          position: relative;
+          top: 40%;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%); }
+        .container #root .root-inner.loaded .app a, .container #root .root-inner.loaded .app p, .container #root .root-inner.loaded .app h1, .container #root .root-inner.loaded .app h2, .container #root .root-inner.loaded .app h3, .container #root .root-inner.loaded .app h4, .container #root .root-inner.loaded .app h5, .container #root .root-inner.loaded .app input {
+          font-weight: 100;
+          font-family: 'Economica', sans-serif; }
+        .container #root .root-inner.loaded .app .button {
+          display: inline-block;
+          padding: 4px 10px 4px 30px;
+          font-family: 'Economica', sans-serif;
+          font-size: 1rem;
+          text-transform: uppercase;
+          box-sizing: border-box;
+          cursor: pointer;
+          -webkit-animation: partAppear 800ms;
+          -moz-animation: partAppear 800ms;
+          -ms-animation: partAppear 800ms;
+          -o-animation: partAppear 800ms;
+          animation: partAppear 800ms;
+          animation-fill-mode: forwards;
+          animation-timing-function: linear;
+          animation-iteration-count: 1;
+          opacity: 0;
+          box-shadow: 2px 2px 6px #afafaf;
+          position: absolute;
+          bottom: -75px;
+          overflow: hidden;
+          border-bottom: 4px solid #5a5a5a;
+          border-radius: 8px;
+          font-weight: bold;
+          background: black;
+          max-width: 0%;
+          max-height: 0%;
+          color: white;
+          width: 130px;
+          text-decoration: none;
+          left: auto;
+          right: calc(50% + 5px); }
+          .container #root .root-inner.loaded .app .button:after {
+            font-family: lineAwesome;
+            content: "";
+            font-size: 1.25rem;
+            font-weight: normal;
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%); }
+          .container #root .root-inner.loaded .app .button + .button {
+            left: calc(50% + 5px);
+            right: auto;
+            padding: 4px 30px 4px 10px; }
+            .container #root .root-inner.loaded .app .button + .button:after {
+              content: "";
+              left: auto;
+              right: 20px; }
+          .container #root .root-inner.loaded .app .button span {
+            position: relative;
+            line-height: 2rem;
+            -webkit-animation: jumpButton 2s;
+            -moz-animation: jumpButton 2s;
+            -ms-animation: jumpButton 2s;
+            -o-animation: jumpButton 2s;
+            animation: jumpButton 2s;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            opacity: 0; }
+          .container #root .root-inner.loaded .app .button:before {
+            content: " ";
+            height: 200%;
+            width: 1px;
+            background: white;
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            -webkit-transform: rotatez(45deg);
+            -moz-transform: rotatez(45deg);
+            -ms-transform: rotatez(45deg);
+            -o-transform: rotatez(45deg);
+            transform: rotatez(45deg);
+            box-shadow: 3px 3px 3px 3px white;
+            -webkit-animation: swipeButton 2s;
+            -moz-animation: swipeButton 2s;
+            -ms-animation: swipeButton 2s;
+            -o-animation: swipeButton 2s;
+            animation: swipeButton 2s;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite; }
+          .container #root .root-inner.loaded .app .button:hover {
+            border-bottom: 3px solid #5a5a5a;
+            margin-top: 1px; }
+        .container #root .root-inner.loaded .app h2 {
+          margin: 0;
+          font-size: 2.9375rem;
+          color: #2b2b2b; }
+          .container #root .root-inner.loaded .app h2:not(.header) {
+            font-family: 'Dosis', serif;
+            font-size: 1.625rem;
+            margin-bottom: 40px; }
+          .container #root .root-inner.loaded .app h2.header {
+            text-transform: uppercase;
+            color: black;
+            white-space: nowrap; }
+            .container #root .root-inner.loaded .app h2.header span:hover {
+              font-weight: bold; }
+          .container #root .root-inner.loaded .app h2 span {
+            position: relative;
+            display: inline-block;
+            min-width: 0.25em;
+            opacity: 0;
+            letter-spacing: 0.05rem;
+            -webkit-animation: jumpText 250ms;
+            -moz-animation: jumpText 250ms;
+            -ms-animation: jumpText 250ms;
+            -o-animation: jumpText 250ms;
+            animation: jumpText 250ms;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            opacity: 1;
+            -webkit-transform: rotateY(-90deg);
+            -moz-transform: rotateY(-90deg);
+            -ms-transform: rotateY(-90deg);
+            -o-transform: rotateY(-90deg);
+            transform: rotateY(-90deg); }
+            @media (max-width: 500px) {
+              .container #root .root-inner.loaded .app h2 span {
+                display: inline;
+                white-space: initial; } }
+        .container #root .root-inner.loaded .app p {
+          margin-top: 30px;
+          font-size: 1.125rem;
+          color: #333;
+          font-family: 'Dosis', serif;
+          width: 26%;
+          display: inline-block;
+          text-align: left;
+          line-height: 1.5em;
+          letter-spacing: 0.5px;
+          margin-right: 1%;
+          vertical-align: top;
+          padding-right: 1.5%;
+          margin-left: 1%;
+          white-space: normal; }
+          .container #root .root-inner.loaded .app p span {
+            position: relative;
+            display: inline;
+            min-width: 0.25em;
+            opacity: 0;
+            letter-spacing: 0.05rem;
+            -webkit-animation: jumpText 250ms;
+            -moz-animation: jumpText 250ms;
+            -ms-animation: jumpText 250ms;
+            -o-animation: jumpText 250ms;
+            animation: jumpText 250ms;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            opacity: 1;
+            -webkit-transform: rotateY(-90deg);
+            -moz-transform: rotateY(-90deg);
+            -ms-transform: rotateY(-90deg);
+            -o-transform: rotateY(-90deg);
+            transform: rotateY(-90deg); }
+          .container #root .root-inner.loaded .app p.paragraph {
+            text-align: center;
+            width: 35%; }
+          .container #root .root-inner.loaded .app p:last-of-type {
+            border-right: 0; }
+        .container #root .root-inner.loaded .app .delay-1 {
+          animation-delay: 0.025s !important; }
+        .container #root .root-inner.loaded .app .delay-2 {
+          animation-delay: 0.05s !important; }
+        .container #root .root-inner.loaded .app .delay-3 {
+          animation-delay: 0.075s !important; }
+        .container #root .root-inner.loaded .app .delay-4 {
+          animation-delay: 0.1s !important; }
+        .container #root .root-inner.loaded .app .delay-5 {
+          animation-delay: 0.125s !important; }
+        .container #root .root-inner.loaded .app .delay-6 {
+          animation-delay: 0.15s !important; }
+        .container #root .root-inner.loaded .app .delay-7 {
+          animation-delay: 0.175s !important; }
+        .container #root .root-inner.loaded .app .delay-8 {
+          animation-delay: 0.2s !important; }
+        .container #root .root-inner.loaded .app .delay-9 {
+          animation-delay: 0.225s !important; }
+        .container #root .root-inner.loaded .app .delay-10 {
+          animation-delay: 0.25s !important; }
+        .container #root .root-inner.loaded .app .delay-11 {
+          animation-delay: 0.275s !important; }
+        .container #root .root-inner.loaded .app .delay-12 {
+          animation-delay: 0.3s !important; }
+        .container #root .root-inner.loaded .app .delay-13 {
+          animation-delay: 0.325s !important; }
+        .container #root .root-inner.loaded .app .delay-14 {
+          animation-delay: 0.35s !important; }
+        .container #root .root-inner.loaded .app .delay-15 {
+          animation-delay: 0.375s !important; }
+        .container #root .root-inner.loaded .app .delay-16 {
+          animation-delay: 0.4s !important; }
+        .container #root .root-inner.loaded .app .delay-17 {
+          animation-delay: 0.425s !important; }
+        .container #root .root-inner.loaded .app .delay-18 {
+          animation-delay: 0.45s !important; }
+        .container #root .root-inner.loaded .app .delay-19 {
+          animation-delay: 0.475s !important; }
+        .container #root .root-inner.loaded .app .delay-20 {
+          animation-delay: 0.5s !important; }
+        .container #root .root-inner.loaded .app .delay-21 {
+          animation-delay: 0.525s !important; }
+        .container #root .root-inner.loaded .app .delay-22 {
+          animation-delay: 0.55s !important; }
+        .container #root .root-inner.loaded .app .delay-23 {
+          animation-delay: 0.575s !important; }
+        .container #root .root-inner.loaded .app .delay-24 {
+          animation-delay: 0.6s !important; }
+        .container #root .root-inner.loaded .app .delay-25 {
+          animation-delay: 0.625s !important; }
+        .container #root .root-inner.loaded .app .delay-26 {
+          animation-delay: 0.65s !important; }
+        .container #root .root-inner.loaded .app .delay-27 {
+          animation-delay: 0.675s !important; }
+        .container #root .root-inner.loaded .app .delay-28 {
+          animation-delay: 0.7s !important; }
+        .container #root .root-inner.loaded .app .delay-29 {
+          animation-delay: 0.725s !important; }
+        .container #root .root-inner.loaded .app .delay-30 {
+          animation-delay: 0.75s !important; }
+        .container #root .root-inner.loaded .app .delay-31 {
+          animation-delay: 0.775s !important; }
+        .container #root .root-inner.loaded .app .delay-32 {
+          animation-delay: 0.8s !important; }
+        .container #root .root-inner.loaded .app .delay-33 {
+          animation-delay: 0.825s !important; }
+        .container #root .root-inner.loaded .app .delay-34 {
+          animation-delay: 0.85s !important; }
+        .container #root .root-inner.loaded .app .delay-35 {
+          animation-delay: 0.875s !important; }
+        .container #root .root-inner.loaded .app .delay-36 {
+          animation-delay: 0.9s !important; }
+        .container #root .root-inner.loaded .app .delay-37 {
+          animation-delay: 0.925s !important; }
+        .container #root .root-inner.loaded .app .delay-38 {
+          animation-delay: 0.95s !important; }
+        .container #root .root-inner.loaded .app .delay-39 {
+          animation-delay: 0.975s !important; }
+        .container #root .root-inner.loaded .app .delay-40 {
+          animation-delay: 1s !important; }
+        .container #root .root-inner.loaded .app .delay-41 {
+          animation-delay: 1.025s !important; }
+        .container #root .root-inner.loaded .app .delay-42 {
+          animation-delay: 1.05s !important; }
+        .container #root .root-inner.loaded .app .delay-43 {
+          animation-delay: 1.075s !important; }
+        .container #root .root-inner.loaded .app .delay-44 {
+          animation-delay: 1.1s !important; }
+        .container #root .root-inner.loaded .app .delay-45 {
+          animation-delay: 1.125s !important; }
+        .container #root .root-inner.loaded .app .delay-46 {
+          animation-delay: 1.15s !important; }
+        .container #root .root-inner.loaded .app .delay-47 {
+          animation-delay: 1.175s !important; }
+        .container #root .root-inner.loaded .app .delay-48 {
+          animation-delay: 1.2s !important; }
+        .container #root .root-inner.loaded .app .delay-49 {
+          animation-delay: 1.225s !important; }
+        .container #root .root-inner.loaded .app .delay-50 {
+          animation-delay: 1.25s !important; }
+        .container #root .root-inner.loaded .app .delay-51 {
+          animation-delay: 1.275s !important; }
+        .container #root .root-inner.loaded .app .delay-52 {
+          animation-delay: 1.3s !important; }
+        .container #root .root-inner.loaded .app .delay-53 {
+          animation-delay: 1.325s !important; }
+        .container #root .root-inner.loaded .app .delay-54 {
+          animation-delay: 1.35s !important; }
+        .container #root .root-inner.loaded .app .delay-55 {
+          animation-delay: 1.375s !important; }
+        .container #root .root-inner.loaded .app .delay-56 {
+          animation-delay: 1.4s !important; }
+        .container #root .root-inner.loaded .app .delay-57 {
+          animation-delay: 1.425s !important; }
+        .container #root .root-inner.loaded .app .delay-58 {
+          animation-delay: 1.45s !important; }
+        .container #root .root-inner.loaded .app .delay-59 {
+          animation-delay: 1.475s !important; }
+        .container #root .root-inner.loaded .app .delay-60 {
+          animation-delay: 1.5s !important; }
+        .container #root .root-inner.loaded .app .delay-61 {
+          animation-delay: 1.525s !important; }
+        .container #root .root-inner.loaded .app .delay-62 {
+          animation-delay: 1.55s !important; }
+        .container #root .root-inner.loaded .app .delay-63 {
+          animation-delay: 1.575s !important; }
+        .container #root .root-inner.loaded .app .delay-64 {
+          animation-delay: 1.6s !important; }
+        .container #root .root-inner.loaded .app .delay-65 {
+          animation-delay: 1.625s !important; }
+        .container #root .root-inner.loaded .app .delay-66 {
+          animation-delay: 1.65s !important; }
+        .container #root .root-inner.loaded .app .delay-67 {
+          animation-delay: 1.675s !important; }
+        .container #root .root-inner.loaded .app .delay-68 {
+          animation-delay: 1.7s !important; }
+        .container #root .root-inner.loaded .app .delay-69 {
+          animation-delay: 1.725s !important; }
+        .container #root .root-inner.loaded .app .delay-70 {
+          animation-delay: 1.75s !important; }
+        .container #root .root-inner.loaded .app .delay-71 {
+          animation-delay: 1.775s !important; }
+        .container #root .root-inner.loaded .app .delay-72 {
+          animation-delay: 1.8s !important; }
+        .container #root .root-inner.loaded .app .delay-73 {
+          animation-delay: 1.825s !important; }
+        .container #root .root-inner.loaded .app .delay-74 {
+          animation-delay: 1.85s !important; }
+        .container #root .root-inner.loaded .app .delay-75 {
+          animation-delay: 1.875s !important; }
+        .container #root .root-inner.loaded .app .delay-76 {
+          animation-delay: 1.9s !important; }
+        .container #root .root-inner.loaded .app .delay-77 {
+          animation-delay: 1.925s !important; }
+        .container #root .root-inner.loaded .app .delay-78 {
+          animation-delay: 1.95s !important; }
+        .container #root .root-inner.loaded .app .delay-79 {
+          animation-delay: 1.975s !important; }
+        .container #root .root-inner.loaded .app .delay-80 {
+          animation-delay: 2s !important; }
+        .container #root .root-inner.loaded .app .delay-81 {
+          animation-delay: 2.025s !important; }
+        .container #root .root-inner.loaded .app .delay-82 {
+          animation-delay: 2.05s !important; }
+        .container #root .root-inner.loaded .app .delay-83 {
+          animation-delay: 2.075s !important; }
+        .container #root .root-inner.loaded .app .delay-84 {
+          animation-delay: 2.1s !important; }
+        .container #root .root-inner.loaded .app .delay-85 {
+          animation-delay: 2.125s !important; }
+        .container #root .root-inner.loaded .app .delay-86 {
+          animation-delay: 2.15s !important; }
+        .container #root .root-inner.loaded .app .delay-87 {
+          animation-delay: 2.175s !important; }
+        .container #root .root-inner.loaded .app .delay-88 {
+          animation-delay: 2.2s !important; }
+        .container #root .root-inner.loaded .app .delay-89 {
+          animation-delay: 2.225s !important; }
+        .container #root .root-inner.loaded .app .delay-90 {
+          animation-delay: 2.25s !important; }
+        .container #root .root-inner.loaded .app .delay-91 {
+          animation-delay: 2.275s !important; }
+        .container #root .root-inner.loaded .app .delay-92 {
+          animation-delay: 2.3s !important; }
+        .container #root .root-inner.loaded .app .delay-93 {
+          animation-delay: 2.325s !important; }
+        .container #root .root-inner.loaded .app .delay-94 {
+          animation-delay: 2.35s !important; }
+        .container #root .root-inner.loaded .app .delay-95 {
+          animation-delay: 2.375s !important; }
+        .container #root .root-inner.loaded .app .delay-96 {
+          animation-delay: 2.4s !important; }
+        .container #root .root-inner.loaded .app .delay-97 {
+          animation-delay: 2.425s !important; }
+        .container #root .root-inner.loaded .app .delay-98 {
+          animation-delay: 2.45s !important; }
+        .container #root .root-inner.loaded .app .delay-99 {
+          animation-delay: 2.475s !important; }
+        .container #root .root-inner.loaded .app .delay-100 {
+          animation-delay: 2.5s !important; }
+        .container #root .root-inner.loaded .app .delay-101 {
+          animation-delay: 2.525s !important; }
+        .container #root .root-inner.loaded .app .delay-102 {
+          animation-delay: 2.55s !important; }
+        .container #root .root-inner.loaded .app .delay-103 {
+          animation-delay: 2.575s !important; }
+        .container #root .root-inner.loaded .app .delay-104 {
+          animation-delay: 2.6s !important; }
+        .container #root .root-inner.loaded .app .delay-105 {
+          animation-delay: 2.625s !important; }
+        .container #root .root-inner.loaded .app .delay-106 {
+          animation-delay: 2.65s !important; }
+        .container #root .root-inner.loaded .app .delay-107 {
+          animation-delay: 2.675s !important; }
+        .container #root .root-inner.loaded .app .delay-108 {
+          animation-delay: 2.7s !important; }
+        .container #root .root-inner.loaded .app .delay-109 {
+          animation-delay: 2.725s !important; }
+        .container #root .root-inner.loaded .app .delay-110 {
+          animation-delay: 2.75s !important; }
+        .container #root .root-inner.loaded .app .delay-111 {
+          animation-delay: 2.775s !important; }
+        .container #root .root-inner.loaded .app .delay-112 {
+          animation-delay: 2.8s !important; }
+        .container #root .root-inner.loaded .app .delay-113 {
+          animation-delay: 2.825s !important; }
+        .container #root .root-inner.loaded .app .delay-114 {
+          animation-delay: 2.85s !important; }
+        .container #root .root-inner.loaded .app .delay-115 {
+          animation-delay: 2.875s !important; }
+        .container #root .root-inner.loaded .app .delay-116 {
+          animation-delay: 2.9s !important; }
+        .container #root .root-inner.loaded .app .delay-117 {
+          animation-delay: 2.925s !important; }
+        .container #root .root-inner.loaded .app .delay-118 {
+          animation-delay: 2.95s !important; }
+        .container #root .root-inner.loaded .app .delay-119 {
+          animation-delay: 2.975s !important; }
+        .container #root .root-inner.loaded .app .delay-120 {
+          animation-delay: 3s !important; }
+        .container #root .root-inner.loaded .app .delay-121 {
+          animation-delay: 3.025s !important; }
+        .container #root .root-inner.loaded .app .delay-122 {
+          animation-delay: 3.05s !important; }
+        .container #root .root-inner.loaded .app .delay-123 {
+          animation-delay: 3.075s !important; }
+        .container #root .root-inner.loaded .app .delay-124 {
+          animation-delay: 3.1s !important; }
+        .container #root .root-inner.loaded .app .delay-125 {
+          animation-delay: 3.125s !important; }
+        .container #root .root-inner.loaded .app .delay-126 {
+          animation-delay: 3.15s !important; }
+        .container #root .root-inner.loaded .app .delay-127 {
+          animation-delay: 3.175s !important; }
+        .container #root .root-inner.loaded .app .delay-128 {
+          animation-delay: 3.2s !important; }
+        .container #root .root-inner.loaded .app .delay-129 {
+          animation-delay: 3.225s !important; }
+        .container #root .root-inner.loaded .app .delay-130 {
+          animation-delay: 3.25s !important; }
+        .container #root .root-inner.loaded .app .delay-131 {
+          animation-delay: 3.275s !important; }
+        .container #root .root-inner.loaded .app .delay-132 {
+          animation-delay: 3.3s !important; }
+        .container #root .root-inner.loaded .app .delay-133 {
+          animation-delay: 3.325s !important; }
+        .container #root .root-inner.loaded .app .delay-134 {
+          animation-delay: 3.35s !important; }
+        .container #root .root-inner.loaded .app .delay-135 {
+          animation-delay: 3.375s !important; }
+        .container #root .root-inner.loaded .app .delay-136 {
+          animation-delay: 3.4s !important; }
+        .container #root .root-inner.loaded .app .delay-137 {
+          animation-delay: 3.425s !important; }
+        .container #root .root-inner.loaded .app .delay-138 {
+          animation-delay: 3.45s !important; }
+        .container #root .root-inner.loaded .app .delay-139 {
+          animation-delay: 3.475s !important; }
+        .container #root .root-inner.loaded .app .delay-140 {
+          animation-delay: 3.5s !important; }
+        .container #root .root-inner.loaded .app .delay-141 {
+          animation-delay: 3.525s !important; }
+        .container #root .root-inner.loaded .app .delay-142 {
+          animation-delay: 3.55s !important; }
+        .container #root .root-inner.loaded .app .delay-143 {
+          animation-delay: 3.575s !important; }
+        .container #root .root-inner.loaded .app .delay-144 {
+          animation-delay: 3.6s !important; }
+        .container #root .root-inner.loaded .app .delay-145 {
+          animation-delay: 3.625s !important; }
+        .container #root .root-inner.loaded .app .delay-146 {
+          animation-delay: 3.65s !important; }
+        .container #root .root-inner.loaded .app .delay-147 {
+          animation-delay: 3.675s !important; }
+        .container #root .root-inner.loaded .app .delay-148 {
+          animation-delay: 3.7s !important; }
+        .container #root .root-inner.loaded .app .delay-149 {
+          animation-delay: 3.725s !important; }
+        .container #root .root-inner.loaded .app .delay-150 {
+          animation-delay: 3.75s !important; }
+        .container #root .root-inner.loaded .app .delay-151 {
+          animation-delay: 3.775s !important; }
+        .container #root .root-inner.loaded .app .delay-152 {
+          animation-delay: 3.8s !important; }
+        .container #root .root-inner.loaded .app .delay-153 {
+          animation-delay: 3.825s !important; }
+        .container #root .root-inner.loaded .app .delay-154 {
+          animation-delay: 3.85s !important; }
+        .container #root .root-inner.loaded .app .delay-155 {
+          animation-delay: 3.875s !important; }
+        .container #root .root-inner.loaded .app .delay-156 {
+          animation-delay: 3.9s !important; }
+        .container #root .root-inner.loaded .app .delay-157 {
+          animation-delay: 3.925s !important; }
+        .container #root .root-inner.loaded .app .delay-158 {
+          animation-delay: 3.95s !important; }
+        .container #root .root-inner.loaded .app .delay-159 {
+          animation-delay: 3.975s !important; }
+        .container #root .root-inner.loaded .app .delay-160 {
+          animation-delay: 4s !important; }
+        .container #root .root-inner.loaded .app .delay-161 {
+          animation-delay: 4.025s !important; }
+        .container #root .root-inner.loaded .app .delay-162 {
+          animation-delay: 4.05s !important; }
+        .container #root .root-inner.loaded .app .delay-163 {
+          animation-delay: 4.075s !important; }
+        .container #root .root-inner.loaded .app .delay-164 {
+          animation-delay: 4.1s !important; }
+        .container #root .root-inner.loaded .app .delay-165 {
+          animation-delay: 4.125s !important; }
+        .container #root .root-inner.loaded .app .delay-166 {
+          animation-delay: 4.15s !important; }
+        .container #root .root-inner.loaded .app .delay-167 {
+          animation-delay: 4.175s !important; }
+        .container #root .root-inner.loaded .app .delay-168 {
+          animation-delay: 4.2s !important; }
+        .container #root .root-inner.loaded .app .delay-169 {
+          animation-delay: 4.225s !important; }
+        .container #root .root-inner.loaded .app .delay-170 {
+          animation-delay: 4.25s !important; }
+        .container #root .root-inner.loaded .app .delay-171 {
+          animation-delay: 4.275s !important; }
+        .container #root .root-inner.loaded .app .delay-172 {
+          animation-delay: 4.3s !important; }
+        .container #root .root-inner.loaded .app .delay-173 {
+          animation-delay: 4.325s !important; }
+        .container #root .root-inner.loaded .app .delay-174 {
+          animation-delay: 4.35s !important; }
+        .container #root .root-inner.loaded .app .delay-175 {
+          animation-delay: 4.375s !important; }
+        .container #root .root-inner.loaded .app .delay-176 {
+          animation-delay: 4.4s !important; }
+        .container #root .root-inner.loaded .app .delay-177 {
+          animation-delay: 4.425s !important; }
+        .container #root .root-inner.loaded .app .delay-178 {
+          animation-delay: 4.45s !important; }
+        .container #root .root-inner.loaded .app .delay-179 {
+          animation-delay: 4.475s !important; }
+        .container #root .root-inner.loaded .app .delay-180 {
+          animation-delay: 4.5s !important; }
+        .container #root .root-inner.loaded .app .delay-181 {
+          animation-delay: 4.525s !important; }
+        .container #root .root-inner.loaded .app .delay-182 {
+          animation-delay: 4.55s !important; }
+        .container #root .root-inner.loaded .app .delay-183 {
+          animation-delay: 4.575s !important; }
+        .container #root .root-inner.loaded .app .delay-184 {
+          animation-delay: 4.6s !important; }
+        .container #root .root-inner.loaded .app .delay-185 {
+          animation-delay: 4.625s !important; }
+        .container #root .root-inner.loaded .app .delay-186 {
+          animation-delay: 4.65s !important; }
+        .container #root .root-inner.loaded .app .delay-187 {
+          animation-delay: 4.675s !important; }
+        .container #root .root-inner.loaded .app .delay-188 {
+          animation-delay: 4.7s !important; }
+        .container #root .root-inner.loaded .app .delay-189 {
+          animation-delay: 4.725s !important; }
+        .container #root .root-inner.loaded .app .delay-190 {
+          animation-delay: 4.75s !important; }
+        .container #root .root-inner.loaded .app .delay-191 {
+          animation-delay: 4.775s !important; }
+        .container #root .root-inner.loaded .app .delay-192 {
+          animation-delay: 4.8s !important; }
+        .container #root .root-inner.loaded .app .delay-193 {
+          animation-delay: 4.825s !important; }
+        .container #root .root-inner.loaded .app .delay-194 {
+          animation-delay: 4.85s !important; }
+        .container #root .root-inner.loaded .app .delay-195 {
+          animation-delay: 4.875s !important; }
+        .container #root .root-inner.loaded .app .delay-196 {
+          animation-delay: 4.9s !important; }
+        .container #root .root-inner.loaded .app .delay-197 {
+          animation-delay: 4.925s !important; }
+        .container #root .root-inner.loaded .app .delay-198 {
+          animation-delay: 4.95s !important; }
+        .container #root .root-inner.loaded .app .delay-199 {
+          animation-delay: 4.975s !important; }
+        .container #root .root-inner.loaded .app .delay-200 {
+          animation-delay: 5s !important; }
+        .container #root .root-inner.loaded .app .delay-201 {
+          animation-delay: 5.025s !important; }
+        .container #root .root-inner.loaded .app .delay-202 {
+          animation-delay: 5.05s !important; }
+        .container #root .root-inner.loaded .app .delay-203 {
+          animation-delay: 5.075s !important; }
+        .container #root .root-inner.loaded .app .delay-204 {
+          animation-delay: 5.1s !important; }
+        .container #root .root-inner.loaded .app .delay-205 {
+          animation-delay: 5.125s !important; }
+        .container #root .root-inner.loaded .app .delay-206 {
+          animation-delay: 5.15s !important; }
+        .container #root .root-inner.loaded .app .delay-207 {
+          animation-delay: 5.175s !important; }
+        .container #root .root-inner.loaded .app .delay-208 {
+          animation-delay: 5.2s !important; }
+        .container #root .root-inner.loaded .app .delay-209 {
+          animation-delay: 5.225s !important; }
+        .container #root .root-inner.loaded .app .delay-210 {
+          animation-delay: 5.25s !important; }
+        .container #root .root-inner.loaded .app .delay-211 {
+          animation-delay: 5.275s !important; }
+        .container #root .root-inner.loaded .app .delay-212 {
+          animation-delay: 5.3s !important; }
+        .container #root .root-inner.loaded .app .delay-213 {
+          animation-delay: 5.325s !important; }
+        .container #root .root-inner.loaded .app .delay-214 {
+          animation-delay: 5.35s !important; }
+        .container #root .root-inner.loaded .app .delay-215 {
+          animation-delay: 5.375s !important; }
+        .container #root .root-inner.loaded .app .delay-216 {
+          animation-delay: 5.4s !important; }
+        .container #root .root-inner.loaded .app .delay-217 {
+          animation-delay: 5.425s !important; }
+        .container #root .root-inner.loaded .app .delay-218 {
+          animation-delay: 5.45s !important; }
+        .container #root .root-inner.loaded .app .delay-219 {
+          animation-delay: 5.475s !important; }
+        .container #root .root-inner.loaded .app .delay-220 {
+          animation-delay: 5.5s !important; }
+        .container #root .root-inner.loaded .app .delay-221 {
+          animation-delay: 5.525s !important; }
+        .container #root .root-inner.loaded .app .delay-222 {
+          animation-delay: 5.55s !important; }
+        .container #root .root-inner.loaded .app .delay-223 {
+          animation-delay: 5.575s !important; }
+        .container #root .root-inner.loaded .app .delay-224 {
+          animation-delay: 5.6s !important; }
+        .container #root .root-inner.loaded .app .delay-225 {
+          animation-delay: 5.625s !important; }
+        .container #root .root-inner.loaded .app .delay-226 {
+          animation-delay: 5.65s !important; }
+        .container #root .root-inner.loaded .app .delay-227 {
+          animation-delay: 5.675s !important; }
+        .container #root .root-inner.loaded .app .delay-228 {
+          animation-delay: 5.7s !important; }
+        .container #root .root-inner.loaded .app .delay-229 {
+          animation-delay: 5.725s !important; }
+        .container #root .root-inner.loaded .app .delay-230 {
+          animation-delay: 5.75s !important; }
+        .container #root .root-inner.loaded .app .delay-231 {
+          animation-delay: 5.775s !important; }
+        .container #root .root-inner.loaded .app .delay-232 {
+          animation-delay: 5.8s !important; }
+        .container #root .root-inner.loaded .app .delay-233 {
+          animation-delay: 5.825s !important; }
+        .container #root .root-inner.loaded .app .delay-234 {
+          animation-delay: 5.85s !important; }
+        .container #root .root-inner.loaded .app .delay-235 {
+          animation-delay: 5.875s !important; }
+        .container #root .root-inner.loaded .app .delay-236 {
+          animation-delay: 5.9s !important; }
+        .container #root .root-inner.loaded .app .delay-237 {
+          animation-delay: 5.925s !important; }
+        .container #root .root-inner.loaded .app .delay-238 {
+          animation-delay: 5.95s !important; }
+        .container #root .root-inner.loaded .app .delay-239 {
+          animation-delay: 5.975s !important; }
+        .container #root .root-inner.loaded .app .delay-240 {
+          animation-delay: 6s !important; }
+        .container #root .root-inner.loaded .app .delay-241 {
+          animation-delay: 6.025s !important; }
+        .container #root .root-inner.loaded .app .delay-242 {
+          animation-delay: 6.05s !important; }
+        .container #root .root-inner.loaded .app .delay-243 {
+          animation-delay: 6.075s !important; }
+        .container #root .root-inner.loaded .app .delay-244 {
+          animation-delay: 6.1s !important; }
+        .container #root .root-inner.loaded .app .delay-245 {
+          animation-delay: 6.125s !important; }
+        .container #root .root-inner.loaded .app .delay-246 {
+          animation-delay: 6.15s !important; }
+        .container #root .root-inner.loaded .app .delay-247 {
+          animation-delay: 6.175s !important; }
+        .container #root .root-inner.loaded .app .delay-248 {
+          animation-delay: 6.2s !important; }
+        .container #root .root-inner.loaded .app .delay-249 {
+          animation-delay: 6.225s !important; }
+        .container #root .root-inner.loaded .app .delay-250 {
+          animation-delay: 6.25s !important; }
+        .container #root .root-inner.loaded .app .delay-251 {
+          animation-delay: 6.275s !important; }
+        .container #root .root-inner.loaded .app .delay-252 {
+          animation-delay: 6.3s !important; }
+        .container #root .root-inner.loaded .app .delay-253 {
+          animation-delay: 6.325s !important; }
+        .container #root .root-inner.loaded .app .delay-254 {
+          animation-delay: 6.35s !important; }
+        .container #root .root-inner.loaded .app .delay-255 {
+          animation-delay: 6.375s !important; }
+        .container #root .root-inner.loaded .app .delay-256 {
+          animation-delay: 6.4s !important; }
+        .container #root .root-inner.loaded .app .delay-257 {
+          animation-delay: 6.425s !important; }
+        .container #root .root-inner.loaded .app .delay-258 {
+          animation-delay: 6.45s !important; }
+        .container #root .root-inner.loaded .app .delay-259 {
+          animation-delay: 6.475s !important; }
+        .container #root .root-inner.loaded .app .delay-260 {
+          animation-delay: 6.5s !important; }
+        .container #root .root-inner.loaded .app .delay-261 {
+          animation-delay: 6.525s !important; }
+        .container #root .root-inner.loaded .app .delay-262 {
+          animation-delay: 6.55s !important; }
+        .container #root .root-inner.loaded .app .delay-263 {
+          animation-delay: 6.575s !important; }
+        .container #root .root-inner.loaded .app .delay-264 {
+          animation-delay: 6.6s !important; }
+        .container #root .root-inner.loaded .app .delay-265 {
+          animation-delay: 6.625s !important; }
+        .container #root .root-inner.loaded .app .delay-266 {
+          animation-delay: 6.65s !important; }
+        .container #root .root-inner.loaded .app .delay-267 {
+          animation-delay: 6.675s !important; }
+        .container #root .root-inner.loaded .app .delay-268 {
+          animation-delay: 6.7s !important; }
+        .container #root .root-inner.loaded .app .delay-269 {
+          animation-delay: 6.725s !important; }
+        .container #root .root-inner.loaded .app .delay-270 {
+          animation-delay: 6.75s !important; }
+        .container #root .root-inner.loaded .app .delay-271 {
+          animation-delay: 6.775s !important; }
+        .container #root .root-inner.loaded .app .delay-272 {
+          animation-delay: 6.8s !important; }
+        .container #root .root-inner.loaded .app .delay-273 {
+          animation-delay: 6.825s !important; }
+        .container #root .root-inner.loaded .app .delay-274 {
+          animation-delay: 6.85s !important; }
+        .container #root .root-inner.loaded .app .delay-275 {
+          animation-delay: 6.875s !important; }
+        .container #root .root-inner.loaded .app .delay-276 {
+          animation-delay: 6.9s !important; }
+        .container #root .root-inner.loaded .app .delay-277 {
+          animation-delay: 6.925s !important; }
+        .container #root .root-inner.loaded .app .delay-278 {
+          animation-delay: 6.95s !important; }
+        .container #root .root-inner.loaded .app .delay-279 {
+          animation-delay: 6.975s !important; }
+        .container #root .root-inner.loaded .app .delay-280 {
+          animation-delay: 7s !important; }
+        .container #root .root-inner.loaded .app .delay-281 {
+          animation-delay: 7.025s !important; }
+        .container #root .root-inner.loaded .app .delay-282 {
+          animation-delay: 7.05s !important; }
+        .container #root .root-inner.loaded .app .delay-283 {
+          animation-delay: 7.075s !important; }
+        .container #root .root-inner.loaded .app .delay-284 {
+          animation-delay: 7.1s !important; }
+        .container #root .root-inner.loaded .app .delay-285 {
+          animation-delay: 7.125s !important; }
+        .container #root .root-inner.loaded .app .delay-286 {
+          animation-delay: 7.15s !important; }
+        .container #root .root-inner.loaded .app .delay-287 {
+          animation-delay: 7.175s !important; }
+        .container #root .root-inner.loaded .app .delay-288 {
+          animation-delay: 7.2s !important; }
+        .container #root .root-inner.loaded .app .delay-289 {
+          animation-delay: 7.225s !important; }
+        .container #root .root-inner.loaded .app .delay-290 {
+          animation-delay: 7.25s !important; }
+        .container #root .root-inner.loaded .app .delay-291 {
+          animation-delay: 7.275s !important; }
+        .container #root .root-inner.loaded .app .delay-292 {
+          animation-delay: 7.3s !important; }
+        .container #root .root-inner.loaded .app .delay-293 {
+          animation-delay: 7.325s !important; }
+        .container #root .root-inner.loaded .app .delay-294 {
+          animation-delay: 7.35s !important; }
+        .container #root .root-inner.loaded .app .delay-295 {
+          animation-delay: 7.375s !important; }
+        .container #root .root-inner.loaded .app .delay-296 {
+          animation-delay: 7.4s !important; }
+        .container #root .root-inner.loaded .app .delay-297 {
+          animation-delay: 7.425s !important; }
+        .container #root .root-inner.loaded .app .delay-298 {
+          animation-delay: 7.45s !important; }
+        .container #root .root-inner.loaded .app .delay-299 {
+          animation-delay: 7.475s !important; }
+        .container #root .root-inner.loaded .app .delay-300 {
+          animation-delay: 7.5s !important; }
+        .container #root .root-inner.loaded .app .delay-301 {
+          animation-delay: 7.525s !important; }
+        .container #root .root-inner.loaded .app .delay-302 {
+          animation-delay: 7.55s !important; }
+        .container #root .root-inner.loaded .app .delay-303 {
+          animation-delay: 7.575s !important; }
+        .container #root .root-inner.loaded .app .delay-304 {
+          animation-delay: 7.6s !important; }
+        .container #root .root-inner.loaded .app .delay-305 {
+          animation-delay: 7.625s !important; }
+        .container #root .root-inner.loaded .app .delay-306 {
+          animation-delay: 7.65s !important; }
+        .container #root .root-inner.loaded .app .delay-307 {
+          animation-delay: 7.675s !important; }
+        .container #root .root-inner.loaded .app .delay-308 {
+          animation-delay: 7.7s !important; }
+        .container #root .root-inner.loaded .app .delay-309 {
+          animation-delay: 7.725s !important; }
+        .container #root .root-inner.loaded .app .delay-310 {
+          animation-delay: 7.75s !important; }
+        .container #root .root-inner.loaded .app .delay-311 {
+          animation-delay: 7.775s !important; }
+        .container #root .root-inner.loaded .app .delay-312 {
+          animation-delay: 7.8s !important; }
+        .container #root .root-inner.loaded .app .delay-313 {
+          animation-delay: 7.825s !important; }
+        .container #root .root-inner.loaded .app .delay-314 {
+          animation-delay: 7.85s !important; }
+        .container #root .root-inner.loaded .app .delay-315 {
+          animation-delay: 7.875s !important; }
+        .container #root .root-inner.loaded .app .delay-316 {
+          animation-delay: 7.9s !important; }
+        .container #root .root-inner.loaded .app .delay-317 {
+          animation-delay: 7.925s !important; }
+        .container #root .root-inner.loaded .app .delay-318 {
+          animation-delay: 7.95s !important; }
+        .container #root .root-inner.loaded .app .delay-319 {
+          animation-delay: 7.975s !important; }
+        .container #root .root-inner.loaded .app .delay-320 {
+          animation-delay: 8s !important; }
+        .container #root .root-inner.loaded .app .delay-321 {
+          animation-delay: 8.025s !important; }
+        .container #root .root-inner.loaded .app .delay-322 {
+          animation-delay: 8.05s !important; }
+        .container #root .root-inner.loaded .app .delay-323 {
+          animation-delay: 8.075s !important; }
+        .container #root .root-inner.loaded .app .delay-324 {
+          animation-delay: 8.1s !important; }
+        .container #root .root-inner.loaded .app .delay-325 {
+          animation-delay: 8.125s !important; }
+        .container #root .root-inner.loaded .app .delay-326 {
+          animation-delay: 8.15s !important; }
+        .container #root .root-inner.loaded .app .delay-327 {
+          animation-delay: 8.175s !important; }
+        .container #root .root-inner.loaded .app .delay-328 {
+          animation-delay: 8.2s !important; }
+        .container #root .root-inner.loaded .app .delay-329 {
+          animation-delay: 8.225s !important; }
+        .container #root .root-inner.loaded .app .delay-330 {
+          animation-delay: 8.25s !important; }
+        .container #root .root-inner.loaded .app .delay-331 {
+          animation-delay: 8.275s !important; }
+        .container #root .root-inner.loaded .app .delay-332 {
+          animation-delay: 8.3s !important; }
+        .container #root .root-inner.loaded .app .delay-333 {
+          animation-delay: 8.325s !important; }
+        .container #root .root-inner.loaded .app .delay-334 {
+          animation-delay: 8.35s !important; }
+        .container #root .root-inner.loaded .app .delay-335 {
+          animation-delay: 8.375s !important; }
+        .container #root .root-inner.loaded .app .delay-336 {
+          animation-delay: 8.4s !important; }
+        .container #root .root-inner.loaded .app .delay-337 {
+          animation-delay: 8.425s !important; }
+        .container #root .root-inner.loaded .app .delay-338 {
+          animation-delay: 8.45s !important; }
+        .container #root .root-inner.loaded .app .delay-339 {
+          animation-delay: 8.475s !important; }
+        .container #root .root-inner.loaded .app .delay-340 {
+          animation-delay: 8.5s !important; }
+        .container #root .root-inner.loaded .app .delay-341 {
+          animation-delay: 8.525s !important; }
+        .container #root .root-inner.loaded .app .delay-342 {
+          animation-delay: 8.55s !important; }
+        .container #root .root-inner.loaded .app .delay-343 {
+          animation-delay: 8.575s !important; }
+        .container #root .root-inner.loaded .app .delay-344 {
+          animation-delay: 8.6s !important; }
+        .container #root .root-inner.loaded .app .delay-345 {
+          animation-delay: 8.625s !important; }
+        .container #root .root-inner.loaded .app .delay-346 {
+          animation-delay: 8.65s !important; }
+        .container #root .root-inner.loaded .app .delay-347 {
+          animation-delay: 8.675s !important; }
+        .container #root .root-inner.loaded .app .delay-348 {
+          animation-delay: 8.7s !important; }
+        .container #root .root-inner.loaded .app .delay-349 {
+          animation-delay: 8.725s !important; }
+        .container #root .root-inner.loaded .app .delay-350 {
+          animation-delay: 8.75s !important; }
+        .container #root .root-inner.loaded .app .delay-351 {
+          animation-delay: 8.775s !important; }
+        .container #root .root-inner.loaded .app .delay-352 {
+          animation-delay: 8.8s !important; }
+        .container #root .root-inner.loaded .app .delay-353 {
+          animation-delay: 8.825s !important; }
+        .container #root .root-inner.loaded .app .delay-354 {
+          animation-delay: 8.85s !important; }
+        .container #root .root-inner.loaded .app .delay-355 {
+          animation-delay: 8.875s !important; }
+        .container #root .root-inner.loaded .app .delay-356 {
+          animation-delay: 8.9s !important; }
+        .container #root .root-inner.loaded .app .delay-357 {
+          animation-delay: 8.925s !important; }
+        .container #root .root-inner.loaded .app .delay-358 {
+          animation-delay: 8.95s !important; }
+        .container #root .root-inner.loaded .app .delay-359 {
+          animation-delay: 8.975s !important; }
+        .container #root .root-inner.loaded .app .delay-360 {
+          animation-delay: 9s !important; }
+        .container #root .root-inner.loaded .app .delay-361 {
+          animation-delay: 9.025s !important; }
+        .container #root .root-inner.loaded .app .delay-362 {
+          animation-delay: 9.05s !important; }
+        .container #root .root-inner.loaded .app .delay-363 {
+          animation-delay: 9.075s !important; }
+        .container #root .root-inner.loaded .app .delay-364 {
+          animation-delay: 9.1s !important; }
+        .container #root .root-inner.loaded .app .delay-365 {
+          animation-delay: 9.125s !important; }
+        .container #root .root-inner.loaded .app .delay-366 {
+          animation-delay: 9.15s !important; }
+        .container #root .root-inner.loaded .app .delay-367 {
+          animation-delay: 9.175s !important; }
+        .container #root .root-inner.loaded .app .delay-368 {
+          animation-delay: 9.2s !important; }
+        .container #root .root-inner.loaded .app .delay-369 {
+          animation-delay: 9.225s !important; }
+        .container #root .root-inner.loaded .app .delay-370 {
+          animation-delay: 9.25s !important; }
+        .container #root .root-inner.loaded .app .delay-371 {
+          animation-delay: 9.275s !important; }
+        .container #root .root-inner.loaded .app .delay-372 {
+          animation-delay: 9.3s !important; }
+        .container #root .root-inner.loaded .app .delay-373 {
+          animation-delay: 9.325s !important; }
+        .container #root .root-inner.loaded .app .delay-374 {
+          animation-delay: 9.35s !important; }
+        .container #root .root-inner.loaded .app .delay-375 {
+          animation-delay: 9.375s !important; }
+        .container #root .root-inner.loaded .app .delay-376 {
+          animation-delay: 9.4s !important; }
+        .container #root .root-inner.loaded .app .delay-377 {
+          animation-delay: 9.425s !important; }
+        .container #root .root-inner.loaded .app .delay-378 {
+          animation-delay: 9.45s !important; }
+        .container #root .root-inner.loaded .app .delay-379 {
+          animation-delay: 9.475s !important; }
+        .container #root .root-inner.loaded .app .delay-380 {
+          animation-delay: 9.5s !important; }
+        .container #root .root-inner.loaded .app .delay-381 {
+          animation-delay: 9.525s !important; }
+        .container #root .root-inner.loaded .app .delay-382 {
+          animation-delay: 9.55s !important; }
+        .container #root .root-inner.loaded .app .delay-383 {
+          animation-delay: 9.575s !important; }
+        .container #root .root-inner.loaded .app .delay-384 {
+          animation-delay: 9.6s !important; }
+        .container #root .root-inner.loaded .app .delay-385 {
+          animation-delay: 9.625s !important; }
+        .container #root .root-inner.loaded .app .delay-386 {
+          animation-delay: 9.65s !important; }
+        .container #root .root-inner.loaded .app .delay-387 {
+          animation-delay: 9.675s !important; }
+        .container #root .root-inner.loaded .app .delay-388 {
+          animation-delay: 9.7s !important; }
+        .container #root .root-inner.loaded .app .delay-389 {
+          animation-delay: 9.725s !important; }
+        .container #root .root-inner.loaded .app .delay-390 {
+          animation-delay: 9.75s !important; }
+        .container #root .root-inner.loaded .app .delay-391 {
+          animation-delay: 9.775s !important; }
+        .container #root .root-inner.loaded .app .delay-392 {
+          animation-delay: 9.8s !important; }
+        .container #root .root-inner.loaded .app .delay-393 {
+          animation-delay: 9.825s !important; }
+        .container #root .root-inner.loaded .app .delay-394 {
+          animation-delay: 9.85s !important; }
+        .container #root .root-inner.loaded .app .delay-395 {
+          animation-delay: 9.875s !important; }
+        .container #root .root-inner.loaded .app .delay-396 {
+          animation-delay: 9.9s !important; }
+        .container #root .root-inner.loaded .app .delay-397 {
+          animation-delay: 9.925s !important; }
+        .container #root .root-inner.loaded .app .delay-398 {
+          animation-delay: 9.95s !important; }
+        .container #root .root-inner.loaded .app .delay-399 {
+          animation-delay: 9.975s !important; }
+        .container #root .root-inner.loaded .app .delay-400 {
+          animation-delay: 10s !important; }
+        .container #root .root-inner.loaded .app .delay-401 {
+          animation-delay: 10.025s !important; }
+        .container #root .root-inner.loaded .app .delay-402 {
+          animation-delay: 10.05s !important; }
+        .container #root .root-inner.loaded .app .delay-403 {
+          animation-delay: 10.075s !important; }
+        .container #root .root-inner.loaded .app .delay-404 {
+          animation-delay: 10.1s !important; }
+        .container #root .root-inner.loaded .app .delay-405 {
+          animation-delay: 10.125s !important; }
+        .container #root .root-inner.loaded .app .delay-406 {
+          animation-delay: 10.15s !important; }
+        .container #root .root-inner.loaded .app .delay-407 {
+          animation-delay: 10.175s !important; }
+        .container #root .root-inner.loaded .app .delay-408 {
+          animation-delay: 10.2s !important; }
+        .container #root .root-inner.loaded .app .delay-409 {
+          animation-delay: 10.225s !important; }
+        .container #root .root-inner.loaded .app .delay-410 {
+          animation-delay: 10.25s !important; }
+        .container #root .root-inner.loaded .app .delay-411 {
+          animation-delay: 10.275s !important; }
+        .container #root .root-inner.loaded .app .delay-412 {
+          animation-delay: 10.3s !important; }
+        .container #root .root-inner.loaded .app .delay-413 {
+          animation-delay: 10.325s !important; }
+        .container #root .root-inner.loaded .app .delay-414 {
+          animation-delay: 10.35s !important; }
+        .container #root .root-inner.loaded .app .delay-415 {
+          animation-delay: 10.375s !important; }
+        .container #root .root-inner.loaded .app .delay-416 {
+          animation-delay: 10.4s !important; }
+        .container #root .root-inner.loaded .app .delay-417 {
+          animation-delay: 10.425s !important; }
+        .container #root .root-inner.loaded .app .delay-418 {
+          animation-delay: 10.45s !important; }
+        .container #root .root-inner.loaded .app .delay-419 {
+          animation-delay: 10.475s !important; }
+        .container #root .root-inner.loaded .app .delay-420 {
+          animation-delay: 10.5s !important; }
+        .container #root .root-inner.loaded .app .delay-421 {
+          animation-delay: 10.525s !important; }
+        .container #root .root-inner.loaded .app .delay-422 {
+          animation-delay: 10.55s !important; }
+        .container #root .root-inner.loaded .app .delay-423 {
+          animation-delay: 10.575s !important; }
+        .container #root .root-inner.loaded .app .delay-424 {
+          animation-delay: 10.6s !important; }
+        .container #root .root-inner.loaded .app .delay-425 {
+          animation-delay: 10.625s !important; }
+        .container #root .root-inner.loaded .app .delay-426 {
+          animation-delay: 10.65s !important; }
+        .container #root .root-inner.loaded .app .delay-427 {
+          animation-delay: 10.675s !important; }
+        .container #root .root-inner.loaded .app .delay-428 {
+          animation-delay: 10.7s !important; }
+        .container #root .root-inner.loaded .app .delay-429 {
+          animation-delay: 10.725s !important; }
+        .container #root .root-inner.loaded .app .delay-430 {
+          animation-delay: 10.75s !important; }
+        .container #root .root-inner.loaded .app .delay-431 {
+          animation-delay: 10.775s !important; }
+        .container #root .root-inner.loaded .app .delay-432 {
+          animation-delay: 10.8s !important; }
+        .container #root .root-inner.loaded .app .delay-433 {
+          animation-delay: 10.825s !important; }
+        .container #root .root-inner.loaded .app .delay-434 {
+          animation-delay: 10.85s !important; }
+        .container #root .root-inner.loaded .app .delay-435 {
+          animation-delay: 10.875s !important; }
+        .container #root .root-inner.loaded .app .delay-436 {
+          animation-delay: 10.9s !important; }
+        .container #root .root-inner.loaded .app .delay-437 {
+          animation-delay: 10.925s !important; }
+        .container #root .root-inner.loaded .app .delay-438 {
+          animation-delay: 10.95s !important; }
+        .container #root .root-inner.loaded .app .delay-439 {
+          animation-delay: 10.975s !important; }
+        .container #root .root-inner.loaded .app .delay-440 {
+          animation-delay: 11s !important; }
+        .container #root .root-inner.loaded .app .delay-441 {
+          animation-delay: 11.025s !important; }
+        .container #root .root-inner.loaded .app .delay-442 {
+          animation-delay: 11.05s !important; }
+        .container #root .root-inner.loaded .app .delay-443 {
+          animation-delay: 11.075s !important; }
+        .container #root .root-inner.loaded .app .delay-444 {
+          animation-delay: 11.1s !important; }
+        .container #root .root-inner.loaded .app .delay-445 {
+          animation-delay: 11.125s !important; }
+        .container #root .root-inner.loaded .app .delay-446 {
+          animation-delay: 11.15s !important; }
+        .container #root .root-inner.loaded .app .delay-447 {
+          animation-delay: 11.175s !important; }
+        .container #root .root-inner.loaded .app .delay-448 {
+          animation-delay: 11.2s !important; }
+        .container #root .root-inner.loaded .app .delay-449 {
+          animation-delay: 11.225s !important; }
+        .container #root .root-inner.loaded .app .delay-450 {
+          animation-delay: 11.25s !important; }
+        .container #root .root-inner.loaded .app .delay-451 {
+          animation-delay: 11.275s !important; }
+        .container #root .root-inner.loaded .app .delay-452 {
+          animation-delay: 11.3s !important; }
+        .container #root .root-inner.loaded .app .delay-453 {
+          animation-delay: 11.325s !important; }
+        .container #root .root-inner.loaded .app .delay-454 {
+          animation-delay: 11.35s !important; }
+        .container #root .root-inner.loaded .app .delay-455 {
+          animation-delay: 11.375s !important; }
+        .container #root .root-inner.loaded .app .delay-456 {
+          animation-delay: 11.4s !important; }
+        .container #root .root-inner.loaded .app .delay-457 {
+          animation-delay: 11.425s !important; }
+        .container #root .root-inner.loaded .app .delay-458 {
+          animation-delay: 11.45s !important; }
+        .container #root .root-inner.loaded .app .delay-459 {
+          animation-delay: 11.475s !important; }
+        .container #root .root-inner.loaded .app .delay-460 {
+          animation-delay: 11.5s !important; }
+        .container #root .root-inner.loaded .app .delay-461 {
+          animation-delay: 11.525s !important; }
+        .container #root .root-inner.loaded .app .delay-462 {
+          animation-delay: 11.55s !important; }
+        .container #root .root-inner.loaded .app .delay-463 {
+          animation-delay: 11.575s !important; }
+        .container #root .root-inner.loaded .app .delay-464 {
+          animation-delay: 11.6s !important; }
+        .container #root .root-inner.loaded .app .delay-465 {
+          animation-delay: 11.625s !important; }
+        .container #root .root-inner.loaded .app .delay-466 {
+          animation-delay: 11.65s !important; }
+        .container #root .root-inner.loaded .app .delay-467 {
+          animation-delay: 11.675s !important; }
+        .container #root .root-inner.loaded .app .delay-468 {
+          animation-delay: 11.7s !important; }
+        .container #root .root-inner.loaded .app .delay-469 {
+          animation-delay: 11.725s !important; }
+        .container #root .root-inner.loaded .app .delay-470 {
+          animation-delay: 11.75s !important; }
+        .container #root .root-inner.loaded .app .delay-471 {
+          animation-delay: 11.775s !important; }
+        .container #root .root-inner.loaded .app .delay-472 {
+          animation-delay: 11.8s !important; }
+        .container #root .root-inner.loaded .app .delay-473 {
+          animation-delay: 11.825s !important; }
+        .container #root .root-inner.loaded .app .delay-474 {
+          animation-delay: 11.85s !important; }
+        .container #root .root-inner.loaded .app .delay-475 {
+          animation-delay: 11.875s !important; }
+        .container #root .root-inner.loaded .app .delay-476 {
+          animation-delay: 11.9s !important; }
+        .container #root .root-inner.loaded .app .delay-477 {
+          animation-delay: 11.925s !important; }
+        .container #root .root-inner.loaded .app .delay-478 {
+          animation-delay: 11.95s !important; }
+        .container #root .root-inner.loaded .app .delay-479 {
+          animation-delay: 11.975s !important; }
+        .container #root .root-inner.loaded .app .delay-480 {
+          animation-delay: 12s !important; }
+        .container #root .root-inner.loaded .app .delay-481 {
+          animation-delay: 12.025s !important; }
+        .container #root .root-inner.loaded .app .delay-482 {
+          animation-delay: 12.05s !important; }
+        .container #root .root-inner.loaded .app .delay-483 {
+          animation-delay: 12.075s !important; }
+        .container #root .root-inner.loaded .app .delay-484 {
+          animation-delay: 12.1s !important; }
+        .container #root .root-inner.loaded .app .delay-485 {
+          animation-delay: 12.125s !important; }
+        .container #root .root-inner.loaded .app .delay-486 {
+          animation-delay: 12.15s !important; }
+        .container #root .root-inner.loaded .app .delay-487 {
+          animation-delay: 12.175s !important; }
+        .container #root .root-inner.loaded .app .delay-488 {
+          animation-delay: 12.2s !important; }
+        .container #root .root-inner.loaded .app .delay-489 {
+          animation-delay: 12.225s !important; }
+        .container #root .root-inner.loaded .app .delay-490 {
+          animation-delay: 12.25s !important; }
+        .container #root .root-inner.loaded .app .delay-491 {
+          animation-delay: 12.275s !important; }
+        .container #root .root-inner.loaded .app .delay-492 {
+          animation-delay: 12.3s !important; }
+        .container #root .root-inner.loaded .app .delay-493 {
+          animation-delay: 12.325s !important; }
+        .container #root .root-inner.loaded .app .delay-494 {
+          animation-delay: 12.35s !important; }
+        .container #root .root-inner.loaded .app .delay-495 {
+          animation-delay: 12.375s !important; }
+        .container #root .root-inner.loaded .app .delay-496 {
+          animation-delay: 12.4s !important; }
+        .container #root .root-inner.loaded .app .delay-497 {
+          animation-delay: 12.425s !important; }
+        .container #root .root-inner.loaded .app .delay-498 {
+          animation-delay: 12.45s !important; }
+        .container #root .root-inner.loaded .app .delay-499 {
+          animation-delay: 12.475s !important; }
+        .container #root .root-inner.loaded .app .delay-500 {
+          animation-delay: 12.5s !important; }
+        .container #root .root-inner.loaded .app .delay-501 {
+          animation-delay: 12.525s !important; }
+        .container #root .root-inner.loaded .app .delay-502 {
+          animation-delay: 12.55s !important; }
+        .container #root .root-inner.loaded .app .delay-503 {
+          animation-delay: 12.575s !important; }
+        .container #root .root-inner.loaded .app .delay-504 {
+          animation-delay: 12.6s !important; }
+        .container #root .root-inner.loaded .app .delay-505 {
+          animation-delay: 12.625s !important; }
+        .container #root .root-inner.loaded .app .delay-506 {
+          animation-delay: 12.65s !important; }
+        .container #root .root-inner.loaded .app .delay-507 {
+          animation-delay: 12.675s !important; }
+        .container #root .root-inner.loaded .app .delay-508 {
+          animation-delay: 12.7s !important; }
+        .container #root .root-inner.loaded .app .delay-509 {
+          animation-delay: 12.725s !important; }
+        .container #root .root-inner.loaded .app .delay-510 {
+          animation-delay: 12.75s !important; }
+        .container #root .root-inner.loaded .app .delay-511 {
+          animation-delay: 12.775s !important; }
+        .container #root .root-inner.loaded .app .delay-512 {
+          animation-delay: 12.8s !important; }
+        .container #root .root-inner.loaded .app .delay-513 {
+          animation-delay: 12.825s !important; }
+        .container #root .root-inner.loaded .app .delay-514 {
+          animation-delay: 12.85s !important; }
+        .container #root .root-inner.loaded .app .delay-515 {
+          animation-delay: 12.875s !important; }
+        .container #root .root-inner.loaded .app .delay-516 {
+          animation-delay: 12.9s !important; }
+        .container #root .root-inner.loaded .app .delay-517 {
+          animation-delay: 12.925s !important; }
+        .container #root .root-inner.loaded .app .delay-518 {
+          animation-delay: 12.95s !important; }
+        .container #root .root-inner.loaded .app .delay-519 {
+          animation-delay: 12.975s !important; }
+        .container #root .root-inner.loaded .app .delay-520 {
+          animation-delay: 13s !important; }
+        .container #root .root-inner.loaded .app .delay-521 {
+          animation-delay: 13.025s !important; }
+        .container #root .root-inner.loaded .app .delay-522 {
+          animation-delay: 13.05s !important; }
+        .container #root .root-inner.loaded .app .delay-523 {
+          animation-delay: 13.075s !important; }
+        .container #root .root-inner.loaded .app .delay-524 {
+          animation-delay: 13.1s !important; }
+        .container #root .root-inner.loaded .app .delay-525 {
+          animation-delay: 13.125s !important; }
+        .container #root .root-inner.loaded .app .delay-526 {
+          animation-delay: 13.15s !important; }
+        .container #root .root-inner.loaded .app .delay-527 {
+          animation-delay: 13.175s !important; }
+        .container #root .root-inner.loaded .app .delay-528 {
+          animation-delay: 13.2s !important; }
+        .container #root .root-inner.loaded .app .delay-529 {
+          animation-delay: 13.225s !important; }
+        .container #root .root-inner.loaded .app .delay-530 {
+          animation-delay: 13.25s !important; }
+        .container #root .root-inner.loaded .app .delay-531 {
+          animation-delay: 13.275s !important; }
+        .container #root .root-inner.loaded .app .delay-532 {
+          animation-delay: 13.3s !important; }
+        .container #root .root-inner.loaded .app .delay-533 {
+          animation-delay: 13.325s !important; }
+        .container #root .root-inner.loaded .app .delay-534 {
+          animation-delay: 13.35s !important; }
+        .container #root .root-inner.loaded .app .delay-535 {
+          animation-delay: 13.375s !important; }
+        .container #root .root-inner.loaded .app .delay-536 {
+          animation-delay: 13.4s !important; }
+        .container #root .root-inner.loaded .app .delay-537 {
+          animation-delay: 13.425s !important; }
+        .container #root .root-inner.loaded .app .delay-538 {
+          animation-delay: 13.45s !important; }
+        .container #root .root-inner.loaded .app .delay-539 {
+          animation-delay: 13.475s !important; }
+        .container #root .root-inner.loaded .app .delay-540 {
+          animation-delay: 13.5s !important; }
+        .container #root .root-inner.loaded .app .delay-541 {
+          animation-delay: 13.525s !important; }
+        .container #root .root-inner.loaded .app .delay-542 {
+          animation-delay: 13.55s !important; }
+        .container #root .root-inner.loaded .app .delay-543 {
+          animation-delay: 13.575s !important; }
+        .container #root .root-inner.loaded .app .delay-544 {
+          animation-delay: 13.6s !important; }
+        .container #root .root-inner.loaded .app .delay-545 {
+          animation-delay: 13.625s !important; }
+        .container #root .root-inner.loaded .app .delay-546 {
+          animation-delay: 13.65s !important; }
+        .container #root .root-inner.loaded .app .delay-547 {
+          animation-delay: 13.675s !important; }
+        .container #root .root-inner.loaded .app .delay-548 {
+          animation-delay: 13.7s !important; }
+        .container #root .root-inner.loaded .app .delay-549 {
+          animation-delay: 13.725s !important; }
+        .container #root .root-inner.loaded .app .delay-550 {
+          animation-delay: 13.75s !important; }
+        .container #root .root-inner.loaded .app .delay-551 {
+          animation-delay: 13.775s !important; }
+        .container #root .root-inner.loaded .app .delay-552 {
+          animation-delay: 13.8s !important; }
+        .container #root .root-inner.loaded .app .delay-553 {
+          animation-delay: 13.825s !important; }
+        .container #root .root-inner.loaded .app .delay-554 {
+          animation-delay: 13.85s !important; }
+        .container #root .root-inner.loaded .app .delay-555 {
+          animation-delay: 13.875s !important; }
+        .container #root .root-inner.loaded .app .delay-556 {
+          animation-delay: 13.9s !important; }
+        .container #root .root-inner.loaded .app .delay-557 {
+          animation-delay: 13.925s !important; }
+        .container #root .root-inner.loaded .app .delay-558 {
+          animation-delay: 13.95s !important; }
+        .container #root .root-inner.loaded .app .delay-559 {
+          animation-delay: 13.975s !important; }
+        .container #root .root-inner.loaded .app .delay-560 {
+          animation-delay: 14s !important; }
+        .container #root .root-inner.loaded .app .delay-561 {
+          animation-delay: 14.025s !important; }
+        .container #root .root-inner.loaded .app .delay-562 {
+          animation-delay: 14.05s !important; }
+        .container #root .root-inner.loaded .app .delay-563 {
+          animation-delay: 14.075s !important; }
+        .container #root .root-inner.loaded .app .delay-564 {
+          animation-delay: 14.1s !important; }
+        .container #root .root-inner.loaded .app .delay-565 {
+          animation-delay: 14.125s !important; }
+        .container #root .root-inner.loaded .app .delay-566 {
+          animation-delay: 14.15s !important; }
+        .container #root .root-inner.loaded .app .delay-567 {
+          animation-delay: 14.175s !important; }
+        .container #root .root-inner.loaded .app .delay-568 {
+          animation-delay: 14.2s !important; }
+        .container #root .root-inner.loaded .app .delay-569 {
+          animation-delay: 14.225s !important; }
+        .container #root .root-inner.loaded .app .delay-570 {
+          animation-delay: 14.25s !important; }
+        .container #root .root-inner.loaded .app .delay-571 {
+          animation-delay: 14.275s !important; }
+        .container #root .root-inner.loaded .app .delay-572 {
+          animation-delay: 14.3s !important; }
+        .container #root .root-inner.loaded .app .delay-573 {
+          animation-delay: 14.325s !important; }
+        .container #root .root-inner.loaded .app .delay-574 {
+          animation-delay: 14.35s !important; }
+        .container #root .root-inner.loaded .app .delay-575 {
+          animation-delay: 14.375s !important; }
+        .container #root .root-inner.loaded .app .delay-576 {
+          animation-delay: 14.4s !important; }
+        .container #root .root-inner.loaded .app .delay-577 {
+          animation-delay: 14.425s !important; }
+        .container #root .root-inner.loaded .app .delay-578 {
+          animation-delay: 14.45s !important; }
+        .container #root .root-inner.loaded .app .delay-579 {
+          animation-delay: 14.475s !important; }
+        .container #root .root-inner.loaded .app .delay-580 {
+          animation-delay: 14.5s !important; }
+        .container #root .root-inner.loaded .app .delay-581 {
+          animation-delay: 14.525s !important; }
+        .container #root .root-inner.loaded .app .delay-582 {
+          animation-delay: 14.55s !important; }
+        .container #root .root-inner.loaded .app .delay-583 {
+          animation-delay: 14.575s !important; }
+        .container #root .root-inner.loaded .app .delay-584 {
+          animation-delay: 14.6s !important; }
+        .container #root .root-inner.loaded .app .delay-585 {
+          animation-delay: 14.625s !important; }
+        .container #root .root-inner.loaded .app .delay-586 {
+          animation-delay: 14.65s !important; }
+        .container #root .root-inner.loaded .app .delay-587 {
+          animation-delay: 14.675s !important; }
+        .container #root .root-inner.loaded .app .delay-588 {
+          animation-delay: 14.7s !important; }
+        .container #root .root-inner.loaded .app .delay-589 {
+          animation-delay: 14.725s !important; }
+        .container #root .root-inner.loaded .app .delay-590 {
+          animation-delay: 14.75s !important; }
+        .container #root .root-inner.loaded .app .delay-591 {
+          animation-delay: 14.775s !important; }
+        .container #root .root-inner.loaded .app .delay-592 {
+          animation-delay: 14.8s !important; }
+        .container #root .root-inner.loaded .app .delay-593 {
+          animation-delay: 14.825s !important; }
+        .container #root .root-inner.loaded .app .delay-594 {
+          animation-delay: 14.85s !important; }
+        .container #root .root-inner.loaded .app .delay-595 {
+          animation-delay: 14.875s !important; }
+        .container #root .root-inner.loaded .app .delay-596 {
+          animation-delay: 14.9s !important; }
+        .container #root .root-inner.loaded .app .delay-597 {
+          animation-delay: 14.925s !important; }
+        .container #root .root-inner.loaded .app .delay-598 {
+          animation-delay: 14.95s !important; }
+        .container #root .root-inner.loaded .app .delay-599 {
+          animation-delay: 14.975s !important; }
+        .container #root .root-inner.loaded .app .delay-600 {
+          animation-delay: 15s !important; }
+        .container #root .root-inner.loaded .app .delay-601 {
+          animation-delay: 15.025s !important; }
+        .container #root .root-inner.loaded .app .delay-602 {
+          animation-delay: 15.05s !important; }
+        .container #root .root-inner.loaded .app .delay-603 {
+          animation-delay: 15.075s !important; }
+        .container #root .root-inner.loaded .app .delay-604 {
+          animation-delay: 15.1s !important; }
+        .container #root .root-inner.loaded .app .delay-605 {
+          animation-delay: 15.125s !important; }
+        .container #root .root-inner.loaded .app .delay-606 {
+          animation-delay: 15.15s !important; }
+        .container #root .root-inner.loaded .app .delay-607 {
+          animation-delay: 15.175s !important; }
+        .container #root .root-inner.loaded .app .delay-608 {
+          animation-delay: 15.2s !important; }
+        .container #root .root-inner.loaded .app .delay-609 {
+          animation-delay: 15.225s !important; }
+        .container #root .root-inner.loaded .app .delay-610 {
+          animation-delay: 15.25s !important; }
+        .container #root .root-inner.loaded .app .delay-611 {
+          animation-delay: 15.275s !important; }
+        .container #root .root-inner.loaded .app .delay-612 {
+          animation-delay: 15.3s !important; }
+        .container #root .root-inner.loaded .app .delay-613 {
+          animation-delay: 15.325s !important; }
+        .container #root .root-inner.loaded .app .delay-614 {
+          animation-delay: 15.35s !important; }
+        .container #root .root-inner.loaded .app .delay-615 {
+          animation-delay: 15.375s !important; }
+        .container #root .root-inner.loaded .app .delay-616 {
+          animation-delay: 15.4s !important; }
+        .container #root .root-inner.loaded .app .delay-617 {
+          animation-delay: 15.425s !important; }
+        .container #root .root-inner.loaded .app .delay-618 {
+          animation-delay: 15.45s !important; }
+        .container #root .root-inner.loaded .app .delay-619 {
+          animation-delay: 15.475s !important; }
+        .container #root .root-inner.loaded .app .delay-620 {
+          animation-delay: 15.5s !important; }
+        .container #root .root-inner.loaded .app .delay-621 {
+          animation-delay: 15.525s !important; }
+        .container #root .root-inner.loaded .app .delay-622 {
+          animation-delay: 15.55s !important; }
+        .container #root .root-inner.loaded .app .delay-623 {
+          animation-delay: 15.575s !important; }
+        .container #root .root-inner.loaded .app .delay-624 {
+          animation-delay: 15.6s !important; }
+        .container #root .root-inner.loaded .app .delay-625 {
+          animation-delay: 15.625s !important; }
+        .container #root .root-inner.loaded .app .delay-626 {
+          animation-delay: 15.65s !important; }
+        .container #root .root-inner.loaded .app .delay-627 {
+          animation-delay: 15.675s !important; }
+        .container #root .root-inner.loaded .app .delay-628 {
+          animation-delay: 15.7s !important; }
+        .container #root .root-inner.loaded .app .delay-629 {
+          animation-delay: 15.725s !important; }
+        .container #root .root-inner.loaded .app .delay-630 {
+          animation-delay: 15.75s !important; }
+        .container #root .root-inner.loaded .app .delay-631 {
+          animation-delay: 15.775s !important; }
+        .container #root .root-inner.loaded .app .delay-632 {
+          animation-delay: 15.8s !important; }
+        .container #root .root-inner.loaded .app .delay-633 {
+          animation-delay: 15.825s !important; }
+        .container #root .root-inner.loaded .app .delay-634 {
+          animation-delay: 15.85s !important; }
+        .container #root .root-inner.loaded .app .delay-635 {
+          animation-delay: 15.875s !important; }
+        .container #root .root-inner.loaded .app .delay-636 {
+          animation-delay: 15.9s !important; }
+        .container #root .root-inner.loaded .app .delay-637 {
+          animation-delay: 15.925s !important; }
+        .container #root .root-inner.loaded .app .delay-638 {
+          animation-delay: 15.95s !important; }
+        .container #root .root-inner.loaded .app .delay-639 {
+          animation-delay: 15.975s !important; }
+        .container #root .root-inner.loaded .app .delay-640 {
+          animation-delay: 16s !important; }
+        .container #root .root-inner.loaded .app .delay-641 {
+          animation-delay: 16.025s !important; }
+        .container #root .root-inner.loaded .app .delay-642 {
+          animation-delay: 16.05s !important; }
+        .container #root .root-inner.loaded .app .delay-643 {
+          animation-delay: 16.075s !important; }
+        .container #root .root-inner.loaded .app .delay-644 {
+          animation-delay: 16.1s !important; }
+        .container #root .root-inner.loaded .app .delay-645 {
+          animation-delay: 16.125s !important; }
+        .container #root .root-inner.loaded .app .delay-646 {
+          animation-delay: 16.15s !important; }
+        .container #root .root-inner.loaded .app .delay-647 {
+          animation-delay: 16.175s !important; }
+        .container #root .root-inner.loaded .app .delay-648 {
+          animation-delay: 16.2s !important; }
+        .container #root .root-inner.loaded .app .delay-649 {
+          animation-delay: 16.225s !important; }
+        .container #root .root-inner.loaded .app .delay-650 {
+          animation-delay: 16.25s !important; }
+        .container #root .root-inner.loaded .app .delay-651 {
+          animation-delay: 16.275s !important; }
+        .container #root .root-inner.loaded .app .delay-652 {
+          animation-delay: 16.3s !important; }
+        .container #root .root-inner.loaded .app .delay-653 {
+          animation-delay: 16.325s !important; }
+        .container #root .root-inner.loaded .app .delay-654 {
+          animation-delay: 16.35s !important; }
+        .container #root .root-inner.loaded .app .delay-655 {
+          animation-delay: 16.375s !important; }
+        .container #root .root-inner.loaded .app .delay-656 {
+          animation-delay: 16.4s !important; }
+        .container #root .root-inner.loaded .app .delay-657 {
+          animation-delay: 16.425s !important; }
+        .container #root .root-inner.loaded .app .delay-658 {
+          animation-delay: 16.45s !important; }
+        .container #root .root-inner.loaded .app .delay-659 {
+          animation-delay: 16.475s !important; }
+        .container #root .root-inner.loaded .app .delay-660 {
+          animation-delay: 16.5s !important; }
+        .container #root .root-inner.loaded .app .delay-661 {
+          animation-delay: 16.525s !important; }
+        .container #root .root-inner.loaded .app .delay-662 {
+          animation-delay: 16.55s !important; }
+        .container #root .root-inner.loaded .app .delay-663 {
+          animation-delay: 16.575s !important; }
+        .container #root .root-inner.loaded .app .delay-664 {
+          animation-delay: 16.6s !important; }
+        .container #root .root-inner.loaded .app .delay-665 {
+          animation-delay: 16.625s !important; }
+        .container #root .root-inner.loaded .app .delay-666 {
+          animation-delay: 16.65s !important; }
+        .container #root .root-inner.loaded .app .delay-667 {
+          animation-delay: 16.675s !important; }
+        .container #root .root-inner.loaded .app .delay-668 {
+          animation-delay: 16.7s !important; }
+        .container #root .root-inner.loaded .app .delay-669 {
+          animation-delay: 16.725s !important; }
+        .container #root .root-inner.loaded .app .delay-670 {
+          animation-delay: 16.75s !important; }
+        .container #root .root-inner.loaded .app .delay-671 {
+          animation-delay: 16.775s !important; }
+        .container #root .root-inner.loaded .app .delay-672 {
+          animation-delay: 16.8s !important; }
+        .container #root .root-inner.loaded .app .delay-673 {
+          animation-delay: 16.825s !important; }
+        .container #root .root-inner.loaded .app .delay-674 {
+          animation-delay: 16.85s !important; }
+        .container #root .root-inner.loaded .app .delay-675 {
+          animation-delay: 16.875s !important; }
+        .container #root .root-inner.loaded .app .delay-676 {
+          animation-delay: 16.9s !important; }
+        .container #root .root-inner.loaded .app .delay-677 {
+          animation-delay: 16.925s !important; }
+        .container #root .root-inner.loaded .app .delay-678 {
+          animation-delay: 16.95s !important; }
+        .container #root .root-inner.loaded .app .delay-679 {
+          animation-delay: 16.975s !important; }
+        .container #root .root-inner.loaded .app .delay-680 {
+          animation-delay: 17s !important; }
+        .container #root .root-inner.loaded .app .delay-681 {
+          animation-delay: 17.025s !important; }
+        .container #root .root-inner.loaded .app .delay-682 {
+          animation-delay: 17.05s !important; }
+        .container #root .root-inner.loaded .app .delay-683 {
+          animation-delay: 17.075s !important; }
+        .container #root .root-inner.loaded .app .delay-684 {
+          animation-delay: 17.1s !important; }
+        .container #root .root-inner.loaded .app .delay-685 {
+          animation-delay: 17.125s !important; }
+        .container #root .root-inner.loaded .app .delay-686 {
+          animation-delay: 17.15s !important; }
+        .container #root .root-inner.loaded .app .delay-687 {
+          animation-delay: 17.175s !important; }
+        .container #root .root-inner.loaded .app .delay-688 {
+          animation-delay: 17.2s !important; }
+        .container #root .root-inner.loaded .app .delay-689 {
+          animation-delay: 17.225s !important; }
+        .container #root .root-inner.loaded .app .delay-690 {
+          animation-delay: 17.25s !important; }
+        .container #root .root-inner.loaded .app .delay-691 {
+          animation-delay: 17.275s !important; }
+        .container #root .root-inner.loaded .app .delay-692 {
+          animation-delay: 17.3s !important; }
+        .container #root .root-inner.loaded .app .delay-693 {
+          animation-delay: 17.325s !important; }
+        .container #root .root-inner.loaded .app .delay-694 {
+          animation-delay: 17.35s !important; }
+        .container #root .root-inner.loaded .app .delay-695 {
+          animation-delay: 17.375s !important; }
+        .container #root .root-inner.loaded .app .delay-696 {
+          animation-delay: 17.4s !important; }
+        .container #root .root-inner.loaded .app .delay-697 {
+          animation-delay: 17.425s !important; }
+        .container #root .root-inner.loaded .app .delay-698 {
+          animation-delay: 17.45s !important; }
+        .container #root .root-inner.loaded .app .delay-699 {
+          animation-delay: 17.475s !important; }
+        .container #root .root-inner.loaded .app .delay-700 {
+          animation-delay: 17.5s !important; }
+        .container #root .root-inner.loaded .app .delay-701 {
+          animation-delay: 17.525s !important; }
+        .container #root .root-inner.loaded .app .delay-702 {
+          animation-delay: 17.55s !important; }
+        .container #root .root-inner.loaded .app .delay-703 {
+          animation-delay: 17.575s !important; }
+        .container #root .root-inner.loaded .app .delay-704 {
+          animation-delay: 17.6s !important; }
+        .container #root .root-inner.loaded .app .delay-705 {
+          animation-delay: 17.625s !important; }
+        .container #root .root-inner.loaded .app .delay-706 {
+          animation-delay: 17.65s !important; }
+        .container #root .root-inner.loaded .app .delay-707 {
+          animation-delay: 17.675s !important; }
+        .container #root .root-inner.loaded .app .delay-708 {
+          animation-delay: 17.7s !important; }
+        .container #root .root-inner.loaded .app .delay-709 {
+          animation-delay: 17.725s !important; }
+        .container #root .root-inner.loaded .app .delay-710 {
+          animation-delay: 17.75s !important; }
+        .container #root .root-inner.loaded .app .delay-711 {
+          animation-delay: 17.775s !important; }
+        .container #root .root-inner.loaded .app .delay-712 {
+          animation-delay: 17.8s !important; }
+        .container #root .root-inner.loaded .app .delay-713 {
+          animation-delay: 17.825s !important; }
+        .container #root .root-inner.loaded .app .delay-714 {
+          animation-delay: 17.85s !important; }
+        .container #root .root-inner.loaded .app .delay-715 {
+          animation-delay: 17.875s !important; }
+        .container #root .root-inner.loaded .app .delay-716 {
+          animation-delay: 17.9s !important; }
+        .container #root .root-inner.loaded .app .delay-717 {
+          animation-delay: 17.925s !important; }
+        .container #root .root-inner.loaded .app .delay-718 {
+          animation-delay: 17.95s !important; }
+        .container #root .root-inner.loaded .app .delay-719 {
+          animation-delay: 17.975s !important; }
+        .container #root .root-inner.loaded .app .delay-720 {
+          animation-delay: 18s !important; }
+        .container #root .root-inner.loaded .app .delay-721 {
+          animation-delay: 18.025s !important; }
+        .container #root .root-inner.loaded .app .delay-722 {
+          animation-delay: 18.05s !important; }
+        .container #root .root-inner.loaded .app .delay-723 {
+          animation-delay: 18.075s !important; }
+        .container #root .root-inner.loaded .app .delay-724 {
+          animation-delay: 18.1s !important; }
+        .container #root .root-inner.loaded .app .delay-725 {
+          animation-delay: 18.125s !important; }
+        .container #root .root-inner.loaded .app .delay-726 {
+          animation-delay: 18.15s !important; }
+        .container #root .root-inner.loaded .app .delay-727 {
+          animation-delay: 18.175s !important; }
+        .container #root .root-inner.loaded .app .delay-728 {
+          animation-delay: 18.2s !important; }
+        .container #root .root-inner.loaded .app .delay-729 {
+          animation-delay: 18.225s !important; }
+        .container #root .root-inner.loaded .app .delay-730 {
+          animation-delay: 18.25s !important; }
+        .container #root .root-inner.loaded .app .delay-731 {
+          animation-delay: 18.275s !important; }
+        .container #root .root-inner.loaded .app .delay-732 {
+          animation-delay: 18.3s !important; }
+        .container #root .root-inner.loaded .app .delay-733 {
+          animation-delay: 18.325s !important; }
+        .container #root .root-inner.loaded .app .delay-734 {
+          animation-delay: 18.35s !important; }
+        .container #root .root-inner.loaded .app .delay-735 {
+          animation-delay: 18.375s !important; }
+        .container #root .root-inner.loaded .app .delay-736 {
+          animation-delay: 18.4s !important; }
+        .container #root .root-inner.loaded .app .delay-737 {
+          animation-delay: 18.425s !important; }
+        .container #root .root-inner.loaded .app .delay-738 {
+          animation-delay: 18.45s !important; }
+        .container #root .root-inner.loaded .app .delay-739 {
+          animation-delay: 18.475s !important; }
+        .container #root .root-inner.loaded .app .delay-740 {
+          animation-delay: 18.5s !important; }
+        .container #root .root-inner.loaded .app .delay-741 {
+          animation-delay: 18.525s !important; }
+        .container #root .root-inner.loaded .app .delay-742 {
+          animation-delay: 18.55s !important; }
+        .container #root .root-inner.loaded .app .delay-743 {
+          animation-delay: 18.575s !important; }
+        .container #root .root-inner.loaded .app .delay-744 {
+          animation-delay: 18.6s !important; }
+        .container #root .root-inner.loaded .app .delay-745 {
+          animation-delay: 18.625s !important; }
+        .container #root .root-inner.loaded .app .delay-746 {
+          animation-delay: 18.65s !important; }
+        .container #root .root-inner.loaded .app .delay-747 {
+          animation-delay: 18.675s !important; }
+        .container #root .root-inner.loaded .app .delay-748 {
+          animation-delay: 18.7s !important; }
+        .container #root .root-inner.loaded .app .delay-749 {
+          animation-delay: 18.725s !important; }
+        .container #root .root-inner.loaded .app .delay-750 {
+          animation-delay: 18.75s !important; }
+        .container #root .root-inner.loaded .app .delay-751 {
+          animation-delay: 18.775s !important; }
+        .container #root .root-inner.loaded .app .delay-752 {
+          animation-delay: 18.8s !important; }
+        .container #root .root-inner.loaded .app .delay-753 {
+          animation-delay: 18.825s !important; }
+        .container #root .root-inner.loaded .app .delay-754 {
+          animation-delay: 18.85s !important; }
+        .container #root .root-inner.loaded .app .delay-755 {
+          animation-delay: 18.875s !important; }
+        .container #root .root-inner.loaded .app .delay-756 {
+          animation-delay: 18.9s !important; }
+        .container #root .root-inner.loaded .app .delay-757 {
+          animation-delay: 18.925s !important; }
+        .container #root .root-inner.loaded .app .delay-758 {
+          animation-delay: 18.95s !important; }
+        .container #root .root-inner.loaded .app .delay-759 {
+          animation-delay: 18.975s !important; }
+        .container #root .root-inner.loaded .app .delay-760 {
+          animation-delay: 19s !important; }
+        .container #root .root-inner.loaded .app .delay-761 {
+          animation-delay: 19.025s !important; }
+        .container #root .root-inner.loaded .app .delay-762 {
+          animation-delay: 19.05s !important; }
+        .container #root .root-inner.loaded .app .delay-763 {
+          animation-delay: 19.075s !important; }
+        .container #root .root-inner.loaded .app .delay-764 {
+          animation-delay: 19.1s !important; }
+        .container #root .root-inner.loaded .app .delay-765 {
+          animation-delay: 19.125s !important; }
+        .container #root .root-inner.loaded .app .delay-766 {
+          animation-delay: 19.15s !important; }
+        .container #root .root-inner.loaded .app .delay-767 {
+          animation-delay: 19.175s !important; }
+        .container #root .root-inner.loaded .app .delay-768 {
+          animation-delay: 19.2s !important; }
+        .container #root .root-inner.loaded .app .delay-769 {
+          animation-delay: 19.225s !important; }
+        .container #root .root-inner.loaded .app .delay-770 {
+          animation-delay: 19.25s !important; }
+        .container #root .root-inner.loaded .app .delay-771 {
+          animation-delay: 19.275s !important; }
+        .container #root .root-inner.loaded .app .delay-772 {
+          animation-delay: 19.3s !important; }
+        .container #root .root-inner.loaded .app .delay-773 {
+          animation-delay: 19.325s !important; }
+        .container #root .root-inner.loaded .app .delay-774 {
+          animation-delay: 19.35s !important; }
+        .container #root .root-inner.loaded .app .delay-775 {
+          animation-delay: 19.375s !important; }
+        .container #root .root-inner.loaded .app .delay-776 {
+          animation-delay: 19.4s !important; }
+        .container #root .root-inner.loaded .app .delay-777 {
+          animation-delay: 19.425s !important; }
+        .container #root .root-inner.loaded .app .delay-778 {
+          animation-delay: 19.45s !important; }
+        .container #root .root-inner.loaded .app .delay-779 {
+          animation-delay: 19.475s !important; }
+        .container #root .root-inner.loaded .app .delay-780 {
+          animation-delay: 19.5s !important; }
+        .container #root .root-inner.loaded .app .delay-781 {
+          animation-delay: 19.525s !important; }
+        .container #root .root-inner.loaded .app .delay-782 {
+          animation-delay: 19.55s !important; }
+        .container #root .root-inner.loaded .app .delay-783 {
+          animation-delay: 19.575s !important; }
+        .container #root .root-inner.loaded .app .delay-784 {
+          animation-delay: 19.6s !important; }
+        .container #root .root-inner.loaded .app .delay-785 {
+          animation-delay: 19.625s !important; }
+        .container #root .root-inner.loaded .app .delay-786 {
+          animation-delay: 19.65s !important; }
+        .container #root .root-inner.loaded .app .delay-787 {
+          animation-delay: 19.675s !important; }
+        .container #root .root-inner.loaded .app .delay-788 {
+          animation-delay: 19.7s !important; }
+        .container #root .root-inner.loaded .app .delay-789 {
+          animation-delay: 19.725s !important; }
+        .container #root .root-inner.loaded .app .delay-790 {
+          animation-delay: 19.75s !important; }
+        .container #root .root-inner.loaded .app .delay-791 {
+          animation-delay: 19.775s !important; }
+        .container #root .root-inner.loaded .app .delay-792 {
+          animation-delay: 19.8s !important; }
+        .container #root .root-inner.loaded .app .delay-793 {
+          animation-delay: 19.825s !important; }
+        .container #root .root-inner.loaded .app .delay-794 {
+          animation-delay: 19.85s !important; }
+        .container #root .root-inner.loaded .app .delay-795 {
+          animation-delay: 19.875s !important; }
+        .container #root .root-inner.loaded .app .delay-796 {
+          animation-delay: 19.9s !important; }
+        .container #root .root-inner.loaded .app .delay-797 {
+          animation-delay: 19.925s !important; }
+        .container #root .root-inner.loaded .app .delay-798 {
+          animation-delay: 19.95s !important; }
+        .container #root .root-inner.loaded .app .delay-799 {
+          animation-delay: 19.975s !important; }
+        .container #root .root-inner.loaded .app .delay-800 {
+          animation-delay: 20s !important; }
+        .container #root .root-inner.loaded .app .delay-801 {
+          animation-delay: 20.025s !important; }
+        .container #root .root-inner.loaded .app .delay-802 {
+          animation-delay: 20.05s !important; }
+        .container #root .root-inner.loaded .app .delay-803 {
+          animation-delay: 20.075s !important; }
+        .container #root .root-inner.loaded .app .delay-804 {
+          animation-delay: 20.1s !important; }
+        .container #root .root-inner.loaded .app .delay-805 {
+          animation-delay: 20.125s !important; }
+        .container #root .root-inner.loaded .app .delay-806 {
+          animation-delay: 20.15s !important; }
+        .container #root .root-inner.loaded .app .delay-807 {
+          animation-delay: 20.175s !important; }
+        .container #root .root-inner.loaded .app .delay-808 {
+          animation-delay: 20.2s !important; }
+        .container #root .root-inner.loaded .app .delay-809 {
+          animation-delay: 20.225s !important; }
+        .container #root .root-inner.loaded .app .delay-810 {
+          animation-delay: 20.25s !important; }
+        .container #root .root-inner.loaded .app .delay-811 {
+          animation-delay: 20.275s !important; }
+        .container #root .root-inner.loaded .app .delay-812 {
+          animation-delay: 20.3s !important; }
+        .container #root .root-inner.loaded .app .delay-813 {
+          animation-delay: 20.325s !important; }
+        .container #root .root-inner.loaded .app .delay-814 {
+          animation-delay: 20.35s !important; }
+        .container #root .root-inner.loaded .app .delay-815 {
+          animation-delay: 20.375s !important; }
+        .container #root .root-inner.loaded .app .delay-816 {
+          animation-delay: 20.4s !important; }
+        .container #root .root-inner.loaded .app .delay-817 {
+          animation-delay: 20.425s !important; }
+        .container #root .root-inner.loaded .app .delay-818 {
+          animation-delay: 20.45s !important; }
+        .container #root .root-inner.loaded .app .delay-819 {
+          animation-delay: 20.475s !important; }
+        .container #root .root-inner.loaded .app .delay-820 {
+          animation-delay: 20.5s !important; }
+        .container #root .root-inner.loaded .app .delay-821 {
+          animation-delay: 20.525s !important; }
+        .container #root .root-inner.loaded .app .delay-822 {
+          animation-delay: 20.55s !important; }
+        .container #root .root-inner.loaded .app .delay-823 {
+          animation-delay: 20.575s !important; }
+        .container #root .root-inner.loaded .app .delay-824 {
+          animation-delay: 20.6s !important; }
+        .container #root .root-inner.loaded .app .delay-825 {
+          animation-delay: 20.625s !important; }
+        .container #root .root-inner.loaded .app .delay-826 {
+          animation-delay: 20.65s !important; }
+        .container #root .root-inner.loaded .app .delay-827 {
+          animation-delay: 20.675s !important; }
+        .container #root .root-inner.loaded .app .delay-828 {
+          animation-delay: 20.7s !important; }
+        .container #root .root-inner.loaded .app .delay-829 {
+          animation-delay: 20.725s !important; }
+        .container #root .root-inner.loaded .app .delay-830 {
+          animation-delay: 20.75s !important; }
+        .container #root .root-inner.loaded .app .delay-831 {
+          animation-delay: 20.775s !important; }
+        .container #root .root-inner.loaded .app .delay-832 {
+          animation-delay: 20.8s !important; }
+        .container #root .root-inner.loaded .app .delay-833 {
+          animation-delay: 20.825s !important; }
+        .container #root .root-inner.loaded .app .delay-834 {
+          animation-delay: 20.85s !important; }
+        .container #root .root-inner.loaded .app .delay-835 {
+          animation-delay: 20.875s !important; }
+        .container #root .root-inner.loaded .app .delay-836 {
+          animation-delay: 20.9s !important; }
+        .container #root .root-inner.loaded .app .delay-837 {
+          animation-delay: 20.925s !important; }
+        .container #root .root-inner.loaded .app .delay-838 {
+          animation-delay: 20.95s !important; }
+        .container #root .root-inner.loaded .app .delay-839 {
+          animation-delay: 20.975s !important; }
+        .container #root .root-inner.loaded .app .delay-840 {
+          animation-delay: 21s !important; }
+        .container #root .root-inner.loaded .app .delay-841 {
+          animation-delay: 21.025s !important; }
+        .container #root .root-inner.loaded .app .delay-842 {
+          animation-delay: 21.05s !important; }
+        .container #root .root-inner.loaded .app .delay-843 {
+          animation-delay: 21.075s !important; }
+        .container #root .root-inner.loaded .app .delay-844 {
+          animation-delay: 21.1s !important; }
+        .container #root .root-inner.loaded .app .delay-845 {
+          animation-delay: 21.125s !important; }
+        .container #root .root-inner.loaded .app .delay-846 {
+          animation-delay: 21.15s !important; }
+        .container #root .root-inner.loaded .app .delay-847 {
+          animation-delay: 21.175s !important; }
+        .container #root .root-inner.loaded .app .delay-848 {
+          animation-delay: 21.2s !important; }
+        .container #root .root-inner.loaded .app .delay-849 {
+          animation-delay: 21.225s !important; }
+        .container #root .root-inner.loaded .app .delay-850 {
+          animation-delay: 21.25s !important; }
+        .container #root .root-inner.loaded .app .delay-851 {
+          animation-delay: 21.275s !important; }
+        .container #root .root-inner.loaded .app .delay-852 {
+          animation-delay: 21.3s !important; }
+        .container #root .root-inner.loaded .app .delay-853 {
+          animation-delay: 21.325s !important; }
+        .container #root .root-inner.loaded .app .delay-854 {
+          animation-delay: 21.35s !important; }
+        .container #root .root-inner.loaded .app .delay-855 {
+          animation-delay: 21.375s !important; }
+        .container #root .root-inner.loaded .app .delay-856 {
+          animation-delay: 21.4s !important; }
+        .container #root .root-inner.loaded .app .delay-857 {
+          animation-delay: 21.425s !important; }
+        .container #root .root-inner.loaded .app .delay-858 {
+          animation-delay: 21.45s !important; }
+        .container #root .root-inner.loaded .app .delay-859 {
+          animation-delay: 21.475s !important; }
+        .container #root .root-inner.loaded .app .delay-860 {
+          animation-delay: 21.5s !important; }
+        .container #root .root-inner.loaded .app .delay-861 {
+          animation-delay: 21.525s !important; }
+        .container #root .root-inner.loaded .app .delay-862 {
+          animation-delay: 21.55s !important; }
+        .container #root .root-inner.loaded .app .delay-863 {
+          animation-delay: 21.575s !important; }
+        .container #root .root-inner.loaded .app .delay-864 {
+          animation-delay: 21.6s !important; }
+        .container #root .root-inner.loaded .app .delay-865 {
+          animation-delay: 21.625s !important; }
+        .container #root .root-inner.loaded .app .delay-866 {
+          animation-delay: 21.65s !important; }
+        .container #root .root-inner.loaded .app .delay-867 {
+          animation-delay: 21.675s !important; }
+        .container #root .root-inner.loaded .app .delay-868 {
+          animation-delay: 21.7s !important; }
+        .container #root .root-inner.loaded .app .delay-869 {
+          animation-delay: 21.725s !important; }
+        .container #root .root-inner.loaded .app .delay-870 {
+          animation-delay: 21.75s !important; }
+        .container #root .root-inner.loaded .app .delay-871 {
+          animation-delay: 21.775s !important; }
+        .container #root .root-inner.loaded .app .delay-872 {
+          animation-delay: 21.8s !important; }
+        .container #root .root-inner.loaded .app .delay-873 {
+          animation-delay: 21.825s !important; }
+        .container #root .root-inner.loaded .app .delay-874 {
+          animation-delay: 21.85s !important; }
+        .container #root .root-inner.loaded .app .delay-875 {
+          animation-delay: 21.875s !important; }
+        .container #root .root-inner.loaded .app .delay-876 {
+          animation-delay: 21.9s !important; }
+        .container #root .root-inner.loaded .app .delay-877 {
+          animation-delay: 21.925s !important; }
+        .container #root .root-inner.loaded .app .delay-878 {
+          animation-delay: 21.95s !important; }
+        .container #root .root-inner.loaded .app .delay-879 {
+          animation-delay: 21.975s !important; }
+        .container #root .root-inner.loaded .app .delay-880 {
+          animation-delay: 22s !important; }
+        .container #root .root-inner.loaded .app .delay-881 {
+          animation-delay: 22.025s !important; }
+        .container #root .root-inner.loaded .app .delay-882 {
+          animation-delay: 22.05s !important; }
+        .container #root .root-inner.loaded .app .delay-883 {
+          animation-delay: 22.075s !important; }
+        .container #root .root-inner.loaded .app .delay-884 {
+          animation-delay: 22.1s !important; }
+        .container #root .root-inner.loaded .app .delay-885 {
+          animation-delay: 22.125s !important; }
+        .container #root .root-inner.loaded .app .delay-886 {
+          animation-delay: 22.15s !important; }
+        .container #root .root-inner.loaded .app .delay-887 {
+          animation-delay: 22.175s !important; }
+        .container #root .root-inner.loaded .app .delay-888 {
+          animation-delay: 22.2s !important; }
+        .container #root .root-inner.loaded .app .delay-889 {
+          animation-delay: 22.225s !important; }
+        .container #root .root-inner.loaded .app .delay-890 {
+          animation-delay: 22.25s !important; }
+        .container #root .root-inner.loaded .app .delay-891 {
+          animation-delay: 22.275s !important; }
+        .container #root .root-inner.loaded .app .delay-892 {
+          animation-delay: 22.3s !important; }
+        .container #root .root-inner.loaded .app .delay-893 {
+          animation-delay: 22.325s !important; }
+        .container #root .root-inner.loaded .app .delay-894 {
+          animation-delay: 22.35s !important; }
+        .container #root .root-inner.loaded .app .delay-895 {
+          animation-delay: 22.375s !important; }
+        .container #root .root-inner.loaded .app .delay-896 {
+          animation-delay: 22.4s !important; }
+        .container #root .root-inner.loaded .app .delay-897 {
+          animation-delay: 22.425s !important; }
+        .container #root .root-inner.loaded .app .delay-898 {
+          animation-delay: 22.45s !important; }
+        .container #root .root-inner.loaded .app .delay-899 {
+          animation-delay: 22.475s !important; }
+        .container #root .root-inner.loaded .app .delay-900 {
+          animation-delay: 22.5s !important; }
+        .container #root .root-inner.loaded .app .delay-901 {
+          animation-delay: 22.525s !important; }
+        .container #root .root-inner.loaded .app .delay-902 {
+          animation-delay: 22.55s !important; }
+        .container #root .root-inner.loaded .app .delay-903 {
+          animation-delay: 22.575s !important; }
+        .container #root .root-inner.loaded .app .delay-904 {
+          animation-delay: 22.6s !important; }
+        .container #root .root-inner.loaded .app .delay-905 {
+          animation-delay: 22.625s !important; }
+        .container #root .root-inner.loaded .app .delay-906 {
+          animation-delay: 22.65s !important; }
+        .container #root .root-inner.loaded .app .delay-907 {
+          animation-delay: 22.675s !important; }
+        .container #root .root-inner.loaded .app .delay-908 {
+          animation-delay: 22.7s !important; }
+        .container #root .root-inner.loaded .app .delay-909 {
+          animation-delay: 22.725s !important; }
+        .container #root .root-inner.loaded .app .delay-910 {
+          animation-delay: 22.75s !important; }
+        .container #root .root-inner.loaded .app .delay-911 {
+          animation-delay: 22.775s !important; }
+        .container #root .root-inner.loaded .app .delay-912 {
+          animation-delay: 22.8s !important; }
+        .container #root .root-inner.loaded .app .delay-913 {
+          animation-delay: 22.825s !important; }
+        .container #root .root-inner.loaded .app .delay-914 {
+          animation-delay: 22.85s !important; }
+        .container #root .root-inner.loaded .app .delay-915 {
+          animation-delay: 22.875s !important; }
+        .container #root .root-inner.loaded .app .delay-916 {
+          animation-delay: 22.9s !important; }
+        .container #root .root-inner.loaded .app .delay-917 {
+          animation-delay: 22.925s !important; }
+        .container #root .root-inner.loaded .app .delay-918 {
+          animation-delay: 22.95s !important; }
+        .container #root .root-inner.loaded .app .delay-919 {
+          animation-delay: 22.975s !important; }
+        .container #root .root-inner.loaded .app .delay-920 {
+          animation-delay: 23s !important; }
+        .container #root .root-inner.loaded .app .delay-921 {
+          animation-delay: 23.025s !important; }
+        .container #root .root-inner.loaded .app .delay-922 {
+          animation-delay: 23.05s !important; }
+        .container #root .root-inner.loaded .app .delay-923 {
+          animation-delay: 23.075s !important; }
+        .container #root .root-inner.loaded .app .delay-924 {
+          animation-delay: 23.1s !important; }
+        .container #root .root-inner.loaded .app .delay-925 {
+          animation-delay: 23.125s !important; }
+        .container #root .root-inner.loaded .app .delay-926 {
+          animation-delay: 23.15s !important; }
+        .container #root .root-inner.loaded .app .delay-927 {
+          animation-delay: 23.175s !important; }
+        .container #root .root-inner.loaded .app .delay-928 {
+          animation-delay: 23.2s !important; }
+        .container #root .root-inner.loaded .app .delay-929 {
+          animation-delay: 23.225s !important; }
+        .container #root .root-inner.loaded .app .delay-930 {
+          animation-delay: 23.25s !important; }
+        .container #root .root-inner.loaded .app .delay-931 {
+          animation-delay: 23.275s !important; }
+        .container #root .root-inner.loaded .app .delay-932 {
+          animation-delay: 23.3s !important; }
+        .container #root .root-inner.loaded .app .delay-933 {
+          animation-delay: 23.325s !important; }
+        .container #root .root-inner.loaded .app .delay-934 {
+          animation-delay: 23.35s !important; }
+        .container #root .root-inner.loaded .app .delay-935 {
+          animation-delay: 23.375s !important; }
+        .container #root .root-inner.loaded .app .delay-936 {
+          animation-delay: 23.4s !important; }
+        .container #root .root-inner.loaded .app .delay-937 {
+          animation-delay: 23.425s !important; }
+        .container #root .root-inner.loaded .app .delay-938 {
+          animation-delay: 23.45s !important; }
+        .container #root .root-inner.loaded .app .delay-939 {
+          animation-delay: 23.475s !important; }
+        .container #root .root-inner.loaded .app .delay-940 {
+          animation-delay: 23.5s !important; }
+        .container #root .root-inner.loaded .app .delay-941 {
+          animation-delay: 23.525s !important; }
+        .container #root .root-inner.loaded .app .delay-942 {
+          animation-delay: 23.55s !important; }
+        .container #root .root-inner.loaded .app .delay-943 {
+          animation-delay: 23.575s !important; }
+        .container #root .root-inner.loaded .app .delay-944 {
+          animation-delay: 23.6s !important; }
+        .container #root .root-inner.loaded .app .delay-945 {
+          animation-delay: 23.625s !important; }
+        .container #root .root-inner.loaded .app .delay-946 {
+          animation-delay: 23.65s !important; }
+        .container #root .root-inner.loaded .app .delay-947 {
+          animation-delay: 23.675s !important; }
+        .container #root .root-inner.loaded .app .delay-948 {
+          animation-delay: 23.7s !important; }
+        .container #root .root-inner.loaded .app .delay-949 {
+          animation-delay: 23.725s !important; }
+        .container #root .root-inner.loaded .app .delay-950 {
+          animation-delay: 23.75s !important; }
+        .container #root .root-inner.loaded .app .delay-951 {
+          animation-delay: 23.775s !important; }
+        .container #root .root-inner.loaded .app .delay-952 {
+          animation-delay: 23.8s !important; }
+        .container #root .root-inner.loaded .app .delay-953 {
+          animation-delay: 23.825s !important; }
+        .container #root .root-inner.loaded .app .delay-954 {
+          animation-delay: 23.85s !important; }
+        .container #root .root-inner.loaded .app .delay-955 {
+          animation-delay: 23.875s !important; }
+        .container #root .root-inner.loaded .app .delay-956 {
+          animation-delay: 23.9s !important; }
+        .container #root .root-inner.loaded .app .delay-957 {
+          animation-delay: 23.925s !important; }
+        .container #root .root-inner.loaded .app .delay-958 {
+          animation-delay: 23.95s !important; }
+        .container #root .root-inner.loaded .app .delay-959 {
+          animation-delay: 23.975s !important; }
+        .container #root .root-inner.loaded .app .delay-960 {
+          animation-delay: 24s !important; }
+        .container #root .root-inner.loaded .app .delay-961 {
+          animation-delay: 24.025s !important; }
+        .container #root .root-inner.loaded .app .delay-962 {
+          animation-delay: 24.05s !important; }
+        .container #root .root-inner.loaded .app .delay-963 {
+          animation-delay: 24.075s !important; }
+        .container #root .root-inner.loaded .app .delay-964 {
+          animation-delay: 24.1s !important; }
+        .container #root .root-inner.loaded .app .delay-965 {
+          animation-delay: 24.125s !important; }
+        .container #root .root-inner.loaded .app .delay-966 {
+          animation-delay: 24.15s !important; }
+        .container #root .root-inner.loaded .app .delay-967 {
+          animation-delay: 24.175s !important; }
+        .container #root .root-inner.loaded .app .delay-968 {
+          animation-delay: 24.2s !important; }
+        .container #root .root-inner.loaded .app .delay-969 {
+          animation-delay: 24.225s !important; }
+        .container #root .root-inner.loaded .app .delay-970 {
+          animation-delay: 24.25s !important; }
+        .container #root .root-inner.loaded .app .delay-971 {
+          animation-delay: 24.275s !important; }
+        .container #root .root-inner.loaded .app .delay-972 {
+          animation-delay: 24.3s !important; }
+        .container #root .root-inner.loaded .app .delay-973 {
+          animation-delay: 24.325s !important; }
+        .container #root .root-inner.loaded .app .delay-974 {
+          animation-delay: 24.35s !important; }
+        .container #root .root-inner.loaded .app .delay-975 {
+          animation-delay: 24.375s !important; }
+        .container #root .root-inner.loaded .app .delay-976 {
+          animation-delay: 24.4s !important; }
+        .container #root .root-inner.loaded .app .delay-977 {
+          animation-delay: 24.425s !important; }
+        .container #root .root-inner.loaded .app .delay-978 {
+          animation-delay: 24.45s !important; }
+        .container #root .root-inner.loaded .app .delay-979 {
+          animation-delay: 24.475s !important; }
+        .container #root .root-inner.loaded .app .delay-980 {
+          animation-delay: 24.5s !important; }
+        .container #root .root-inner.loaded .app .delay-981 {
+          animation-delay: 24.525s !important; }
+        .container #root .root-inner.loaded .app .delay-982 {
+          animation-delay: 24.55s !important; }
+        .container #root .root-inner.loaded .app .delay-983 {
+          animation-delay: 24.575s !important; }
+        .container #root .root-inner.loaded .app .delay-984 {
+          animation-delay: 24.6s !important; }
+        .container #root .root-inner.loaded .app .delay-985 {
+          animation-delay: 24.625s !important; }
+        .container #root .root-inner.loaded .app .delay-986 {
+          animation-delay: 24.65s !important; }
+        .container #root .root-inner.loaded .app .delay-987 {
+          animation-delay: 24.675s !important; }
+        .container #root .root-inner.loaded .app .delay-988 {
+          animation-delay: 24.7s !important; }
+        .container #root .root-inner.loaded .app .delay-989 {
+          animation-delay: 24.725s !important; }
+        .container #root .root-inner.loaded .app .delay-990 {
+          animation-delay: 24.75s !important; }
+        .container #root .root-inner.loaded .app .delay-991 {
+          animation-delay: 24.775s !important; }
+        .container #root .root-inner.loaded .app .delay-992 {
+          animation-delay: 24.8s !important; }
+        .container #root .root-inner.loaded .app .delay-993 {
+          animation-delay: 24.825s !important; }
+        .container #root .root-inner.loaded .app .delay-994 {
+          animation-delay: 24.85s !important; }
+        .container #root .root-inner.loaded .app .delay-995 {
+          animation-delay: 24.875s !important; }
+        .container #root .root-inner.loaded .app .delay-996 {
+          animation-delay: 24.9s !important; }
+        .container #root .root-inner.loaded .app .delay-997 {
+          animation-delay: 24.925s !important; }
+        .container #root .root-inner.loaded .app .delay-998 {
+          animation-delay: 24.95s !important; }
+        .container #root .root-inner.loaded .app .delay-999 {
+          animation-delay: 24.975s !important; }
+
+@keyframes loading {
+  0% {
+    width: 0px;
+    height: 0px; }
+  5% {
+    width: 0px;
+    height: 0px; }
+  70% {
+    width: 10px;
+    height: 10px; }
+  100% {
+    width: 10px;
+    height: 10px; } }
+
+@keyframes opacity-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes page-header-exit {
+  0% {
+    font-size: 0px; }
+  88% {
+    font-size: 0px; }
+  89% { }
+  100% { } }
+
+@keyframes change-z-index {
+  0% {
+    z-index: 0; }
+  99% {
+    z-index: 0; }
+  100% {
+    z-index: 2; } }
+
+@keyframes header-grow {
+  0% {
+    opacity: 0;
+    font-size: 15px; }
+  100% {
+    opacity: 1;
+    font-size: 5.625rem; } }
+
+@keyframes page-0-in {
+  0% {
+    width: 0;
+    height: 0; }
+  30% {
+    width: 0;
+    height: 0%; }
+  100% {
+    width: 150%;
+    height: 150%; } }
+
+@keyframes page-0 {
+  0% {
+    background-position: 0% 31%; }
+  50% {
+    background-position: 100% 70%; }
+  100% {
+    background-position: 0% 31%; } }
+
+@keyframes jumpText {
+  0% { }
+  69% { }
+  100% {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0); } }
+
+@keyframes jumpButton {
+  0% {
+    top: 0;
+    opacity: 1; }
+  5% {
+    top: -3px; }
+  10% {
+    top: 0; }
+  100% {
+    top: 0;
+    opacity: 1; } }
+
+@keyframes swipeButton {
+  0% { }
+  25% {
+    left: 150%; }
+  100% {
+    left: 150%; } }
+
+@keyframes display-before {
+  0% {
+    display: none; }
+  99% {
+    display: none; }
+  100% {
+    display: block; } }
+
+@keyframes partAppear {
+  0% {
+    opacity: 0;
+    padding: 15px 0 15px; }
+  20% {
+    opacity: 1;
+    max-width: 0%;
+    max-height: 0%;
+    padding: 15px 30px 15px; }
+  30% {
+    opacity: 1;
+    max-width: 100%;
+    max-height: 0%; }
+  40% {
+    opacity: 1;
+    max-height: 0%;
+    max-width: 100%; }
+  100% {
+    opacity: 1;
+    max-width: 100%;
+    max-height: 100%; } }
+
+@keyframes menuRotate {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotateY(0deg);
+    -moz-transform: translate(-50%, -50%) rotateY(0deg);
+    -ms-transform: translate(-50%, -50%) rotateY(0deg);
+    -o-transform: translate(-50%, -50%) rotateY(0deg);
+    transform: translate(-50%, -50%) rotateY(0deg); }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotateY(-360deg);
+    -moz-transform: translate(-50%, -50%) rotateY(-360deg);
+    -ms-transform: translate(-50%, -50%) rotateY(-360deg);
+    -o-transform: translate(-50%, -50%) rotateY(-360deg);
+    transform: translate(-50%, -50%) rotateY(-360deg); } }
