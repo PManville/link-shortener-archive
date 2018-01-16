@@ -36,12 +36,16 @@ html {
 	}
 }
 
+$dosis: 'Dosis', sans-serif;
+$lato: 'Lato', sans-serif;
+$quicksand: 'Quicksand', sans-serif;
+$sourcesans: "Source Sans Pro", sans-serif;
+
 .container {
 	margin: 0;
 	padding: 0;
 	@include fullscreen;
 	#root {
-	    background: black;
 	    width: 100%;
 	    height: 100%;
     	.loader {
@@ -85,85 +89,38 @@ html {
 	    	.loader {
 	    		display: none;
 	    	}
+		    .header-bar {
+    	        position: fixed;
+			    width: 100%;
+			    z-index: 100;
+			    list-style: none;
+			    text-align: right;
+			    box-sizing: border-box;
+			    padding: 10px 40px;
+			    background: black;
+			    margin: 0;
+			    li {
+			        display: inline-block;
+				    margin-left: 20px;
+				    font-family: $lato;
+				    text-transform: uppercase;
+				    font-size: 0.7rem;
+				    font-weight: bold;
+				    letter-spacing: 2px;
+				    color: white;
+				    cursor: pointer;
+				    &.active {
+			    	    border-bottom: 2px solid #5d5d5d;
+					    padding-bottom: 2px;
+				    }
+			    }
+		    }
 			.app {
-			    @include fullscreen;
 			    height: auto;
 				    max-height: 200%;
 				    min-height: 100%;
 			    overflow: hidden;
-			    @include  m-transform(translateX(-50%));
-				&:not(.active){
-				    position: absolute;
-				    width: 35px;
-				    // height: 0%;
-					    max-height: 0%;
-					    min-height: 0%;
-				    top: 50px;
-				    padding-top: 35px;
-				    overflow: visible;
-				    cursor: pointer;
-				    transition: 0s 0.6s;
-				    @include m-prefix(animation, change-z-index 0.75s 0s linear 1 normal forwards running);
-				    border-radius: 200px;
-			    	z-index: 2;
-			    	box-shadow: 0 0 5px #ccc;
-			    	font-size: 1em;
-				    i {
-				    	content: "";
-						position: absolute;
-						left: 50%;
-						top: 0%;
-						width: 60px;
-						height: 80px;
-						transform: translate(-50%, 0);
-						font-style: normal;
-						z-index: 1;
-				    	&:before {
-						    font-size: 0.875em;
-						    color: black;
-				    		font-family: lineAwesome;
-				    		position: absolute;
-							top: calc(50% - 22.5px);
-				    		left: 50%;
-						    @include  m-transform(translate(-50%, -50%)rotateY(0deg));
-				    	}
-
-				    	&:hover { 
-					    	&:before {
-							    // font-size: 1.25em;
-							    @include m-prefix(animation, 0.75s menuRotate linear 0s infinite);
-					    	}
-					    }
-				    }
-
-					.text-section {
-						padding-top: 20px;
-					}
-				    h1, h2, h3, h4, h5, p, img, .button {
-				    	display: none;
-				    	&.header {
-				    		display: block;
-						    font-size: 15px;
-						    text-transform: none;
-						    position: absolute;
-						    left: 50%;
-						    @include  m-transform(translateX(-50%));
-						    @include m-prefix(animation, 1s page-header-exit 0s linear);
-				    	}
-				    }
-				    .skill {
-				    	display: none;
-				    }
-				    &:hover {
-				    	.header {
-				    		font-size: 16px;
-				    		font-weight: bold;
-				    	}
-				    }
-					.works {
-						opacity: 0;
-					}
-				}
+			    @include  m-transform(translateX(0%));
 				&.active {
 					z-index: 1;
 					cursor: default;
@@ -178,12 +135,13 @@ html {
 				    padding: 0 20px;
 				    box-sizing: border-box;
 					.text-section {
-						padding-top: 140px!important;
-					    padding-bottom: 35px!important;
-					    max-width: 1180px;
+						padding-top: 170px!important;
+					    padding-bottom: 150px!important;    
+					    max-width: 1000px;
 					    margin: 0 auto;
 					    transform: none;
 					    top: 0!important;
+					    border-bottom: 1px solid #e9e9e9;
 					}
 				    h1, h2, h3, h4, h5, p {
 				    	&.header {
@@ -205,39 +163,42 @@ html {
 					    }
 					}
 				}
-			    &.page-0 {  
-			    	background: black;
-				    &:not(.active){
-				    	left: 50%;
-
-					    top: 0;
-					    border-radius: 0 0 200px 200px;
-					    width: 10%; 
-					    width: 130px;
-					    overflow: hidden;
-						box-shadow: 0px 0px 3px #555;
-
-					    i {
-						    width: 130px;
-						    height: 35px;
-					    	&:before {
-					    		// Home
-					    		content: "";
-							    left: 50%;
-							    z-index: 1;
-							    top: 50%;
-						    }
-						}
-					    .text-wrapper {
-					    	display: none;
-					    }
-				    }  
+			    &.page-0 {   
 				    &.active {
-						h2 {
-							&:not(.header){
-								margin-bottom: 0;
-							}
-						}
+				    	.text-section {
+						    padding-top: 280px !important;
+						    padding-bottom: 240px !important;
+						    &:before {
+					    	    content: "P";
+							    font-size: 95px;
+							    vertical-align: middle;
+							    color: rgba(255, 255, 255, 0.7);
+							    text-shadow: 10px 0px rgba(171, 178, 214, 0.5);
+							    font-family: "Lato";
+							    background: rgba(0, 0, 0, 0.6);
+							    background: linear-gradient(301deg, #67daa5, #c4eba3);
+							    /* background: #ebebeb; */
+							    /* background: black; */
+							    width: 94px;
+							    left: calc(50% - 47px);
+							    height: 94px;
+							    position: absolute;
+							    z-index: 0;
+							    top: 111px;
+							    transform: rotateZ(45deg);
+							    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+							    border-radius: 10px;
+						    }
+						    h2 {
+							    color: rgba(255, 255, 255, 0.9);
+							    font-weight: bold;
+							    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+						    	&.header {
+								    color: rgba(255, 255, 255, 0.9);
+								    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+						    	}
+						    }
+				    	}
 						.text-wrapper {
 							position: relative;
 						}
@@ -262,26 +223,17 @@ html {
 				    }
 				}
 				&.page-1 { 
-				    background: khaki;
-				    &:not(.active){
-					    left: calc(50% - 60px);
-					    i {
-						    &:before {
-						    	// Code
-					    		content: "";
-					    		// Notepad
-					    		content: "";
-						    }
-						}
-				    }
 				    &.active {
 						.text-section {
-							top: 55%;
 							.text-wrapper {
-							    max-width: 600px;
-							    margin: 0 auto;
+							    .header {
+								    color: white;
+								    background: black;
+								    padding: 0px 0 0px 10px;
+							    }
 								.experience {
 								    margin: 20px auto 0;
+								    padding: 0px 10px;
 								    vertical-align: top;
 								    font-size: 0;
 								    @include m-prefix(animation, 0.75s opacity-in 1.5s forwards);
@@ -316,21 +268,36 @@ html {
 										    width: 100%;
 										    margin: 0;
 										    &.date{
-										    	color: grey;
+										    	text-transform: uppercase;
+											    font-size: 0.7rem;
+											    color: grey;
+											    margin-top: 10px!important;
 										    }
-										    &.position{
+										    &.position{ 
+										    	text-transform: uppercase;   
 										    	font-weight: bold;
+											    font-size: 1rem;
+										    }
+										    &.location {
+										    	text-transform: uppercase;
+											    font-size: 0.8rem!important;
 										    }
 										    &.message {
-										    	font-size: 1rem;
+											    font-size: 0.8rem;
+											    text-transform: none;
+											    line-height: 1.3rem;
 										    }
 									    }
 								    }
-								    .left-section {
-							    	    width: 33%;
+								    .left-section {   
+								    	width: 28%;
+									    padding-right: 10%;
 								    }
 								    .right-section {
-							    	    width: 67%;
+									    width: 43%;
+									    padding-left: 10%;
+									    border-left: 1px solid rgba(128, 128, 128, 0.1);
+									    box-sizing: border-box;
 								    }
 								}
 							}
@@ -338,27 +305,23 @@ html {
 				    }
 				}
 				&.page-2 { 
-				    background: antiquewhite;
-				    &:not(.active){
-					    left: 50%;
-					    i {
-						    &:before {
-						    	// Star
-					    		content: "";
-						    }
-						}
-				    }
 				    &.active {
 						.text-section {
-							top: 45%;
-							max-width: 1180px;
-							margin: 0 auto;
+							.header {
+								display: block;
+							}
+							// h2:not(.header){
+							//     display: inline-block;
+							//     background: black;
+							//     color: white;
+							//     padding: 1px 12px;
+							// }
 						    .skill {
 						    	opacity: 0;
 							    @include m-prefix(animation, 0.5s opacity-in 1.5s forwards);
 							    font-size: 0px;
 							    transition: 1s;
-							    width: 33%;
+							    width: 20%;
 							    display: inline-block;
 							    @media(max-width:750px){
 							    	width: 50%;
@@ -372,19 +335,24 @@ html {
 							    	}
 							    }
 							    p {
-							    	margin: 0;
-							    	width: 50%;
+								    width: 100%;
+								    margin-bottom: 5px!important;
+								    font-weight: bold;
+								    text-align: center;
+								    font-size: 0.8rem;
 							    }
-							    .stars {
-							    	width: 25%;
-								    display: inline-block;
+							    .stars {    
+							    	background: black;
+								    color: white;
+								    border-radius: 6px;
+								    padding: 2px 0;
+								    margin: 0 0 10px!important;
+								    max-width: 90px;
 								    .star {
 								    	opacity: 0;
 									    @include m-prefix(animation, 0.5s opacity-in 2s forwards);
 							    		font-family: lineAwesome;
-									    display: inline;    
-									    text-shadow: 0px 0px 1px #666;
-									    color: #ffed8e;
+									    display: inline;   
 							    		&:after {
 						    			    content: "\f318";
 							    		}
@@ -416,110 +384,72 @@ html {
 					}
 				}
 				&.page-3 { 
-				    background: aliceblue;
-				    &:not(.active){
-					    left: calc(50% + 60px);
-					    i {
-						    &:before {
-						    	// Screen
-					    		content: "";
-						    }
-						}
-				    }
 				    &.active {
 						.text-section {
-							top: 60%;
 						}
 						.works {
 							font-size: 1rem;
 							opacity: 0;
 						    @include m-prefix(animation, 1s opacity-in 1.7s forwards);
-						    margin: 24px auto;
-						    box-shadow: 0px 0px 39px #dbecfd;
 						    .works-inner {
-							    max-width: 1220px;
-							    margin: 0 auto;
-							    padding: 30px 0;
-								// @media(max-height: 700px){
-								//     max-width: 1100px;
-								// }
-								// @media(max-height: 650px){
-								//     max-width: 1000px;
-								// }
-								// @media(max-height: 625px){
-								//     max-width: 900px;
-								// }
-								// @media(max-height: 600px){
-								//     max-width: 800px;
-								// }
-								// @media(max-height: 575px){
-								//     max-width: 700px;
-								// }
-								// @media(max-height: 550px){
-								//     max-width: 600px;
-								// }
 								.work {
 								    display: inline-block;
-								    width: 20%;
+								    width: 31%;
 								    margin: 1% 1% 1%;
 								    cursor: pointer;
 								    position: relative;
+								    box-shadow: 0px 0px 39px rgba(0, 0, 0, 0.1);
+								    text-decoration: none;
 								    @media(max-width:700px){
 								    	width: 40%;
 								    }
 								    .front {
 								    	transition: 0.5s;
-									    backface-visibility: hidden;
-										-webkit-backface-visibility: hidden;
-									    border: 10px solid white;
-									    border-radius: 6px;
-									    box-sizing: border-box;
-									    box-shadow: 0px 0px 39px #dbecfd;
+									    box-sizing: border-box;;
 									    @include  m-transform(rotateY(0deg));
+									    &:after {
+										    content: "";
+										    background: rgba(0, 0, 0, 0.3);
+										    position: absolute;
+										    top: 0;
+										    left: 0;
+										    width: 100%;
+										    height: 100%;
+									    }
 										.image {
 									        width: 100%;
-											max-height: 110px;
+											max-height: 190px;
 										    padding-top: 0;
 										    z-index: 1000;
 										    display: inline-block;
 										    background-size: cover;
 										    background-repeat: no-repeat;
 										    background-position: 50%;
+										    display: block;
 										}
 									}
 									.back {
-								    	transition: 0.5s;
-									    backface-visibility: hidden;
-										-webkit-backface-visibility: hidden;
-									    border: 10px solid white;
-									    border-radius: 6px;
+									    transition: 0.5s;
 									    box-sizing: border-box;
-									    box-shadow: 0px 0px 39px #dbecfd;
-									    @include  m-transform(rotateY(-180deg));
-									    position: absolute;
-									    width: 100%;
-									    height: 100%;
-									    top: 0;
-									    left: 0;
+									    padding: 15px 25px;
+									    text-align: left;
 									    background: white;
-									    .back-inner {
-								    	    top: 50%;
-										    position: absolute;
-										    @include  m-transform(translateY(-50%));
-										    width: 100%;
+									    .name,.description {     
+									    	margin: 0;
+										    color: black;
+										    font-family: $lato;
+										    letter-spacing: 3px;
+										    text-align: left;
+										    font-size: 0.9rem;
 									    }
-									    .name,.description {
-											margin: 0;
-											color: black;
+									    .description {    
+									    	margin-top: 5px;
+										    letter-spacing: 1.5px;
+										    font-size: 0.75rem;
+										    font-style: italic;
+										    font-family: $dosis;
+										    color: grey;
 									    }
-									}
-									&:hover {
-										.front {
-										    @include  m-transform(rotateY(180deg));
-										}
-										.back {
-										    @include  m-transform(rotateY(0deg));
-										}
 									}
 								}
 						    }
@@ -535,13 +465,14 @@ html {
 				}
 				a,p,h1,h2,h3,h4,h5,input {
 					font-weight: 100;
-				    font-family: 'Economica', sans-serif;
+				    font-family: $dosis;
 				}
 			    .button {
 			    	display: inline-block;
-				    padding: 4px 10px 4px 30px;
-				    font-family: 'Economica', sans-serif;
-				    font-size: 1rem;
+				    padding: 4px 10px 4px 10px;
+				    font-family: $dosis;
+				    font-size: 0.75rem;
+				    letter-spacing: 2px;
 				    text-transform: uppercase;
 				    box-sizing: border-box;
 				    cursor: pointer;
@@ -552,10 +483,9 @@ html {
 				    opacity: 0;
 				    box-shadow: 2px 2px 6px #afafaf;
 				    position: absolute;
-				    bottom: -75px;
+				    bottom: -70px;
 				    overflow: hidden;
-					border-bottom: 4px solid #5a5a5a;
-				    border-radius: 8px;
+				    border-radius: 4px;
 				    font-weight: bold;
 				    background: black;
 				    max-width: 0%;
@@ -565,25 +495,9 @@ html {
 				    text-decoration: none;
 				    left: auto;
 				    right: calc(50% + 5px);
-				    &:after {
-				    	font-family: lineAwesome;
-				    	content: "";
-				    	font-size: 1.25rem;
-					    font-weight: normal;
-					    position: absolute;
-					    left: 20px;
-					    top: 50%;
-					    @include  m-transform(translateY(-50%));
-				    }
 				    &+ .button {
 				    	left: calc(50% + 5px);
 				    	right: auto;
-					    padding: 4px 30px 4px 10px;
-				    	&:after {
-				    		content: "";
-				    		left: auto;
-				    		right: 20px;
-				    	}
 				    }
 				    span {
 						position: relative;
@@ -598,12 +512,11 @@ html {
 					    content: " ";
 					    height: 200%;
 					    width: 1px;
-					    background: white;
 					    position: absolute;
 					    top: -50%;
 					    left: -50%;
 					    @include  m-transform(rotatez(45deg));
-					    box-shadow: 3px 3px 3px 3px white;
+					    box-shadow: 11px 0px 14px 2px white;
 					    @include m-prefix(animation, swipeButton 2s);
 					    animation-fill-mode:forwards;
 						animation-timing-function:linear;
@@ -615,19 +528,22 @@ html {
 				    }
 			    }
 			    h2 {
-				    margin: 0;    
+				    margin: 0;     
+				    margin-bottom: 50px;   
 				    font-size: 2.9375rem;
-				    color: #2b2b2b;
-				    &:not(.header){
-			    	    font-family: 'Dosis', serif;    
-			    	    font-size: 1.625rem;
-					    margin-bottom: 40px;
-				    }
+				    color: grey;
+				    font-family: $quicksand;
+				    font-size: 1.375rem;
 					&.header {
 					    text-transform: uppercase;
 					    color: black;
 					    white-space: nowrap;
-					    span {
+					    font-family: $lato;
+					    font-weight: bold;
+					    margin-bottom: 15px;
+					    display: inline-block;
+					    span {    
+					    	letter-spacing: 0.875rem;
 						    &:hover {
 						    	font-weight: bold;
 						    }
@@ -638,7 +554,7 @@ html {
 					    display: inline-block;
 					    min-width: 0.25em;
 				    	opacity: 0;
-					    letter-spacing: 0.05rem;
+					    letter-spacing: 0.075rem;
 					    @include m-prefix(animation, jumpText 250ms);
 					    animation-fill-mode:forwards;
 						animation-timing-function:linear;
@@ -657,7 +573,7 @@ html {
 					    display: inline;
 					    min-width: 0.25em;
 				    	opacity: 0;
-					    letter-spacing: 0.05rem;
+					    letter-spacing: 0.075rem;
 					    @include m-prefix(animation, jumpText 250ms);
 					    animation-fill-mode:forwards;
 						animation-timing-function:linear;
@@ -670,21 +586,21 @@ html {
 					    text-align: center;
 					    width: 35%;
 					}
-				    margin-top: 30px;
 				    font-size: 1.125rem;
 				    color: #333;
-				    font-family: 'Dosis', serif;
+				    font-family: $sourcesans;
 				    width: 26%;
 				    display: inline-block;
 				    text-align: left;
-				    line-height: 1.5em;
-				    letter-spacing: 0.5px;
+				    line-height: 1.25em;
+				    letter-spacing: 2px;
 				    margin-right: 1%;
 				    vertical-align: top;
 				    // border-right: 1px solid black;
 				    padding-right: 1.5%;
 				    margin-left: 1%;
 				    white-space: normal;
+				    margin: 3px 0!important;
 				    &:last-of-type{
 				    	border-right: 0;
 				    }
@@ -760,7 +676,7 @@ html {
 	}
 	100% {
 		opacity: 1;
-	    font-size: 5.625rem;
+	    font-size: 2.625rem;
 	}
 }
 

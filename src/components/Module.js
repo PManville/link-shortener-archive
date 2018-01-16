@@ -37,19 +37,17 @@ class Module extends React.Component {
 			var newurlarray = [];
 			for(var i = 0; i < newurl.length; i++){
 				newurlarray.push(
-					<div key={i} className="work">
+					<a key={i} className="work" href={newurl[i].url} >
 						<div className="front">
-						<img className="image" src={ newurl[i].img } />
+							<img className="image" src={ newurl[i].img } />
 						</div>
-						<a href={newurl[i].url} >
-							<div className="back">
-								<div className="back-inner">
-								<h3 className="name">{ newurl[i].name }</h3>
-								<h4 className="description">{ newurl[i].description }</h4>
-								</div>
+						<div className="back">
+							<div className="back-inner">
+							<h3 className="name">{ newurl[i].name }</h3>
+							<h4 className="description">{ newurl[i].description }</h4>
 							</div>
-						</a>
-					</div>
+						</div>
+					</a>
 				);
 			}
 			return (
@@ -97,7 +95,7 @@ class Module extends React.Component {
 			var thisclass = "stars";
 			return (
 				<div className="skill" >
-					<p className="text-center">
+					<p className="text-center description">
 						{ newmessage }
 					</p>
 					<p className={ thisclass }>

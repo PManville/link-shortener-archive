@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   font-size: 16px; }
   @media (max-width: 600px) {
@@ -14,7 +13,6 @@ html {
   width: 100%;
   height: 100%; }
   .container #root {
-    background: black;
     width: 100%;
     height: 100%; }
     .container #root .loader {
@@ -104,95 +102,39 @@ html {
       display: block; }
       .container #root .root-inner.loaded .loader {
         display: none; }
-      .container #root .root-inner.loaded .app {
-        position: absolute;
-        top: 0;
-        left: 0;
+      .container #root .root-inner.loaded .header-bar {
+        position: fixed;
         width: 100%;
-        height: 100%;
+        z-index: 100;
+        list-style: none;
+        text-align: right;
+        box-sizing: border-box;
+        padding: 10px 40px;
+        background: black;
+        margin: 0; }
+        .container #root .root-inner.loaded .header-bar li {
+          display: inline-block;
+          margin-left: 20px;
+          font-family: "Lato", sans-serif;
+          text-transform: uppercase;
+          font-size: 0.7rem;
+          font-weight: bold;
+          letter-spacing: 2px;
+          color: white;
+          cursor: pointer; }
+          .container #root .root-inner.loaded .header-bar li.active {
+            border-bottom: 2px solid #5d5d5d;
+            padding-bottom: 2px; }
+      .container #root .root-inner.loaded .app {
         height: auto;
         max-height: 200%;
         min-height: 100%;
         overflow: hidden;
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
-        transform: translateX(-50%); }
-        .container #root .root-inner.loaded .app:not(.active) {
-          position: absolute;
-          width: 35px;
-          max-height: 0%;
-          min-height: 0%;
-          top: 50px;
-          padding-top: 35px;
-          overflow: visible;
-          cursor: pointer;
-          transition: 0s 0.6s;
-          -webkit-animation: change-z-index 0.75s 0s linear 1 normal forwards running;
-          -moz-animation: change-z-index 0.75s 0s linear 1 normal forwards running;
-          -ms-animation: change-z-index 0.75s 0s linear 1 normal forwards running;
-          -o-animation: change-z-index 0.75s 0s linear 1 normal forwards running;
-          animation: change-z-index 0.75s 0s linear 1 normal forwards running;
-          border-radius: 200px;
-          z-index: 2;
-          box-shadow: 0 0 5px #ccc;
-          font-size: 1em; }
-          .container #root .root-inner.loaded .app:not(.active) i {
-            content: "";
-            position: absolute;
-            left: 50%;
-            top: 0%;
-            width: 60px;
-            height: 80px;
-            transform: translate(-50%, 0);
-            font-style: normal;
-            z-index: 1; }
-            .container #root .root-inner.loaded .app:not(.active) i:before {
-              font-size: 0.875em;
-              color: black;
-              font-family: lineAwesome;
-              position: absolute;
-              top: calc(50% - 22.5px);
-              left: 50%;
-              -webkit-transform: translate(-50%, -50%) rotateY(0deg);
-              -moz-transform: translate(-50%, -50%) rotateY(0deg);
-              -ms-transform: translate(-50%, -50%) rotateY(0deg);
-              -o-transform: translate(-50%, -50%) rotateY(0deg);
-              transform: translate(-50%, -50%) rotateY(0deg); }
-            .container #root .root-inner.loaded .app:not(.active) i:hover:before {
-              -webkit-animation: 0.75s menuRotate linear 0s infinite;
-              -moz-animation: 0.75s menuRotate linear 0s infinite;
-              -ms-animation: 0.75s menuRotate linear 0s infinite;
-              -o-animation: 0.75s menuRotate linear 0s infinite;
-              animation: 0.75s menuRotate linear 0s infinite; }
-          .container #root .root-inner.loaded .app:not(.active) .text-section {
-            padding-top: 20px; }
-          .container #root .root-inner.loaded .app:not(.active) h1, .container #root .root-inner.loaded .app:not(.active) h2, .container #root .root-inner.loaded .app:not(.active) h3, .container #root .root-inner.loaded .app:not(.active) h4, .container #root .root-inner.loaded .app:not(.active) h5, .container #root .root-inner.loaded .app:not(.active) p, .container #root .root-inner.loaded .app:not(.active) img, .container #root .root-inner.loaded .app:not(.active) .button {
-            display: none; }
-            .container #root .root-inner.loaded .app:not(.active) h1.header, .container #root .root-inner.loaded .app:not(.active) h2.header, .container #root .root-inner.loaded .app:not(.active) h3.header, .container #root .root-inner.loaded .app:not(.active) h4.header, .container #root .root-inner.loaded .app:not(.active) h5.header, .container #root .root-inner.loaded .app:not(.active) p.header, .container #root .root-inner.loaded .app:not(.active) img.header, .container #root .root-inner.loaded .app:not(.active) .button.header {
-              display: block;
-              font-size: 15px;
-              text-transform: none;
-              position: absolute;
-              left: 50%;
-              -webkit-transform: translateX(-50%);
-              -moz-transform: translateX(-50%);
-              -ms-transform: translateX(-50%);
-              -o-transform: translateX(-50%);
-              transform: translateX(-50%);
-              -webkit-animation: 1s page-header-exit 0s linear;
-              -moz-animation: 1s page-header-exit 0s linear;
-              -ms-animation: 1s page-header-exit 0s linear;
-              -o-animation: 1s page-header-exit 0s linear;
-              animation: 1s page-header-exit 0s linear; }
-          .container #root .root-inner.loaded .app:not(.active) .skill {
-            display: none; }
-          .container #root .root-inner.loaded .app:not(.active):hover .header {
-            font-size: 16px;
-            font-weight: bold; }
-          .container #root .root-inner.loaded .app:not(.active) .works {
-            opacity: 0; }
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        transform: translateX(0%); }
         .container #root .root-inner.loaded .app.active {
           z-index: 1;
           cursor: default;
@@ -206,12 +148,13 @@ html {
           padding: 0 20px;
           box-sizing: border-box; }
           .container #root .root-inner.loaded .app.active .text-section {
-            padding-top: 140px !important;
-            padding-bottom: 35px !important;
-            max-width: 1180px;
+            padding-top: 170px !important;
+            padding-bottom: 150px !important;
+            max-width: 1000px;
             margin: 0 auto;
             transform: none;
-            top: 0 !important; }
+            top: 0 !important;
+            border-bottom: 1px solid #e9e9e9; }
           .container #root .root-inner.loaded .app.active h1.header, .container #root .root-inner.loaded .app.active h2.header, .container #root .root-inner.loaded .app.active h3.header, .container #root .root-inner.loaded .app.active h4.header, .container #root .root-inner.loaded .app.active h5.header, .container #root .root-inner.loaded .app.active p.header {
             opacity: 0;
             font-size: 16px;
@@ -232,295 +175,276 @@ html {
               -ms-animation: opacity-in 0.5s forwards;
               -o-animation: opacity-in 0.5s forwards;
               animation: opacity-in 0.5s forwards; } }
-        .container #root .root-inner.loaded .app.page-0 {
-          background: black; }
-          .container #root .root-inner.loaded .app.page-0:not(.active) {
-            left: 50%;
-            top: 0;
-            border-radius: 0 0 200px 200px;
-            width: 10%;
-            width: 130px;
-            overflow: hidden;
-            box-shadow: 0px 0px 3px #555; }
-            .container #root .root-inner.loaded .app.page-0:not(.active) i {
-              width: 130px;
-              height: 35px; }
-              .container #root .root-inner.loaded .app.page-0:not(.active) i:before {
-                content: "";
-                left: 50%;
-                z-index: 1;
-                top: 50%; }
-            .container #root .root-inner.loaded .app.page-0:not(.active) .text-wrapper {
-              display: none; }
-          .container #root .root-inner.loaded .app.page-0.active h2:not(.header) {
-            margin-bottom: 0; }
-          .container #root .root-inner.loaded .app.page-0.active .text-wrapper {
-            position: relative; }
-          .container #root .root-inner.loaded .app.page-0.active .paragraph {
-            opacity: 0;
-            -webkit-animation: 0.75s opacity-in 1.5s forwards;
-            -moz-animation: 0.75s opacity-in 1.5s forwards;
-            -ms-animation: 0.75s opacity-in 1.5s forwards;
-            -o-animation: 0.75s opacity-in 1.5s forwards;
-            animation: 0.75s opacity-in 1.5s forwards; }
-          .container #root .root-inner.loaded .app.page-0:after {
-            content: "";
-            z-index: -1;
+        .container #root .root-inner.loaded .app.page-0.active .text-section {
+          padding-top: 280px !important;
+          padding-bottom: 240px !important; }
+          .container #root .root-inner.loaded .app.page-0.active .text-section:before {
+            content: "P";
+            font-size: 95px;
+            vertical-align: middle;
+            color: rgba(255, 255, 255, 0.7);
+            text-shadow: 10px 0px rgba(171, 178, 214, 0.5);
+            font-family: "Lato";
+            background: rgba(0, 0, 0, 0.6);
+            background: linear-gradient(301deg, #67daa5, #c4eba3);
+            /* background: #ebebeb; */
+            /* background: black; */
+            width: 94px;
+            left: calc(50% - 47px);
+            height: 94px;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 150%;
-            height: 150%;
-            -webkit-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            -o-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            border-radius: 1000000px;
-            -webkit-animation: page-0 15s ease infinite, page-0-in 1s ease 1;
-            -moz-animation: page-0 15s ease infinite, page-0-in 1s ease 1;
-            -ms-animation: page-0 15s ease infinite, page-0-in 1s ease 1;
-            -o-animation: page-0 15s ease infinite, page-0-in 1s ease 1;
-            animation: page-0 15s ease infinite, page-0-in 1s ease 1;
-            background: linear-gradient(301deg, #feffcb, #dcd0ff, #ffd2d2, #d2ffd2);
-            background-size: 1500%; }
-        .container #root .root-inner.loaded .app.page-1 {
-          background: khaki; }
-          .container #root .root-inner.loaded .app.page-1:not(.active) {
-            left: calc(50% - 60px); }
-            .container #root .root-inner.loaded .app.page-1:not(.active) i:before {
-              content: "";
-              content: ""; }
-          .container #root .root-inner.loaded .app.page-1.active .text-section {
-            top: 55%; }
-            .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper {
-              max-width: 600px;
-              margin: 0 auto; }
-              .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience {
-                margin: 20px auto 0;
-                vertical-align: top;
-                font-size: 0;
-                -webkit-animation: 0.75s opacity-in 1.5s forwards;
-                -moz-animation: 0.75s opacity-in 1.5s forwards;
-                -ms-animation: 0.75s opacity-in 1.5s forwards;
-                -o-animation: 0.75s opacity-in 1.5s forwards;
-                animation: 0.75s opacity-in 1.5s forwards;
-                opacity: 0; }
-                .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience:nth-of-type(2) {
-                  -webkit-animation: 0.75s opacity-in 1.6s forwards;
-                  -moz-animation: 0.75s opacity-in 1.6s forwards;
-                  -ms-animation: 0.75s opacity-in 1.6s forwards;
-                  -o-animation: 0.75s opacity-in 1.6s forwards;
-                  animation: 0.75s opacity-in 1.6s forwards; }
-                .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience:nth-of-type(3) {
-                  -webkit-animation: 0.75s opacity-in 1.7s forwards;
-                  -moz-animation: 0.75s opacity-in 1.7s forwards;
-                  -ms-animation: 0.75s opacity-in 1.7s forwards;
-                  -o-animation: 0.75s opacity-in 1.7s forwards;
-                  animation: 0.75s opacity-in 1.7s forwards; }
-                .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience:nth-of-type(4) {
-                  -webkit-animation: 0.75s opacity-in 1.8s forwards;
-                  -moz-animation: 0.75s opacity-in 1.8s forwards;
-                  -ms-animation: 0.75s opacity-in 1.8s forwards;
-                  -o-animation: 0.75s opacity-in 1.8s forwards;
-                  animation: 0.75s opacity-in 1.8s forwards; }
-                .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience.one-col {
-                  width: 50%;
-                  display: inline-block; }
-                  .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience.one-col .left-section {
-                    width: 100%; }
-                .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section {
-                  display: inline-block;
-                  vertical-align: top; }
-                  @media (max-width: 500px) {
-                    .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section {
-                      width: 100% !important;
-                      margin-bottom: 10px; }
-                      .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p {
-                        text-align: center; } }
-                  .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p {
-                    width: 100%;
-                    margin: 0; }
-                    .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p.date, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p.date {
-                      color: grey; }
-                    .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p.position, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p.position {
-                      font-weight: bold; }
-                    .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p.message, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p.message {
-                      font-size: 1rem; }
-                .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section {
-                  width: 33%; }
-                .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section {
-                  width: 67%; }
-        .container #root .root-inner.loaded .app.page-2 {
-          background: antiquewhite; }
-          .container #root .root-inner.loaded .app.page-2:not(.active) {
-            left: 50%; }
-            .container #root .root-inner.loaded .app.page-2:not(.active) i:before {
-              content: ""; }
-          .container #root .root-inner.loaded .app.page-2.active .text-section {
-            top: 45%;
-            max-width: 1180px;
-            margin: 0 auto; }
+            z-index: 0;
+            top: 111px;
+            transform: rotateZ(45deg);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px; }
+          .container #root .root-inner.loaded .app.page-0.active .text-section h2 {
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: bold;
+            text-shadow: 1px 1px rgba(0, 0, 0, 0.2); }
+            .container #root .root-inner.loaded .app.page-0.active .text-section h2.header {
+              color: rgba(255, 255, 255, 0.9);
+              text-shadow: 1px 1px rgba(0, 0, 0, 0.2); }
+        .container #root .root-inner.loaded .app.page-0.active .text-wrapper {
+          position: relative; }
+        .container #root .root-inner.loaded .app.page-0.active .paragraph {
+          opacity: 0;
+          -webkit-animation: 0.75s opacity-in 1.5s forwards;
+          -moz-animation: 0.75s opacity-in 1.5s forwards;
+          -ms-animation: 0.75s opacity-in 1.5s forwards;
+          -o-animation: 0.75s opacity-in 1.5s forwards;
+          animation: 0.75s opacity-in 1.5s forwards; }
+        .container #root .root-inner.loaded .app.page-0:after {
+          content: "";
+          z-index: -1;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 150%;
+          height: 150%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          border-radius: 1000000px;
+          -webkit-animation: page-0 15s ease infinite, page-0-in 1s ease 1;
+          -moz-animation: page-0 15s ease infinite, page-0-in 1s ease 1;
+          -ms-animation: page-0 15s ease infinite, page-0-in 1s ease 1;
+          -o-animation: page-0 15s ease infinite, page-0-in 1s ease 1;
+          animation: page-0 15s ease infinite, page-0-in 1s ease 1;
+          background: linear-gradient(301deg, #feffcb, #dcd0ff, #ffd2d2, #d2ffd2);
+          background-size: 1500%; }
+        .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .header {
+          color: white;
+          background: black;
+          padding: 0px 0 0px 10px; }
+        .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience {
+          margin: 20px auto 0;
+          padding: 0px 10px;
+          vertical-align: top;
+          font-size: 0;
+          -webkit-animation: 0.75s opacity-in 1.5s forwards;
+          -moz-animation: 0.75s opacity-in 1.5s forwards;
+          -ms-animation: 0.75s opacity-in 1.5s forwards;
+          -o-animation: 0.75s opacity-in 1.5s forwards;
+          animation: 0.75s opacity-in 1.5s forwards;
+          opacity: 0; }
+          .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience:nth-of-type(2) {
+            -webkit-animation: 0.75s opacity-in 1.6s forwards;
+            -moz-animation: 0.75s opacity-in 1.6s forwards;
+            -ms-animation: 0.75s opacity-in 1.6s forwards;
+            -o-animation: 0.75s opacity-in 1.6s forwards;
+            animation: 0.75s opacity-in 1.6s forwards; }
+          .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience:nth-of-type(3) {
+            -webkit-animation: 0.75s opacity-in 1.7s forwards;
+            -moz-animation: 0.75s opacity-in 1.7s forwards;
+            -ms-animation: 0.75s opacity-in 1.7s forwards;
+            -o-animation: 0.75s opacity-in 1.7s forwards;
+            animation: 0.75s opacity-in 1.7s forwards; }
+          .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience:nth-of-type(4) {
+            -webkit-animation: 0.75s opacity-in 1.8s forwards;
+            -moz-animation: 0.75s opacity-in 1.8s forwards;
+            -ms-animation: 0.75s opacity-in 1.8s forwards;
+            -o-animation: 0.75s opacity-in 1.8s forwards;
+            animation: 0.75s opacity-in 1.8s forwards; }
+          .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience.one-col {
+            width: 50%;
+            display: inline-block; }
+            .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience.one-col .left-section {
+              width: 100%; }
+          .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section {
+            display: inline-block;
+            vertical-align: top; }
+            @media (max-width: 500px) {
+              .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section {
+                width: 100% !important;
+                margin-bottom: 10px; }
+                .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p {
+                  text-align: center; } }
+            .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p {
+              width: 100%;
+              margin: 0; }
+              .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p.date, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p.date {
+                text-transform: uppercase;
+                font-size: 0.7rem;
+                color: grey;
+                margin-top: 10px !important; }
+              .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p.position, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p.position {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1rem; }
+              .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p.location, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p.location {
+                text-transform: uppercase;
+                font-size: 0.8rem !important; }
+              .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p.message, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p.message {
+                font-size: 0.8rem;
+                text-transform: none;
+                line-height: 1.3rem; }
+          .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section {
+            width: 28%;
+            padding-right: 10%; }
+          .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section {
+            width: 43%;
+            padding-left: 10%;
+            border-left: 1px solid rgba(128, 128, 128, 0.1);
+            box-sizing: border-box; }
+        .container #root .root-inner.loaded .app.page-2.active .text-section .header {
+          display: block; }
+        .container #root .root-inner.loaded .app.page-2.active .text-section .skill {
+          opacity: 0;
+          -webkit-animation: 0.5s opacity-in 1.5s forwards;
+          -moz-animation: 0.5s opacity-in 1.5s forwards;
+          -ms-animation: 0.5s opacity-in 1.5s forwards;
+          -o-animation: 0.5s opacity-in 1.5s forwards;
+          animation: 0.5s opacity-in 1.5s forwards;
+          font-size: 0px;
+          transition: 1s;
+          width: 20%;
+          display: inline-block; }
+          @media (max-width: 750px) {
             .container #root .root-inner.loaded .app.page-2.active .text-section .skill {
+              width: 50%; } }
+          @media (max-width: 500px) {
+            .container #root .root-inner.loaded .app.page-2.active .text-section .skill {
+              width: 100%; } }
+          .container #root .root-inner.loaded .app.page-2.active .text-section .skill .text-center span {
+            animation-delay: 0s !important; }
+          .container #root .root-inner.loaded .app.page-2.active .text-section .skill p {
+            width: 100%;
+            margin-bottom: 5px !important;
+            font-weight: bold;
+            text-align: center;
+            font-size: 0.8rem; }
+          .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars {
+            background: black;
+            color: white;
+            border-radius: 6px;
+            padding: 2px 0;
+            margin: 0 0 10px !important;
+            max-width: 90px; }
+            .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star {
               opacity: 0;
-              -webkit-animation: 0.5s opacity-in 1.5s forwards;
-              -moz-animation: 0.5s opacity-in 1.5s forwards;
-              -ms-animation: 0.5s opacity-in 1.5s forwards;
-              -o-animation: 0.5s opacity-in 1.5s forwards;
-              animation: 0.5s opacity-in 1.5s forwards;
-              font-size: 0px;
-              transition: 1s;
-              width: 33%;
-              display: inline-block; }
-              @media (max-width: 750px) {
-                .container #root .root-inner.loaded .app.page-2.active .text-section .skill {
-                  width: 50%; } }
-              @media (max-width: 500px) {
-                .container #root .root-inner.loaded .app.page-2.active .text-section .skill {
-                  width: 100%; } }
-              .container #root .root-inner.loaded .app.page-2.active .text-section .skill .text-center span {
-                animation-delay: 0s !important; }
-              .container #root .root-inner.loaded .app.page-2.active .text-section .skill p {
-                margin: 0;
-                width: 50%; }
-              .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars {
-                width: 25%;
-                display: inline-block; }
-                .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star {
-                  opacity: 0;
-                  -webkit-animation: 0.5s opacity-in 2s forwards;
-                  -moz-animation: 0.5s opacity-in 2s forwards;
-                  -ms-animation: 0.5s opacity-in 2s forwards;
-                  -o-animation: 0.5s opacity-in 2s forwards;
-                  animation: 0.5s opacity-in 2s forwards;
-                  font-family: lineAwesome;
-                  display: inline;
-                  text-shadow: 0px 0px 1px #666;
-                  color: #ffed8e; }
-                  .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star:after {
-                    content: "\f318"; }
-                  .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star.inactive:after {
-                    opacity: 0.3; }
-                  .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star:nth-child(2) {
-                    -webkit-animation: 0.5s opacity-in 2.1s forwards;
-                    -moz-animation: 0.5s opacity-in 2.1s forwards;
-                    -ms-animation: 0.5s opacity-in 2.1s forwards;
-                    -o-animation: 0.5s opacity-in 2.1s forwards;
-                    animation: 0.5s opacity-in 2.1s forwards; }
-                  .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star:nth-child(3) {
-                    -webkit-animation: 0.5s opacity-in 2.2s forwards;
-                    -moz-animation: 0.5s opacity-in 2.2s forwards;
-                    -ms-animation: 0.5s opacity-in 2.2s forwards;
-                    -o-animation: 0.5s opacity-in 2.2s forwards;
-                    animation: 0.5s opacity-in 2.2s forwards; }
-                  .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star:nth-child(4) {
-                    -webkit-animation: 0.5s opacity-in 2.3s forwards;
-                    -moz-animation: 0.5s opacity-in 2.3s forwards;
-                    -ms-animation: 0.5s opacity-in 2.3s forwards;
-                    -o-animation: 0.5s opacity-in 2.3s forwards;
-                    animation: 0.5s opacity-in 2.3s forwards; }
-                  .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star:nth-child(5) {
-                    -webkit-animation: 0.5s opacity-in 2.4s forwards;
-                    -moz-animation: 0.5s opacity-in 2.4s forwards;
-                    -ms-animation: 0.5s opacity-in 2.4s forwards;
-                    -o-animation: 0.5s opacity-in 2.4s forwards;
-                    animation: 0.5s opacity-in 2.4s forwards; }
-        .container #root .root-inner.loaded .app.page-3 {
-          background: aliceblue; }
-          .container #root .root-inner.loaded .app.page-3:not(.active) {
-            left: calc(50% + 60px); }
-            .container #root .root-inner.loaded .app.page-3:not(.active) i:before {
-              content: ""; }
-          .container #root .root-inner.loaded .app.page-3.active .text-section {
-            top: 60%; }
-          .container #root .root-inner.loaded .app.page-3.active .works {
-            font-size: 1rem;
-            opacity: 0;
-            -webkit-animation: 1s opacity-in 1.7s forwards;
-            -moz-animation: 1s opacity-in 1.7s forwards;
-            -ms-animation: 1s opacity-in 1.7s forwards;
-            -o-animation: 1s opacity-in 1.7s forwards;
-            animation: 1s opacity-in 1.7s forwards;
-            margin: 24px auto;
-            box-shadow: 0px 0px 39px #dbecfd; }
-            .container #root .root-inner.loaded .app.page-3.active .works .works-inner {
-              max-width: 1220px;
-              margin: 0 auto;
-              padding: 30px 0; }
+              -webkit-animation: 0.5s opacity-in 2s forwards;
+              -moz-animation: 0.5s opacity-in 2s forwards;
+              -ms-animation: 0.5s opacity-in 2s forwards;
+              -o-animation: 0.5s opacity-in 2s forwards;
+              animation: 0.5s opacity-in 2s forwards;
+              font-family: lineAwesome;
+              display: inline; }
+              .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star:after {
+                content: "\f318"; }
+              .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star.inactive:after {
+                opacity: 0.3; }
+              .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star:nth-child(2) {
+                -webkit-animation: 0.5s opacity-in 2.1s forwards;
+                -moz-animation: 0.5s opacity-in 2.1s forwards;
+                -ms-animation: 0.5s opacity-in 2.1s forwards;
+                -o-animation: 0.5s opacity-in 2.1s forwards;
+                animation: 0.5s opacity-in 2.1s forwards; }
+              .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star:nth-child(3) {
+                -webkit-animation: 0.5s opacity-in 2.2s forwards;
+                -moz-animation: 0.5s opacity-in 2.2s forwards;
+                -ms-animation: 0.5s opacity-in 2.2s forwards;
+                -o-animation: 0.5s opacity-in 2.2s forwards;
+                animation: 0.5s opacity-in 2.2s forwards; }
+              .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star:nth-child(4) {
+                -webkit-animation: 0.5s opacity-in 2.3s forwards;
+                -moz-animation: 0.5s opacity-in 2.3s forwards;
+                -ms-animation: 0.5s opacity-in 2.3s forwards;
+                -o-animation: 0.5s opacity-in 2.3s forwards;
+                animation: 0.5s opacity-in 2.3s forwards; }
+              .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star:nth-child(5) {
+                -webkit-animation: 0.5s opacity-in 2.4s forwards;
+                -moz-animation: 0.5s opacity-in 2.4s forwards;
+                -ms-animation: 0.5s opacity-in 2.4s forwards;
+                -o-animation: 0.5s opacity-in 2.4s forwards;
+                animation: 0.5s opacity-in 2.4s forwards; }
+        .container #root .root-inner.loaded .app.page-3.active .works {
+          font-size: 1rem;
+          opacity: 0;
+          -webkit-animation: 1s opacity-in 1.7s forwards;
+          -moz-animation: 1s opacity-in 1.7s forwards;
+          -ms-animation: 1s opacity-in 1.7s forwards;
+          -o-animation: 1s opacity-in 1.7s forwards;
+          animation: 1s opacity-in 1.7s forwards; }
+          .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work {
+            display: inline-block;
+            width: 31%;
+            margin: 1% 1% 1%;
+            cursor: pointer;
+            position: relative;
+            box-shadow: 0px 0px 39px rgba(0, 0, 0, 0.1);
+            text-decoration: none; }
+            @media (max-width: 700px) {
               .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work {
+                width: 40%; } }
+            .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .front {
+              transition: 0.5s;
+              box-sizing: border-box;
+              -webkit-transform: rotateY(0deg);
+              -moz-transform: rotateY(0deg);
+              -ms-transform: rotateY(0deg);
+              -o-transform: rotateY(0deg);
+              transform: rotateY(0deg); }
+              .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .front:after {
+                content: "";
+                background: rgba(0, 0, 0, 0.3);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%; }
+              .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .front .image {
+                width: 100%;
+                max-height: 190px;
+                padding-top: 0;
+                z-index: 1000;
                 display: inline-block;
-                width: 20%;
-                margin: 1% 1% 1%;
-                cursor: pointer;
-                position: relative; }
-                @media (max-width: 700px) {
-                  .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work {
-                    width: 40%; } }
-                .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .front {
-                  transition: 0.5s;
-                  backface-visibility: hidden;
-                  -webkit-backface-visibility: hidden;
-                  border: 10px solid white;
-                  border-radius: 6px;
-                  box-sizing: border-box;
-                  box-shadow: 0px 0px 39px #dbecfd;
-                  -webkit-transform: rotateY(0deg);
-                  -moz-transform: rotateY(0deg);
-                  -ms-transform: rotateY(0deg);
-                  -o-transform: rotateY(0deg);
-                  transform: rotateY(0deg); }
-                  .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .front .image {
-                    width: 100%;
-                    max-height: 110px;
-                    padding-top: 0;
-                    z-index: 1000;
-                    display: inline-block;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: 50%; }
-                .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .back {
-                  transition: 0.5s;
-                  backface-visibility: hidden;
-                  -webkit-backface-visibility: hidden;
-                  border: 10px solid white;
-                  border-radius: 6px;
-                  box-sizing: border-box;
-                  box-shadow: 0px 0px 39px #dbecfd;
-                  -webkit-transform: rotateY(-180deg);
-                  -moz-transform: rotateY(-180deg);
-                  -ms-transform: rotateY(-180deg);
-                  -o-transform: rotateY(-180deg);
-                  transform: rotateY(-180deg);
-                  position: absolute;
-                  width: 100%;
-                  height: 100%;
-                  top: 0;
-                  left: 0;
-                  background: white; }
-                  .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .back .back-inner {
-                    top: 50%;
-                    position: absolute;
-                    -webkit-transform: translateY(-50%);
-                    -moz-transform: translateY(-50%);
-                    -ms-transform: translateY(-50%);
-                    -o-transform: translateY(-50%);
-                    transform: translateY(-50%);
-                    width: 100%; }
-                  .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .back .name, .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .back .description {
-                    margin: 0;
-                    color: black; }
-                .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work:hover .front {
-                  -webkit-transform: rotateY(180deg);
-                  -moz-transform: rotateY(180deg);
-                  -ms-transform: rotateY(180deg);
-                  -o-transform: rotateY(180deg);
-                  transform: rotateY(180deg); }
-                .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work:hover .back {
-                  -webkit-transform: rotateY(0deg);
-                  -moz-transform: rotateY(0deg);
-                  -ms-transform: rotateY(0deg);
-                  -o-transform: rotateY(0deg);
-                  transform: rotateY(0deg); }
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 50%;
+                display: block; }
+            .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .back {
+              transition: 0.5s;
+              box-sizing: border-box;
+              padding: 15px 25px;
+              text-align: left;
+              background: white; }
+              .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .back .name, .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .back .description {
+                margin: 0;
+                color: black;
+                font-family: "Lato", sans-serif;
+                letter-spacing: 3px;
+                text-align: left;
+                font-size: 0.9rem; }
+              .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .back .description {
+                margin-top: 5px;
+                letter-spacing: 1.5px;
+                font-size: 0.75rem;
+                font-style: italic;
+                font-family: "Dosis", sans-serif;
+                color: grey; }
         .container #root .root-inner.loaded .app .text-section {
           box-sizing: border-box;
           text-align: center;
@@ -533,12 +457,13 @@ html {
           transform: translateY(-50%); }
         .container #root .root-inner.loaded .app a, .container #root .root-inner.loaded .app p, .container #root .root-inner.loaded .app h1, .container #root .root-inner.loaded .app h2, .container #root .root-inner.loaded .app h3, .container #root .root-inner.loaded .app h4, .container #root .root-inner.loaded .app h5, .container #root .root-inner.loaded .app input {
           font-weight: 100;
-          font-family: 'Economica', sans-serif; }
+          font-family: "Dosis", sans-serif; }
         .container #root .root-inner.loaded .app .button {
           display: inline-block;
-          padding: 4px 10px 4px 30px;
-          font-family: 'Economica', sans-serif;
-          font-size: 1rem;
+          padding: 4px 10px 4px 10px;
+          font-family: "Dosis", sans-serif;
+          font-size: 0.75rem;
+          letter-spacing: 2px;
           text-transform: uppercase;
           box-sizing: border-box;
           cursor: pointer;
@@ -553,10 +478,9 @@ html {
           opacity: 0;
           box-shadow: 2px 2px 6px #afafaf;
           position: absolute;
-          bottom: -75px;
+          bottom: -70px;
           overflow: hidden;
-          border-bottom: 4px solid #5a5a5a;
-          border-radius: 8px;
+          border-radius: 4px;
           font-weight: bold;
           background: black;
           max-width: 0%;
@@ -566,27 +490,9 @@ html {
           text-decoration: none;
           left: auto;
           right: calc(50% + 5px); }
-          .container #root .root-inner.loaded .app .button:after {
-            font-family: lineAwesome;
-            content: "";
-            font-size: 1.25rem;
-            font-weight: normal;
-            position: absolute;
-            left: 20px;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -moz-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            -o-transform: translateY(-50%);
-            transform: translateY(-50%); }
           .container #root .root-inner.loaded .app .button + .button {
             left: calc(50% + 5px);
-            right: auto;
-            padding: 4px 30px 4px 10px; }
-            .container #root .root-inner.loaded .app .button + .button:after {
-              content: "";
-              left: auto;
-              right: 20px; }
+            right: auto; }
           .container #root .root-inner.loaded .app .button span {
             position: relative;
             line-height: 2rem;
@@ -603,7 +509,6 @@ html {
             content: " ";
             height: 200%;
             width: 1px;
-            background: white;
             position: absolute;
             top: -50%;
             left: -50%;
@@ -612,7 +517,7 @@ html {
             -ms-transform: rotatez(45deg);
             -o-transform: rotatez(45deg);
             transform: rotatez(45deg);
-            box-shadow: 3px 3px 3px 3px white;
+            box-shadow: 11px 0px 14px 2px white;
             -webkit-animation: swipeButton 2s;
             -moz-animation: swipeButton 2s;
             -ms-animation: swipeButton 2s;
@@ -626,24 +531,29 @@ html {
             margin-top: 1px; }
         .container #root .root-inner.loaded .app h2 {
           margin: 0;
+          margin-bottom: 50px;
           font-size: 2.9375rem;
-          color: #2b2b2b; }
-          .container #root .root-inner.loaded .app h2:not(.header) {
-            font-family: 'Dosis', serif;
-            font-size: 1.625rem;
-            margin-bottom: 40px; }
+          color: grey;
+          font-family: "Quicksand", sans-serif;
+          font-size: 1.375rem; }
           .container #root .root-inner.loaded .app h2.header {
             text-transform: uppercase;
             color: black;
-            white-space: nowrap; }
-            .container #root .root-inner.loaded .app h2.header span:hover {
-              font-weight: bold; }
+            white-space: nowrap;
+            font-family: "Lato", sans-serif;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: inline-block; }
+            .container #root .root-inner.loaded .app h2.header span {
+              letter-spacing: 0.875rem; }
+              .container #root .root-inner.loaded .app h2.header span:hover {
+                font-weight: bold; }
           .container #root .root-inner.loaded .app h2 span {
             position: relative;
             display: inline-block;
             min-width: 0.25em;
             opacity: 0;
-            letter-spacing: 0.05rem;
+            letter-spacing: 0.075rem;
             -webkit-animation: jumpText 250ms;
             -moz-animation: jumpText 250ms;
             -ms-animation: jumpText 250ms;
@@ -663,26 +573,26 @@ html {
                 display: inline;
                 white-space: initial; } }
         .container #root .root-inner.loaded .app p {
-          margin-top: 30px;
           font-size: 1.125rem;
           color: #333;
-          font-family: 'Dosis', serif;
+          font-family: "Source Sans Pro", sans-serif;
           width: 26%;
           display: inline-block;
           text-align: left;
-          line-height: 1.5em;
-          letter-spacing: 0.5px;
+          line-height: 1.25em;
+          letter-spacing: 2px;
           margin-right: 1%;
           vertical-align: top;
           padding-right: 1.5%;
           margin-left: 1%;
-          white-space: normal; }
+          white-space: normal;
+          margin: 3px 0 !important; }
           .container #root .root-inner.loaded .app p span {
             position: relative;
             display: inline;
             min-width: 0.25em;
             opacity: 0;
-            letter-spacing: 0.05rem;
+            letter-spacing: 0.075rem;
             -webkit-animation: jumpText 250ms;
             -moz-animation: jumpText 250ms;
             -ms-animation: jumpText 250ms;
@@ -2743,7 +2653,7 @@ html {
     font-size: 15px; }
   100% {
     opacity: 1;
-    font-size: 5.625rem; } }
+    font-size: 2.625rem; } }
 
 @keyframes page-0-in {
   0% {

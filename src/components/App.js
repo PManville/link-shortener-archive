@@ -2,6 +2,7 @@ import React from 'react';
 import Module from './Module';
 import * as api from '../api';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 class App extends React.Component {
 	state = {};
@@ -342,17 +343,32 @@ class App extends React.Component {
 	loader(){
 
 	}
-	makePage(){
+	makeHeader(){
 		var result = [];
 		for (var i = 0; i <= 3; i++){
-			var stuff = <section key={i} onClick={this.changePages.bind(this, i)} className={'app page-' + i + this.activePage(i)}>
-							<i></i>
-							<div className="text-section">
-								<div className="text-wrapper">
-									{this.makeModule(i)}
-								</div>
+			if(this.state.contents){
+				var stuff = <li key={i} className={this.activePage(i)}>
+								{eval(eval("this.state.contents[i][0].message"))}
+							</li>
+				result.push(stuff);
+			}
+		}
+		return result;
+	}
+	makePage(){
+		var result = [];
+		var stuff = <ul className="header-bar">
+						{this.makeHeader()}
+					</ul>;
+		result.push(stuff);
+		for (var i = 0; i <= 3; i++){
+			stuff = <section key={i} className={'app active page-' + i }>
+						<div className="text-section">
+							<div className="text-wrapper">
+								{this.makeModule(i)}
 							</div>
-						</section>;
+						</div>
+					</section>;
 			result.push(stuff);
 		};
 		return result;
@@ -366,5 +382,18 @@ class App extends React.Component {
 	}
 }
 
-export default App;
+const mapStateToProps = (state) => {
+	return {
+		reducer: state.reducer,
+		otherReducer: state.otherReducer
+	}
+}
+
+const mapDispatchToProps = (state) => {
+	return {
+
+	}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
 
