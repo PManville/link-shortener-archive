@@ -34,6 +34,12 @@ server.get(['/'],(req,res) => {
 	res.render('index');
 });
 
+server.get(['/hi'], (req,res) => {
+    var hi = {'hello':'hi'};
+    res.send(hi);
+});
+
+
 server.use('/api', apiRouter);
 server.use(express.static('public'));
 server.listen(config.port, config.host, () => {

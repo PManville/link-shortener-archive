@@ -134,51 +134,67 @@ html {
         -moz-transform: translateX(0%);
         -ms-transform: translateX(0%);
         -o-transform: translateX(0%);
-        transform: translateX(0%); }
-        .container #root .root-inner.loaded .app.active {
-          z-index: 1;
-          cursor: default;
-          width: 100%;
-          top: 0;
-          border-radius: 0px;
-          left: 50%;
-          transition: 0.5s;
-          font-size: 0;
-          min-height: 100%;
-          padding: 0 20px;
-          box-sizing: border-box; }
-          .container #root .root-inner.loaded .app.active .text-section {
-            padding-top: 170px !important;
-            padding-bottom: 150px !important;
-            max-width: 1000px;
-            margin: 0 auto;
-            transform: none;
-            top: 0 !important;
-            border-bottom: 1px solid #e9e9e9; }
-          .container #root .root-inner.loaded .app.active h1.header, .container #root .root-inner.loaded .app.active h2.header, .container #root .root-inner.loaded .app.active h3.header, .container #root .root-inner.loaded .app.active h4.header, .container #root .root-inner.loaded .app.active h5.header, .container #root .root-inner.loaded .app.active p.header {
-            opacity: 0;
-            font-size: 16px;
-            -webkit-animation: 0.5s header-grow 0.25s forwards;
-            -moz-animation: 0.5s header-grow 0.25s forwards;
-            -ms-animation: 0.5s header-grow 0.25s forwards;
-            -o-animation: 0.5s header-grow 0.25s forwards;
-            animation: 0.5s header-grow 0.25s forwards; }
-            @media (max-width: 500px) {
-              .container #root .root-inner.loaded .app.active h1.header, .container #root .root-inner.loaded .app.active h2.header, .container #root .root-inner.loaded .app.active h3.header, .container #root .root-inner.loaded .app.active h4.header, .container #root .root-inner.loaded .app.active h5.header, .container #root .root-inner.loaded .app.active p.header {
-                line-height: 4.25em;
-                margin-bottom: 20px; } }
-          @media (max-width: 500px) {
-            .container #root .root-inner.loaded .app.active h2 span {
-              opacity: 0;
-              -webkit-animation: opacity-in 0.5s forwards;
-              -moz-animation: opacity-in 0.5s forwards;
-              -ms-animation: opacity-in 0.5s forwards;
-              -o-animation: opacity-in 0.5s forwards;
-              animation: opacity-in 0.5s forwards; } }
-        .container #root .root-inner.loaded .app.page-0.active .text-section {
+        transform: translateX(0%);
+        opacity: 0;
+        z-index: 1;
+        cursor: default;
+        width: 100%;
+        top: 0;
+        border-radius: 0px;
+        left: 50%;
+        transition: 0.5s;
+        font-size: 0;
+        min-height: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        opacity: 1; }
+        .container #root .root-inner.loaded .app h1.header, .container #root .root-inner.loaded .app h2.header, .container #root .root-inner.loaded .app h3.header, .container #root .root-inner.loaded .app h4.header, .container #root .root-inner.loaded .app h5.header, .container #root .root-inner.loaded .app p.header {
+          -webkit-animation: 0.5s header-grow 0.25s forwards;
+          -moz-animation: 0.5s header-grow 0.25s forwards;
+          -ms-animation: 0.5s header-grow 0.25s forwards;
+          -o-animation: 0.5s header-grow 0.25s forwards;
+          animation: 0.5s header-grow 0.25s forwards; }
+        .container #root .root-inner.loaded .app .button {
+          -webkit-animation: partAppear 800ms forwards;
+          -moz-animation: partAppear 800ms forwards;
+          -ms-animation: partAppear 800ms forwards;
+          -o-animation: partAppear 800ms forwards;
+          animation: partAppear 800ms forwards; }
+          .container #root .root-inner.loaded .app .button span {
+            -webkit-animation: jumpButton 2s forwards linear infinite;
+            -moz-animation: jumpButton 2s forwards linear infinite;
+            -ms-animation: jumpButton 2s forwards linear infinite;
+            -o-animation: jumpButton 2s forwards linear infinite;
+            animation: jumpButton 2s forwards linear infinite; }
+          .container #root .root-inner.loaded .app .button:before {
+            -webkit-animation: swipeButton 2s forwards linear infinite;
+            -moz-animation: swipeButton 2s forwards linear infinite;
+            -ms-animation: swipeButton 2s forwards linear infinite;
+            -o-animation: swipeButton 2s forwards linear infinite;
+            animation: swipeButton 2s forwards linear infinite; }
+        .container #root .root-inner.loaded .app h2 span {
+          -webkit-animation: jumpText 250ms forwards linear;
+          -moz-animation: jumpText 250ms forwards linear;
+          -ms-animation: jumpText 250ms forwards linear;
+          -o-animation: jumpText 250ms forwards linear;
+          animation: jumpText 250ms forwards linear; }
+        .container #root .root-inner.loaded .app p span {
+          -webkit-animation: jumpText 250ms forwards linear;
+          -moz-animation: jumpText 250ms forwards linear;
+          -ms-animation: jumpText 250ms forwards linear;
+          -o-animation: jumpText 250ms forwards linear;
+          animation: jumpText 250ms forwards linear; }
+        @media (max-width: 500px) {
+          .container #root .root-inner.loaded .app h2 span {
+            -webkit-animation: opacity-in 0.5s forwards;
+            -moz-animation: opacity-in 0.5s forwards;
+            -ms-animation: opacity-in 0.5s forwards;
+            -o-animation: opacity-in 0.5s forwards;
+            animation: opacity-in 0.5s forwards; } }
+        .container #root .root-inner.loaded .app.page-0 .text-section {
           padding-top: 280px !important;
           padding-bottom: 240px !important; }
-          .container #root .root-inner.loaded .app.page-0.active .text-section:before {
+          .container #root .root-inner.loaded .app.page-0 .text-section:before {
             content: "P";
             font-size: 95px;
             vertical-align: middle;
@@ -187,8 +203,6 @@ html {
             font-family: "Lato";
             background: rgba(0, 0, 0, 0.6);
             background: linear-gradient(301deg, #67daa5, #c4eba3);
-            /* background: #ebebeb; */
-            /* background: black; */
             width: 94px;
             left: calc(50% - 47px);
             height: 94px;
@@ -197,23 +211,19 @@ html {
             top: 111px;
             transform: rotateZ(45deg);
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 10px; }
-          .container #root .root-inner.loaded .app.page-0.active .text-section h2 {
+            border-radius: 10px;
+            opacity: 0; }
+          .container #root .root-inner.loaded .app.page-0 .text-section h2 {
             color: rgba(255, 255, 255, 0.9);
             font-weight: bold;
             text-shadow: 1px 1px rgba(0, 0, 0, 0.2); }
-            .container #root .root-inner.loaded .app.page-0.active .text-section h2.header {
+            .container #root .root-inner.loaded .app.page-0 .text-section h2.header {
               color: rgba(255, 255, 255, 0.9);
               text-shadow: 1px 1px rgba(0, 0, 0, 0.2); }
-        .container #root .root-inner.loaded .app.page-0.active .text-wrapper {
+        .container #root .root-inner.loaded .app.page-0 .text-wrapper {
           position: relative; }
-        .container #root .root-inner.loaded .app.page-0.active .paragraph {
-          opacity: 0;
-          -webkit-animation: 0.75s opacity-in 1.5s forwards;
-          -moz-animation: 0.75s opacity-in 1.5s forwards;
-          -ms-animation: 0.75s opacity-in 1.5s forwards;
-          -o-animation: 0.75s opacity-in 1.5s forwards;
-          animation: 0.75s opacity-in 1.5s forwards; }
+        .container #root .root-inner.loaded .app.page-0 .paragraph {
+          opacity: 0; }
         .container #root .root-inner.loaded .app.page-0:after {
           content: "";
           z-index: -1;
@@ -228,178 +238,171 @@ html {
           -o-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
           border-radius: 1000000px;
-          -webkit-animation: page-0 15s ease infinite, page-0-in 1s ease 1;
-          -moz-animation: page-0 15s ease infinite, page-0-in 1s ease 1;
-          -ms-animation: page-0 15s ease infinite, page-0-in 1s ease 1;
-          -o-animation: page-0 15s ease infinite, page-0-in 1s ease 1;
-          animation: page-0 15s ease infinite, page-0-in 1s ease 1;
           background: linear-gradient(301deg, #feffcb, #dcd0ff, #ffd2d2, #d2ffd2);
           background-size: 1500%; }
-        .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .header {
-          color: white;
-          background: black;
-          padding: 0px 0 0px 10px; }
-        .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience {
-          margin: 20px auto 0;
-          padding: 0px 10px;
-          vertical-align: top;
-          font-size: 0;
+        .container #root .root-inner.loaded .app.page-0.active .text-section:before {
+          -webkit-animation: 0.75s opacity-in 1s forwards;
+          -moz-animation: 0.75s opacity-in 1s forwards;
+          -ms-animation: 0.75s opacity-in 1s forwards;
+          -o-animation: 0.75s opacity-in 1s forwards;
+          animation: 0.75s opacity-in 1s forwards; }
+        .container #root .root-inner.loaded .app.page-0.active .paragraph {
           -webkit-animation: 0.75s opacity-in 1.5s forwards;
           -moz-animation: 0.75s opacity-in 1.5s forwards;
           -ms-animation: 0.75s opacity-in 1.5s forwards;
           -o-animation: 0.75s opacity-in 1.5s forwards;
-          animation: 0.75s opacity-in 1.5s forwards;
+          animation: 0.75s opacity-in 1.5s forwards; }
+        .container #root .root-inner.loaded .app.page-0.active:after {
+          -webkit-animation: page-0 15s ease infinite, page-0-in 1s ease 1;
+          -moz-animation: page-0 15s ease infinite, page-0-in 1s ease 1;
+          -ms-animation: page-0 15s ease infinite, page-0-in 1s ease 1;
+          -o-animation: page-0 15s ease infinite, page-0-in 1s ease 1;
+          animation: page-0 15s ease infinite, page-0-in 1s ease 1; }
+        .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .header {
+          color: white;
+          background: black;
+          padding: 0px 0 0px 10px; }
+        .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience {
+          margin: 20px auto 0;
+          padding: 0px 10px;
+          vertical-align: top;
+          font-size: 0;
           opacity: 0; }
-          .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience:nth-of-type(2) {
-            -webkit-animation: 0.75s opacity-in 1.6s forwards;
-            -moz-animation: 0.75s opacity-in 1.6s forwards;
-            -ms-animation: 0.75s opacity-in 1.6s forwards;
-            -o-animation: 0.75s opacity-in 1.6s forwards;
-            animation: 0.75s opacity-in 1.6s forwards; }
-          .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience:nth-of-type(3) {
-            -webkit-animation: 0.75s opacity-in 1.7s forwards;
-            -moz-animation: 0.75s opacity-in 1.7s forwards;
-            -ms-animation: 0.75s opacity-in 1.7s forwards;
-            -o-animation: 0.75s opacity-in 1.7s forwards;
-            animation: 0.75s opacity-in 1.7s forwards; }
-          .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience:nth-of-type(4) {
-            -webkit-animation: 0.75s opacity-in 1.8s forwards;
-            -moz-animation: 0.75s opacity-in 1.8s forwards;
-            -ms-animation: 0.75s opacity-in 1.8s forwards;
-            -o-animation: 0.75s opacity-in 1.8s forwards;
-            animation: 0.75s opacity-in 1.8s forwards; }
-          .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience.one-col {
+          .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience.one-col {
             width: 50%;
             display: inline-block; }
-            .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience.one-col .left-section {
+            .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience.one-col .left-section {
               width: 100%; }
-          .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section {
+          .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience .left-section, .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience .right-section {
             display: inline-block;
             vertical-align: top; }
             @media (max-width: 500px) {
-              .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section {
+              .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience .left-section, .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience .right-section {
                 width: 100% !important;
                 margin-bottom: 10px; }
-                .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p {
+                .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience .left-section p, .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience .right-section p {
                   text-align: center; } }
-            .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p {
+            .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience .left-section p, .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience .right-section p {
               width: 100%;
               margin: 0; }
-              .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p.date, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p.date {
+              .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience .left-section p.date, .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience .right-section p.date {
                 text-transform: uppercase;
                 font-size: 0.7rem;
                 color: grey;
                 margin-top: 10px !important; }
-              .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p.position, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p.position {
+              .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience .left-section p.position, .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience .right-section p.position {
                 text-transform: uppercase;
                 font-weight: bold;
                 font-size: 1rem; }
-              .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p.location, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p.location {
+              .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience .left-section p.location, .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience .right-section p.location {
                 text-transform: uppercase;
                 font-size: 0.8rem !important; }
-              .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section p.message, .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section p.message {
+              .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience .left-section p.message, .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience .right-section p.message {
                 font-size: 0.8rem;
                 text-transform: none;
-                line-height: 1.3rem; }
-          .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .left-section {
+                line-height: 1.5rem; }
+          .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience .left-section {
             width: 28%;
             padding-right: 10%; }
-          .container #root .root-inner.loaded .app.page-1.active .text-section .text-wrapper .experience .right-section {
+          .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience .right-section {
             width: 43%;
             padding-left: 10%;
             border-left: 1px solid rgba(128, 128, 128, 0.1);
             box-sizing: border-box; }
-        .container #root .root-inner.loaded .app.page-2.active .text-section .header {
+        .container #root .root-inner.loaded .app.page-1 .text-section .text-wrapper .experience.active {
+          -webkit-animation: 0.75s opacity-in 0s forwards;
+          -moz-animation: 0.75s opacity-in 0s forwards;
+          -ms-animation: 0.75s opacity-in 0s forwards;
+          -o-animation: 0.75s opacity-in 0s forwards;
+          animation: 0.75s opacity-in 0s forwards; }
+        .container #root .root-inner.loaded .app.page-2 .text-section .header {
           display: block; }
-        .container #root .root-inner.loaded .app.page-2.active .text-section .skill {
+        .container #root .root-inner.loaded .app.page-2 .text-section .skill {
           opacity: 0;
-          -webkit-animation: 0.5s opacity-in 1.5s forwards;
-          -moz-animation: 0.5s opacity-in 1.5s forwards;
-          -ms-animation: 0.5s opacity-in 1.5s forwards;
-          -o-animation: 0.5s opacity-in 1.5s forwards;
-          animation: 0.5s opacity-in 1.5s forwards;
           font-size: 0px;
           transition: 1s;
           width: 20%;
           display: inline-block; }
           @media (max-width: 750px) {
-            .container #root .root-inner.loaded .app.page-2.active .text-section .skill {
+            .container #root .root-inner.loaded .app.page-2 .text-section .skill {
               width: 50%; } }
           @media (max-width: 500px) {
-            .container #root .root-inner.loaded .app.page-2.active .text-section .skill {
+            .container #root .root-inner.loaded .app.page-2 .text-section .skill {
               width: 100%; } }
-          .container #root .root-inner.loaded .app.page-2.active .text-section .skill .text-center span {
+          .container #root .root-inner.loaded .app.page-2 .text-section .skill .text-center span {
             animation-delay: 0s !important; }
-          .container #root .root-inner.loaded .app.page-2.active .text-section .skill p {
+          .container #root .root-inner.loaded .app.page-2 .text-section .skill p {
             width: 100%;
             margin-bottom: 5px !important;
             font-weight: bold;
             text-align: center;
             font-size: 0.8rem; }
-          .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars {
+          .container #root .root-inner.loaded .app.page-2 .text-section .skill .stars {
             background: black;
             color: white;
             border-radius: 6px;
             padding: 2px 0;
             margin: 0 0 10px !important;
             max-width: 90px; }
-            .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star {
+            .container #root .root-inner.loaded .app.page-2 .text-section .skill .stars .star {
               opacity: 0;
-              -webkit-animation: 0.5s opacity-in 2s forwards;
-              -moz-animation: 0.5s opacity-in 2s forwards;
-              -ms-animation: 0.5s opacity-in 2s forwards;
-              -o-animation: 0.5s opacity-in 2s forwards;
-              animation: 0.5s opacity-in 2s forwards;
               font-family: lineAwesome;
               display: inline; }
-              .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star:after {
+              .container #root .root-inner.loaded .app.page-2 .text-section .skill .stars .star:after {
                 content: "\f318"; }
-              .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star.inactive:after {
+              .container #root .root-inner.loaded .app.page-2 .text-section .skill .stars .star.inactive:after {
                 opacity: 0.3; }
-              .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star:nth-child(2) {
-                -webkit-animation: 0.5s opacity-in 2.1s forwards;
-                -moz-animation: 0.5s opacity-in 2.1s forwards;
-                -ms-animation: 0.5s opacity-in 2.1s forwards;
-                -o-animation: 0.5s opacity-in 2.1s forwards;
-                animation: 0.5s opacity-in 2.1s forwards; }
-              .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star:nth-child(3) {
-                -webkit-animation: 0.5s opacity-in 2.2s forwards;
-                -moz-animation: 0.5s opacity-in 2.2s forwards;
-                -ms-animation: 0.5s opacity-in 2.2s forwards;
-                -o-animation: 0.5s opacity-in 2.2s forwards;
-                animation: 0.5s opacity-in 2.2s forwards; }
-              .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star:nth-child(4) {
-                -webkit-animation: 0.5s opacity-in 2.3s forwards;
-                -moz-animation: 0.5s opacity-in 2.3s forwards;
-                -ms-animation: 0.5s opacity-in 2.3s forwards;
-                -o-animation: 0.5s opacity-in 2.3s forwards;
-                animation: 0.5s opacity-in 2.3s forwards; }
-              .container #root .root-inner.loaded .app.page-2.active .text-section .skill .stars .star:nth-child(5) {
-                -webkit-animation: 0.5s opacity-in 2.4s forwards;
-                -moz-animation: 0.5s opacity-in 2.4s forwards;
-                -ms-animation: 0.5s opacity-in 2.4s forwards;
-                -o-animation: 0.5s opacity-in 2.4s forwards;
-                animation: 0.5s opacity-in 2.4s forwards; }
-        .container #root .root-inner.loaded .app.page-3.active .works {
-          font-size: 1rem;
-          opacity: 0;
-          -webkit-animation: 1s opacity-in 1.7s forwards;
-          -moz-animation: 1s opacity-in 1.7s forwards;
-          -ms-animation: 1s opacity-in 1.7s forwards;
-          -o-animation: 1s opacity-in 1.7s forwards;
-          animation: 1s opacity-in 1.7s forwards; }
-          .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work {
+        .container #root .root-inner.loaded .app.page-2 .text-section .skill.active {
+          -webkit-animation: 0.5s opacity-in 0s forwards;
+          -moz-animation: 0.5s opacity-in 0s forwards;
+          -ms-animation: 0.5s opacity-in 0s forwards;
+          -o-animation: 0.5s opacity-in 0s forwards;
+          animation: 0.5s opacity-in 0s forwards; }
+          .container #root .root-inner.loaded .app.page-2 .text-section .skill.active .stars .star {
+            -webkit-animation: 0.5s opacity-in 0.2s forwards;
+            -moz-animation: 0.5s opacity-in 0.2s forwards;
+            -ms-animation: 0.5s opacity-in 0.2s forwards;
+            -o-animation: 0.5s opacity-in 0.2s forwards;
+            animation: 0.5s opacity-in 0.2s forwards; }
+            .container #root .root-inner.loaded .app.page-2 .text-section .skill.active .stars .star:nth-child(2) {
+              -webkit-animation: 0.5s opacity-in 0.3s forwards;
+              -moz-animation: 0.5s opacity-in 0.3s forwards;
+              -ms-animation: 0.5s opacity-in 0.3s forwards;
+              -o-animation: 0.5s opacity-in 0.3s forwards;
+              animation: 0.5s opacity-in 0.3s forwards; }
+            .container #root .root-inner.loaded .app.page-2 .text-section .skill.active .stars .star:nth-child(3) {
+              -webkit-animation: 0.5s opacity-in 0.4s forwards;
+              -moz-animation: 0.5s opacity-in 0.4s forwards;
+              -ms-animation: 0.5s opacity-in 0.4s forwards;
+              -o-animation: 0.5s opacity-in 0.4s forwards;
+              animation: 0.5s opacity-in 0.4s forwards; }
+            .container #root .root-inner.loaded .app.page-2 .text-section .skill.active .stars .star:nth-child(4) {
+              -webkit-animation: 0.5s opacity-in 0.5s forwards;
+              -moz-animation: 0.5s opacity-in 0.5s forwards;
+              -ms-animation: 0.5s opacity-in 0.5s forwards;
+              -o-animation: 0.5s opacity-in 0.5s forwards;
+              animation: 0.5s opacity-in 0.5s forwards; }
+            .container #root .root-inner.loaded .app.page-2 .text-section .skill.active .stars .star:nth-child(5) {
+              -webkit-animation: 0.5s opacity-in 0.6s forwards;
+              -moz-animation: 0.5s opacity-in 0.6s forwards;
+              -ms-animation: 0.5s opacity-in 0.6s forwards;
+              -o-animation: 0.5s opacity-in 0.6s forwards;
+              animation: 0.5s opacity-in 0.6s forwards; }
+        .container #root .root-inner.loaded .app.page-3 .works {
+          font-size: 1rem; }
+          .container #root .root-inner.loaded .app.page-3 .works .works-inner .work {
             display: inline-block;
             width: 31%;
             margin: 1% 1% 1%;
             cursor: pointer;
             position: relative;
             box-shadow: 0px 0px 39px rgba(0, 0, 0, 0.1);
-            text-decoration: none; }
+            text-decoration: none;
+            opacity: 0; }
             @media (max-width: 700px) {
-              .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work {
+              .container #root .root-inner.loaded .app.page-3 .works .works-inner .work {
                 width: 40%; } }
-            .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .front {
+            .container #root .root-inner.loaded .app.page-3 .works .works-inner .work .front {
               transition: 0.5s;
               box-sizing: border-box;
               -webkit-transform: rotateY(0deg);
@@ -407,7 +410,7 @@ html {
               -ms-transform: rotateY(0deg);
               -o-transform: rotateY(0deg);
               transform: rotateY(0deg); }
-              .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .front:after {
+              .container #root .root-inner.loaded .app.page-3 .works .works-inner .work .front:after {
                 content: "";
                 background: rgba(0, 0, 0, 0.3);
                 position: absolute;
@@ -415,7 +418,7 @@ html {
                 left: 0;
                 width: 100%;
                 height: 100%; }
-              .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .front .image {
+              .container #root .root-inner.loaded .app.page-3 .works .works-inner .work .front .image {
                 width: 100%;
                 max-height: 190px;
                 padding-top: 0;
@@ -425,26 +428,32 @@ html {
                 background-repeat: no-repeat;
                 background-position: 50%;
                 display: block; }
-            .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .back {
+            .container #root .root-inner.loaded .app.page-3 .works .works-inner .work .back {
               transition: 0.5s;
               box-sizing: border-box;
               padding: 15px 25px;
               text-align: left;
               background: white; }
-              .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .back .name, .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .back .description {
+              .container #root .root-inner.loaded .app.page-3 .works .works-inner .work .back .name, .container #root .root-inner.loaded .app.page-3 .works .works-inner .work .back .description {
                 margin: 0;
                 color: black;
                 font-family: "Lato", sans-serif;
                 letter-spacing: 3px;
                 text-align: left;
                 font-size: 0.9rem; }
-              .container #root .root-inner.loaded .app.page-3.active .works .works-inner .work .back .description {
+              .container #root .root-inner.loaded .app.page-3 .works .works-inner .work .back .description {
                 margin-top: 5px;
                 letter-spacing: 1.5px;
                 font-size: 0.75rem;
                 font-style: italic;
                 font-family: "Dosis", sans-serif;
                 color: grey; }
+        .container #root .root-inner.loaded .app.page-3 .works .work.active {
+          -webkit-animation: 1s opacity-in 0s forwards;
+          -moz-animation: 1s opacity-in 0s forwards;
+          -ms-animation: 1s opacity-in 0s forwards;
+          -o-animation: 1s opacity-in 0s forwards;
+          animation: 1s opacity-in 0s forwards; }
         .container #root .root-inner.loaded .app .text-section {
           box-sizing: border-box;
           text-align: center;
@@ -454,7 +463,14 @@ html {
           -moz-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
           -o-transform: translateY(-50%);
-          transform: translateY(-50%); }
+          transform: translateY(-50%);
+          padding-top: 170px !important;
+          padding-bottom: 150px !important;
+          max-width: 1000px;
+          margin: 0 auto;
+          transform: none;
+          top: 0 !important;
+          border-bottom: 1px solid #e9e9e9; }
         .container #root .root-inner.loaded .app a, .container #root .root-inner.loaded .app p, .container #root .root-inner.loaded .app h1, .container #root .root-inner.loaded .app h2, .container #root .root-inner.loaded .app h3, .container #root .root-inner.loaded .app h4, .container #root .root-inner.loaded .app h5, .container #root .root-inner.loaded .app input {
           font-weight: 100;
           font-family: "Dosis", sans-serif; }
@@ -467,14 +483,6 @@ html {
           text-transform: uppercase;
           box-sizing: border-box;
           cursor: pointer;
-          -webkit-animation: partAppear 800ms;
-          -moz-animation: partAppear 800ms;
-          -ms-animation: partAppear 800ms;
-          -o-animation: partAppear 800ms;
-          animation: partAppear 800ms;
-          animation-fill-mode: forwards;
-          animation-timing-function: linear;
-          animation-iteration-count: 1;
           opacity: 0;
           box-shadow: 2px 2px 6px #afafaf;
           position: absolute;
@@ -496,14 +504,6 @@ html {
           .container #root .root-inner.loaded .app .button span {
             position: relative;
             line-height: 2rem;
-            -webkit-animation: jumpButton 2s;
-            -moz-animation: jumpButton 2s;
-            -ms-animation: jumpButton 2s;
-            -o-animation: jumpButton 2s;
-            animation: jumpButton 2s;
-            animation-fill-mode: forwards;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
             opacity: 0; }
           .container #root .root-inner.loaded .app .button:before {
             content: " ";
@@ -517,15 +517,7 @@ html {
             -ms-transform: rotatez(45deg);
             -o-transform: rotatez(45deg);
             transform: rotatez(45deg);
-            box-shadow: 11px 0px 14px 2px white;
-            -webkit-animation: swipeButton 2s;
-            -moz-animation: swipeButton 2s;
-            -ms-animation: swipeButton 2s;
-            -o-animation: swipeButton 2s;
-            animation: swipeButton 2s;
-            animation-fill-mode: forwards;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite; }
+            box-shadow: 11px 0px 14px 2px white; }
           .container #root .root-inner.loaded .app .button:hover {
             border-bottom: 3px solid #5a5a5a;
             margin-top: 1px; }
@@ -543,25 +535,26 @@ html {
             font-family: "Lato", sans-serif;
             font-weight: bold;
             margin-bottom: 15px;
-            display: inline-block; }
+            display: inline-block;
+            opacity: 0;
+            font-size: 16px; }
             .container #root .root-inner.loaded .app h2.header span {
               letter-spacing: 0.875rem; }
               .container #root .root-inner.loaded .app h2.header span:hover {
                 font-weight: bold; }
+            @media (max-width: 500px) {
+              .container #root .root-inner.loaded .app h2.header {
+                line-height: 4.25em;
+                margin-bottom: 20px; } }
+          @media (max-width: 500px) {
+            .container #root .root-inner.loaded .app h2 span {
+              opacity: 0; } }
           .container #root .root-inner.loaded .app h2 span {
             position: relative;
             display: inline-block;
             min-width: 0.25em;
             opacity: 0;
             letter-spacing: 0.075rem;
-            -webkit-animation: jumpText 250ms;
-            -moz-animation: jumpText 250ms;
-            -ms-animation: jumpText 250ms;
-            -o-animation: jumpText 250ms;
-            animation: jumpText 250ms;
-            animation-fill-mode: forwards;
-            animation-timing-function: linear;
-            animation-iteration-count: 1;
             opacity: 1;
             -webkit-transform: rotateY(-90deg);
             -moz-transform: rotateY(-90deg);
@@ -593,14 +586,6 @@ html {
             min-width: 0.25em;
             opacity: 0;
             letter-spacing: 0.075rem;
-            -webkit-animation: jumpText 250ms;
-            -moz-animation: jumpText 250ms;
-            -ms-animation: jumpText 250ms;
-            -o-animation: jumpText 250ms;
-            animation: jumpText 250ms;
-            animation-fill-mode: forwards;
-            animation-timing-function: linear;
-            animation-iteration-count: 1;
             opacity: 1;
             -webkit-transform: rotateY(-90deg);
             -moz-transform: rotateY(-90deg);

@@ -14,6 +14,7 @@ MongoClient.connect(config.mongodbUri, (err, db) => {
 
 const router = express.Router();
 
+
 router.get('/contests', (req,res) => {
 	// mdb...
 	let contests = {};

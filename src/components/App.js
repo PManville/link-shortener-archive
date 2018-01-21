@@ -14,8 +14,34 @@ class App extends React.Component {
 		}
 	}
 	componentDidMount() {
+		
+		document.addEventListener('scroll', function(){
+			// for(let i = 0; i <= 3; i++){
+			// 	if(window.scrollY - document.getElementById("page-" + i).offsetTop >= -300){
+			// 		document.getElementById("page-" + i).classList.add("active");
+			// 	}
+			// }
+			// for(let i = 0; i < document.getElementsByClassName("app").length; i++){
+			// 	var el = document.getElementsByClassName("app")[i];
+			// 	if(window.scrollY - el.offsetTop >= -300){
+			// 		el.classList.add("active");
+			// 	}
+			// }
+			console.log(window.scrollY);
+			for(let i = 0; i < document.getElementsByTagName("*").length; i++){
+				var elo = document.getElementsByTagName("*")[i];
+				// if((window.scrollY) - elo.getBoundingClientRect().top >= 0){
+				if(elo.getBoundingClientRect().top - (window.innerHeight) <= -100){
+					// console.log("Active: ", i ," OffsetTop: ", elo.getBoundingClientRect().bottom);
+					elo.classList.add("active");
+					// elo.classList.add(elo.getBoundingClientRect().top);
+				}
+			}
+		});
+
 		this.setState(function(props){
 			return {
+				location: {me:1},
 				page: 0,
 				refresh: false,
 				contents: [
@@ -53,21 +79,21 @@ class App extends React.Component {
 							date: "\'2016 - Present\'",
 							position: "\'Lead Developer\'",
 							location: "\'Tomorrow People\'",
-							message: "\'Creating pixel-perfect websites based on UX design and leading web projects to tight deadlines in a fast-paced digital agency for clients predominantly in the technology sector.\'"
+							message: "\'Creating and maintaining pixel-perfect web apps based on UX design and leading a team of web developers in a fast-paced digital agency for global clients predominantly in the technology sector.\'"
 						},
 						{
 							type: "\'experience\'",
 							date: "\'2013 - 2016\'",
 							position: "\'Junior Developer\'",
 							location: "\'Tomorrow People\'",
-							message: "\'Ensuring websites work across browsers and devices and maintaining performance by running A/B tests, identifying UI issues and proposing and implementing solutions.\'"
+							message: "\'Building and maintaining high-performing responsive microsites and landing pages and working closely with digital designers to improve UX and drive conversions.\'"
 						},
 						{
 							type: "\'experience\'",
 							date: "\'2008 - 2012\'",
 							position: "\'BSc Computer Games Design\'",
 							location: "\'Staffordshire University\'",
-							message: "\'Using front-end languages such as HTML, CSS & JavaScript to complete web-based projects as well as studying object-oriented programming in Java and C++.\'"
+							message: "\'Using front end languages such as HTML, CSS & JavaScript to complete web-based projects as well as studying object oriented programming in Java and C++.\'"
 						
 						},
 					],
@@ -251,12 +277,6 @@ class App extends React.Component {
 			myval: evt.target.value
 		})
 	}
-	changePage = () => {
-		this.setState({
-			page: this.state.page + 1,
-			refresh: true
-		})
-	}
 	findType(i){
 		if (this.state.contents){
 			if (eval("this.state.contents[0][" + i + "]")){
@@ -279,7 +299,7 @@ class App extends React.Component {
 	}
 	makeModule(thispage){
 		var result = [];
-		var animation = 10;
+		var animation = 0;
 		var imgs = 0;
 		if (this.state.contents){
 			for (var i = 0; i < this.state.contents[thispage].length; i++){ 
@@ -325,14 +345,9 @@ class App extends React.Component {
 	}
 	activePage(i){
 		if (i == this.state.page){
-			return ' active';
+			return 'active';
 		}
 		return '';
-	}
-	changePages = (i, e) =>{
-		this.setState({
-			page : i
-		})
 	}
 	checkIfLoaded(){
 		if(this.state.contents){
@@ -340,14 +355,37 @@ class App extends React.Component {
 		}
 		return "root-inner";
 	}
-	loader(){
-
+	apiCall(){
+		fetch(`http://localhost:8080/hi`)
+			.then(response => {
+				response.json()
+					.then((data)=>{
+						this.setState({
+							location: data.hello
+						})
+						// console.log(this.state.location);
+					});
+			});
+		// var xhttp = new XMLHttpRequest();
+		// xhttp.onload = function(){
+		// 	var data = JSON.parse(this.responseText);
+		// 	// console.log(data);
+		// }
+		// xhttp.open('get','http://maps.googleapis.com/maps/api/geocode/json?address=utrecht','true');
+		// xhttp.send();
+		return this.state.location;
+	}
+	changePage = (i) => {
+		window.scrollTo(0, document.getElementById("page-"+ i).offsetTop);
+		this.setState({
+			page: i
+		})
 	}
 	makeHeader(){
 		var result = [];
-		for (var i = 0; i <= 3; i++){
+		for (let i = 0; i <= 3; i++){
 			if(this.state.contents){
-				var stuff = <li key={i} className={this.activePage(i)}>
+				var stuff = <li key={i} onClick={this.changePage.bind(this, i)} className={this.activePage(i)}>
 								{eval(eval("this.state.contents[i][0].message"))}
 							</li>
 				result.push(stuff);
@@ -357,12 +395,12 @@ class App extends React.Component {
 	}
 	makePage(){
 		var result = [];
-		var stuff = <ul className="header-bar">
+		var stuff = <ul key={0} className="header-bar">
 						{this.makeHeader()}
 					</ul>;
 		result.push(stuff);
 		for (var i = 0; i <= 3; i++){
-			stuff = <section key={i} className={'app active page-' + i }>
+			stuff = <section key={i+1} id={'page-' + i} className={this.activePage(i) + ' app page-' + i }>
 						<div className="text-section">
 							<div className="text-wrapper">
 								{this.makeModule(i)}
@@ -382,6 +420,9 @@ class App extends React.Component {
 	}
 }
 
+//<div>{this.apiCall()}</div><div onClick={() => this.props.reducer.add(10)} >{this.props.reducer.result}</div>
+				
+
 const mapStateToProps = (state) => {
 	return {
 		reducer: state.reducer,
@@ -389,9 +430,20 @@ const mapStateToProps = (state) => {
 	}
 }
 
-const mapDispatchToProps = (state) => {
+const mapDispatchToProps = (dispatch) => {
 	return {
-
+		add: (amount) => {
+			dispatch({
+				type: "ADD",
+				payload: amount
+			})
+		},
+		subtract: (amount) => {
+			dispatch({
+				type: "SUBTRACT",
+				payload: amount
+			})
+		}
 	}
 }
 

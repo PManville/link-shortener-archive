@@ -5,8 +5,28 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { createLogger } from 'redux-logger';
 import { Provider } from 'react-redux';
 
+const getresult = () => {
+	try {
+		var result = localStorage.getItem('result');
+		if (result === null ){
+			result = 1;
+			localStorage.setItem('result', result);
+		}
+		else {
+			result = JSON.parse(result) + 1;
+			localStorage.setItem('result', result);
+		}
+		// console.log(JSON.parse(result));
+		return result;
+	}catch(err){
+		var result = 1;
+		localStorage.setItem('result', result);
+		return result;
+	}
+}
+
 const initialState = {
-	result: 1,
+	result: getresult(),
 	lastValues: []
 }
 
@@ -53,7 +73,7 @@ const otherReducer = (state = initialState, action) => {
 const store = createStore(
 	combineReducers({reducer, otherReducer}),
 	{},
-	applyMiddleware(createLogger())
+	// applyMiddleware(createLogger())
 );
 
 // store.subscribe(() => {
