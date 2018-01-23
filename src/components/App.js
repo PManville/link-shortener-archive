@@ -14,7 +14,7 @@ class App extends React.Component {
 		}
 	}
 	componentDidMount() {
-		
+
 		document.addEventListener('scroll', function(){
 			// for(let i = 0; i <= 3; i++){
 			// 	if(window.scrollY - document.getElementById("page-" + i).offsetTop >= -300){
@@ -27,7 +27,7 @@ class App extends React.Component {
 			// 		el.classList.add("active");
 			// 	}
 			// }
-			console.log(window.scrollY);
+			// console.log(window.scrollY);
 			for(let i = 0; i < document.getElementsByTagName("*").length; i++){
 				var elo = document.getElementsByTagName("*")[i];
 				// if((window.scrollY) - elo.getBoundingClientRect().top >= 0){
@@ -41,7 +41,17 @@ class App extends React.Component {
 
 		this.setState(function(props){
 			return {
-				location: {me:1},
+				carousel: {
+					left: 0,
+					stop: 0,
+					direction: 0,
+					ndirection: 0,
+					speed: 50,
+					nspeed: 50,
+				},
+				location: {
+					me:1
+				},
 				page: 0,
 				refresh: false,
 				contents: [
@@ -68,6 +78,28 @@ class App extends React.Component {
 					[
 						{
 							type: "\'header\'",
+							message: "\'About\'"
+						},
+						{
+							type: "\'text\'",
+							message: "\'Let me introduce myself\'"
+						},
+						{
+							type: "\'image\'",
+							src:"\'/assets/images/meo.jpg\'"	
+						},
+						{
+							type: "\'paragraph\'",
+							message: "\'I am a front-end developer with four years\\' professional experience creating and maintaining fully responsive web apps for a variety of global clients predominantly in the technology and ecommerce sectors.\'"
+						},
+						{
+							type: "\'paragraph\'",
+							message: "\'I am dedicated to creating high-performing, reusable code and ensuring the best customer experience possible.  I have recently relocated to the Netherlands from the UK and am looking for exciting new opportunities.\'"
+						},
+					],
+					[
+						{
+							type: "\'header\'",
 							message: "\'Experience\'"
 						},
 						{
@@ -86,6 +118,7 @@ class App extends React.Component {
 							date: "\'2013 - 2016\'",
 							position: "\'Junior Developer\'",
 							location: "\'Tomorrow People\'",
+							flipped: "\'yes\'",
 							message: "\'Building and maintaining high-performing responsive microsites and landing pages and working closely with digital designers to improve UX and drive conversions.\'"
 						},
 						{
@@ -96,106 +129,6 @@ class App extends React.Component {
 							message: "\'Using front end languages such as HTML, CSS & JavaScript to complete web-based projects as well as studying object oriented programming in Java and C++.\'"
 						
 						},
-					],
-					[
-						{
-							type: "\'header\'",
-							message: "\'Skills\'"
-						},
-						{
-							type: "\'text\'",
-							message: "\'Here\\'s what I do best\'"
-						},
-						{
-							type: "\'skill\'",
-							message: "\'HTML\'",
-							rating: "\'5\'"
-						},
-						{
-							type: "\'skill\'",
-							message: "\'CSS\'",
-							rating: "\'5\'"
-						},
-						{
-							type: "\'skill\'",
-							message: "\'Sass\'",
-							rating: "\'5\'"
-						},
-						{
-							type: "\'skill\'",
-							message: "\'JavaScript\'",
-							rating: "\'4\'"
-						},
-						{
-							type: "\'skill\'",
-							message: "\'jQuery\'",
-							rating: "\'4\'"
-						},
-						{
-							type: "\'skill\'",
-							message: "\'EJS\'",
-							rating: "\'3\'"
-						},
-						{
-							type: "\'skill\'",
-							message: "\'ReactJS\'",
-							rating: "\'4\'"
-						},
-						{
-							type: "\'skill\'",
-							message: "\'NodeJS\'",
-							rating: "\'3\'"
-						},
-						{
-							type: "\'skill\'",
-							message: "\'PHP\'",
-							rating: "\'3\'"
-						},
-						{
-							type: "\'skill\'",
-							message: "\'Git\'",
-							rating: "\'4\'"
-						},
-						{
-							type: "\'skill\'",
-							message: "\'Gulp\'",
-							rating: "\'4\'"
-						},
-						{
-							type: "\'skill\'",
-							message: "\'Grunt\'",
-							rating: "\'4\'"
-						},
-						{
-							type: "\'skill\'",
-							message: "\'Bootstrap\'",
-							rating: "\'3\'"
-						},
-						{
-							type: "\'skill\'",
-							message: "\'Drupal\'",
-							rating: "\'4\'"
-						},
-						{
-							type: "\'skill\'",
-							message: "\'Wordpress\'",
-							rating: "\'4\'"
-						},
-						{
-							type: "\'skill\'",
-							message: "\'Responsive Design\'",
-							rating: "\'5\'"
-						},
-						{
-							type: "\'skill\'",
-							message: "\'Semantic HTML\'",
-							rating: "\'3\'"
-						},
-						{
-							type: "\'skill\'",
-							message: "\'Command line\'",
-							rating: "\'4\'"
-						}
 					],
 					[
 						{
@@ -259,10 +192,290 @@ class App extends React.Component {
 								},
 							]
 						}
+					],
+					[
+						{
+							type: "\'header\'",
+							message: "\'Skills\'"
+						},
+						{
+							type: "\'text\'",
+							message: "\'Here\\'s what I do best\'"
+						},
+						{
+							type: "\'skill\'",
+							message: "\'HTML\'",
+							rating: "\'5\'"
+						},
+						{
+							type: "\'skill\'",
+							message: "\'CSS\'",
+							rating: "\'5\'"
+						},
+						{
+							type: "\'skill\'",
+							message: "\'Sass\'",
+							rating: "\'5\'"
+						},
+						{
+							type: "\'skill\'",
+							message: "\'JavaScript\'",
+							rating: "\'5\'"
+						},
+						{
+							type: "\'skill\'",
+							message: "\'jQuery\'",
+							rating: "\'5\'"
+						},
+						{
+							type: "\'skill\'",
+							message: "\'ReactJS\'",
+							rating: "\'4\'"
+						},
+						{
+							type: "\'skill\'",
+							message: "\'AngularJS\'",
+							rating: "\'3\'"
+						},
+						{
+							type: "\'skill\'",
+							message: "\'Redux\'",
+							rating: "\'3\'"
+						},
+						{
+							type: "\'skill\'",
+							message: "\'NodeJS\'",
+							rating: "\'3\'"
+						},
+						{
+							type: "\'skill\'",
+							message: "\'PHP\'",
+							rating: "\'3\'"
+						},
+						{
+							type: "\'skill\'",
+							message: "\'EJS\'",
+							rating: "\'3\'"
+						},
+						{
+							type: "\'skill\'",
+							message: "\'Git\'",
+							rating: "\'4\'"
+						},
+						{
+							type: "\'skill\'",
+							message: "\'Gulp\'",
+							rating: "\'4\'"
+						},
+						{
+							type: "\'skill\'",
+							message: "\'Grunt\'",
+							rating: "\'4\'"
+						},
+						{
+							type: "\'skill\'",
+							message: "\'Bootstrap\'",
+							rating: "\'3\'"
+						},
+						{
+							type: "\'skill\'",
+							message: "\'Drupal\'",
+							rating: "\'4\'"
+						},
+						{
+							type: "\'skill\'",
+							message: "\'Wordpress\'",
+							rating: "\'4\'"
+						},
+						{
+							type: "\'skill\'",
+							message: "\'Responsive Design\'",
+							rating: "\'5\'"
+						},
+						{
+							type: "\'skill\'",
+							message: "\'Semantic HTML\'",
+							rating: "\'3\'"
+						},
+						{
+							type: "\'skill\'",
+							message: "\'REST APIs\'",
+							rating: "\'4\'"
+						}
 					]
 				]
 			}
 		});
+
+
+
+
+
+
+
+		var makeCarousel = () => {
+			console.log(this);
+			var left = 0;
+			var direction = 0;
+			var ndirection = 0;
+			var stop = 0;
+			var speed = 50;
+			var nspeed = 50;
+			var go = () => {
+				if (window.outerWidth > 600) {
+				    if(stop == 0){
+				        document.getElementsByClassName("works-inner")[0].style.marginLeft = (-left / 5) + '%';
+				        if (direction == 0){
+				            left ++;
+				            if (left >= 1500) {
+				                direction = 1;
+								ndirection = 1;
+				            }
+				        }
+				        else {
+				            left --;
+				            if (left <= 0) {
+				                direction = 0;
+								ndirection = 0;
+				            }
+				        }
+				    }
+				}
+			};
+			var interval = setInterval(go, speed);
+			var previous = document.getElementsByClassName("previous")[0];
+			var next = document.getElementsByClassName("next")[0];
+
+
+			var rego = (thisspeed, thisdirection) => {
+				clearInterval(interval);
+				speed = thisspeed; 
+				direction = thisdirection;
+				interval = setInterval(go, speed);
+			}
+
+			document.querySelectorAll(".work").forEach((elem) => {
+				elem.addEventListener("mouseover", () => { stop = 1 });
+				elem.addEventListener("mouseout", () => { stop = 0 });
+			});
+
+
+			previous.addEventListener("mouseover", () => rego(1,0));
+			previous.addEventListener("mouseout", () => rego(nspeed,ndirection));
+
+			next.addEventListener("mouseover", () => rego(1,1));
+			next.addEventListener("mouseout", () => rego(nspeed,ndirection));
+		};
+
+		window.requestAnimationFrame(makeCarousel);
+
+
+
+
+
+
+
+
+		// var makeCarousel = () => {
+		// 	console.log(this);
+		// 	var left = 0;
+		// 	var direction = 0;
+		// 	var ndirection = 0;
+		// 	var stop = 0;
+		// 	var speed = 50;
+		// 	var nspeed = 50;
+		// 	var go = () => {
+		// 	    if(stop == 0){
+		// 	        document.getElementsByClassName("works-inner")[0].style.marginLeft = (-this.state.carousel.left / 5) + '%';
+		// 	        if (this.state.carousel.direction == 0){
+		// 	        	this.setState(prevstate => ({
+		// 	        		carousel: {
+		// 	        			...prevstate.carousel,
+		// 	        			left: (this.state.carousel.left + 1)
+		// 	        		}
+		// 	        	}));
+		// 	            if (this.state.carousel.left >= 1500) {
+		// 	            	this.setState(prevstate => ({
+		// 	            		carousel: {
+		// 	            			...prevstate.carousel,
+		// 	            			direction: 1,
+		// 	            			ndirection: 1
+		// 	            		}
+		// 	            	}));
+		// 	            }
+		// 	        }
+		// 	        else {
+		// 	        	this.setState(prevstate => ({
+		// 	        		carousel: {
+		// 	        			...prevstate.carousel,
+		// 	        			left: (this.state.carousel.left - 1)
+		// 	        		}
+		// 	        	}));
+		// 	            if (this.state.carousel.left <= 0) {
+		// 	            	this.setState(prevstate => ({
+		// 	            		carousel: {
+		// 	            			...prevstate.carousel,
+		// 	            			direction: 0,
+		// 	            			ndirection: 0
+		// 	            		}
+		// 	            	}));
+		// 	            }
+		// 	        }
+		// 	    }
+		// 	};
+
+		// 	var interval = setInterval(go, this.state.carousel.speed);
+		// 	var previous = document.getElementsByClassName("previous")[0];
+		// 	var next = document.getElementsByClassName("next")[0];
+
+
+		// 	var rego = (thisspeed, thisdirection) => {
+		// 			clearInterval(interval);
+		// 			this.setState(prevstate => ({
+		// 				carousel: {
+		// 					...prevstate.carousel,
+		// 					speed: thisspeed,
+		// 					direction: thisdirection
+		// 				}
+		// 			}));
+		// 			interval = setInterval(go, this.state.carousel.speed);
+		// 	}
+
+		// 	document.querySelectorAll(".work").forEach((elem) => {
+		// 		elem.addEventListener("mouseover", () => { 
+		// 			this.setState(prevstate => ({
+		// 				carousel: {
+		// 					...prevstate.carousel,
+		// 					stop: 1
+		// 				}
+		// 			}));
+		// 		});
+		// 		elem.addEventListener("mouseout", () => { 
+		// 			this.setState(prevstate => ({
+		// 				carousel: {
+		// 					...prevstate.carousel,
+		// 					stop: 0
+		// 				}
+		// 			}));
+		// 		});
+		// 	});
+
+
+		// 	previous.addEventListener("mouseover", () => rego(1,0));
+		// 	previous.addEventListener("mouseout", () => rego(this.state.carousel.nspeed,this.state.carousel.ndirection));
+
+		// 	next.addEventListener("mouseover", () => rego(1,1));
+		// 	next.addEventListener("mouseout", () => rego(this.state.carousel.nspeed,this.state.carousel.ndirection));
+		// };
+
+		// window.requestAnimationFrame(makeCarousel);
+
+
+
+
+
+
+
 	}
 	handleClick = (evt) => {
 		evt.preventDefault();
@@ -383,9 +596,9 @@ class App extends React.Component {
 	}
 	makeHeader(){
 		var result = [];
-		for (let i = 0; i <= 3; i++){
+		for (let i = 0; i <= 4; i++){
 			if(this.state.contents){
-				var stuff = <li key={i} onClick={this.changePage.bind(this, i)} className={this.activePage(i)}>
+				var stuff = <li key={i} onClick={this.changePage.bind(this, i)} className={this.activePage(i) + "Page"}>
 								{eval(eval("this.state.contents[i][0].message"))}
 							</li>
 				result.push(stuff);
@@ -399,7 +612,7 @@ class App extends React.Component {
 						{this.makeHeader()}
 					</ul>;
 		result.push(stuff);
-		for (var i = 0; i <= 3; i++){
+		for (var i = 0; i <= 4; i++){
 			stuff = <section key={i+1} id={'page-' + i} className={this.activePage(i) + ' app page-' + i }>
 						<div className="text-section">
 							<div className="text-wrapper">
@@ -409,6 +622,8 @@ class App extends React.Component {
 					</section>;
 			result.push(stuff);
 		};
+		stuff = <section key={6} className="app footer"><div className="text-section active"><div className="text-wrapper active"><h2 className="text-center active"><span className="delay-12 active">Get in touch</span></h2><a className="button delay-39 active" href="mailto:patrickmanville@yahoo.co.uk"><span className="delay-55 active">E</span><span className="delay-56 active">m</span><span className="delay-57 active">a</span><span className="delay-58 active">i</span><span className="delay-59 active">l</span></a><a className="button delay-64 active" href="https://uk.linkedin.com/in/patrick-manville"><span className="delay-80 active">L</span><span className="delay-81 active">i</span><span className="delay-82 active">n</span><span className="delay-83 active">k</span><span className="delay-84 active">e</span><span className="delay-85 active">d</span><span className="delay-86 active">I</span><span className="delay-87 active">n</span></a></div></div><h3>Copyright © 2018 Patrick Manville</h3></section>;
+		result.push(stuff);
 		return result;
 	}
 	render() {

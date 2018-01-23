@@ -29,16 +29,34 @@ class Module extends React.Component {
 				</p>
 			);
 		}
+		if (this.props.type == 'image'){
+			if (!this.props.src){
+				return ('');
+			};
+			return (
+				<img className="image" src={this.props.src} />
+			);
+		}
 		if (this.props.type == 'work'){
 			if (!this.props.urls){
 				return ('');
 			};
 			var newurl = this.props.urls;
 			var newurlarray = [];
-			for(var i = 0; i < newurl.length; i++){
+			var visible = 0;
+			var i = 0;
+			function isvisible(){
+				var vis = visible == i  || visible == (i - 1) ? ' visible' : '';
+				return vis;
+			};
+			function next(){
+				visible ++;
+			}
+			for(i = 0; i < newurl.length; i++){
 				newurlarray.push(
 					<a key={i} className="work" href={newurl[i].url} >
 						<div className="front">
+							<p>Take a Look ></p>
 							<img className="image" src={ newurl[i].img } />
 						</div>
 						<div className="back">
@@ -52,8 +70,14 @@ class Module extends React.Component {
 			}
 			return (
 				<div className="works">
-					<div className="works-inner">
-					{ newurlarray }
+					<div className="works-arrow previous" >
+					</div>
+					<div className="works-inner-wrapper">
+						<div className="works-inner">
+							{ newurlarray }
+						</div>
+					</div>
+					<div className="works-arrow next">
 					</div>
 				</div>
 			);
@@ -62,15 +86,18 @@ class Module extends React.Component {
 			if (!this.props.date){
 				return ('');
 			};
-			var left = this.props.message? '' : ' one-col' ;
+			var left = this.props.message ? '' : ' one-col' ;
+			var flipped = this.props.flipped ? ' flipped' : '' ;
 			return (
-				<div className={'experience' + left}>
-					<div className="left-section">
-						<p className="date" >{ this.props.date }</p>
-						<p className="position">{ this.props.position }</p>
-						<p className="location">{ this.props.location }</p>
-					</div>
+				<div className={'experience' + left + flipped}>
+						<div className="left-section">
+							<div className="left-section-inner">
+								<p className="date" >{ this.props.date }</p>
+								<p className="location">{ this.props.location }</p>
+							</div>
+						</div>
 					<div className="right-section">
+						<p className="position">{ this.props.position }</p>
 						<p className="message">{ this.props.message}</p>
 					</div>
 				</div>
@@ -127,7 +154,8 @@ Module.propTypes = {
 	header: PropTypes.string,
 	work: PropTypes.string,
 	experience: PropTypes.string,
-	message: PropTypes.array,
+	message: PropTypes.string,
+	// message: PropTypes.array,
 	skill: PropTypes.string,
 	front: PropTypes.string,
 	back: PropTypes.string,
@@ -137,7 +165,9 @@ Module.propTypes = {
 	date: PropTypes.string,
 	position: PropTypes.string,
 	location: PropTypes.string,
-	number: PropTypes.number
+	number: PropTypes.number,
+	image: PropTypes.string,
+	src: PropTypes.string
 }
 
 export default Module;
