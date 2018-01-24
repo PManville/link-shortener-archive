@@ -529,7 +529,7 @@ class App extends React.Component {
 				allprops.number = animation;
 				for (var p in allprops) {
 					allprops[p] = eval(allprops[p]);
-					if (p == 'message' && allprops.type != 'paragraph'){
+					if (p == 'message'){
 						if (allprops.type == 'button'){
 								animation += 15;
 						}
