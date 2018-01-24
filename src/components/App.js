@@ -15,7 +15,7 @@ class App extends React.Component {
 	}
 	componentDidMount() {
 
-		document.addEventListener('scroll', function(){
+		document.addEventListener('scroll', () =>{
 			// for(let i = 0; i <= 3; i++){
 			// 	if(window.scrollY - document.getElementById("page-" + i).offsetTop >= -300){
 			// 		document.getElementById("page-" + i).classList.add("active");
@@ -35,6 +35,17 @@ class App extends React.Component {
 					// console.log("Active: ", i ," OffsetTop: ", elo.getBoundingClientRect().bottom);
 					elo.classList.add("active");
 					// elo.classList.add(elo.getBoundingClientRect().top);
+				}
+			}
+			for(let i = 0; i < (document.getElementsByClassName("app").length -1); i++){
+				var elo = document.getElementsByClassName("app")[i];
+				console.log(i);
+				if(elo.getBoundingClientRect().top - (window.innerHeight) <= -100){
+					console.log(i);
+					elo.classList.add("active");
+					this.setState({
+						page: i
+					})
 				}
 			}
 		});
@@ -86,7 +97,7 @@ class App extends React.Component {
 						},
 						{
 							type: "\'image\'",
-							src:"\'/assets/images/meo.jpg\'"	
+							src:"\'/assets/images/me.jpg\'"	
 						},
 						{
 							type: "\'paragraph\'",
