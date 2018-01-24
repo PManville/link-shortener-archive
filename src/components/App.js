@@ -306,7 +306,7 @@ class App extends React.Component {
 						{
 							type: "\'experience\'",
 							date: "\'2008 - 2012\'",
-							position: "\'BSc Computer Games Design\'",
+							position: "\'BSc Computer Games Design & Programming\'",
 							location: "\'Staffordshire University\'",
 							message: "\'Using front end languages such as HTML, CSS & JavaScript to complete web-based projects as well as studying object oriented programming in Java and C++.\'"
 						
