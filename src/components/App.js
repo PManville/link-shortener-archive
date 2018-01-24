@@ -39,7 +39,7 @@ class App extends React.Component {
 			}
 			for(let i = 0; i < (document.getElementsByClassName("app").length -1); i++){
 				var elo = document.getElementsByClassName("app")[i];
-				if(elo.getBoundingClientRect().top - (window.innerHeight) <= -100){
+				if(elo.getBoundingClientRect().top - (window.innerHeight) <= -400){
 					elo.classList.add("active");
 					this.setState({
 						page: i
