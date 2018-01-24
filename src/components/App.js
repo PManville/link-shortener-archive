@@ -39,9 +39,7 @@ class App extends React.Component {
 			}
 			for(let i = 0; i < (document.getElementsByClassName("app").length -1); i++){
 				var elo = document.getElementsByClassName("app")[i];
-				console.log(i);
 				if(elo.getBoundingClientRect().top - (window.innerHeight) <= -100){
-					console.log(i);
 					elo.classList.add("active");
 					this.setState({
 						page: i
@@ -325,7 +323,7 @@ class App extends React.Component {
 
 
 		var makeCarousel = () => {
-			console.log(this);
+			// console.log(this);
 			var left = 0;
 			var direction = 0;
 			var ndirection = 0;
