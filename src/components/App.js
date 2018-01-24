@@ -369,10 +369,10 @@ class App extends React.Component {
 			});
 
 
-			previous.addEventListener("mouseover", () => rego(1,0));
+			previous.addEventListener("mouseover", () => rego(1,1));
 			previous.addEventListener("mouseout", () => rego(nspeed,ndirection));
 
-			next.addEventListener("mouseover", () => rego(1,1));
+			next.addEventListener("mouseover", () => rego(1,0));
 			next.addEventListener("mouseout", () => rego(nspeed,ndirection));
 		};
 
