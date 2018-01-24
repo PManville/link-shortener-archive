@@ -100,39 +100,6 @@ class App extends React.Component {
 					[
 						{
 							type: "\'header\'",
-							message: "\'Experience\'"
-						},
-						{
-							type: "\'text\'",
-							message: "\'My coding experience at a glance\'"
-						},
-						{
-							type: "\'experience\'",
-							date: "\'2016 - Present\'",
-							position: "\'Lead Developer\'",
-							location: "\'Tomorrow People\'",
-							message: "\'Creating and maintaining pixel-perfect web apps based on UX design and leading a team of web developers in a fast-paced digital agency for global clients predominantly in the technology sector.\'"
-						},
-						{
-							type: "\'experience\'",
-							date: "\'2013 - 2016\'",
-							position: "\'Junior Developer\'",
-							location: "\'Tomorrow People\'",
-							flipped: "\'yes\'",
-							message: "\'Building and maintaining high-performing responsive microsites and landing pages and working closely with digital designers to improve UX and drive conversions.\'"
-						},
-						{
-							type: "\'experience\'",
-							date: "\'2008 - 2012\'",
-							position: "\'BSc Computer Games Design\'",
-							location: "\'Staffordshire University\'",
-							message: "\'Using front end languages such as HTML, CSS & JavaScript to complete web-based projects as well as studying object oriented programming in Java and C++.\'"
-						
-						},
-					],
-					[
-						{
-							type: "\'header\'",
 							message: "\'Work\'"
 						},
 						{
@@ -302,6 +269,39 @@ class App extends React.Component {
 							message: "\'REST APIs\'",
 							rating: "\'4\'"
 						}
+					],
+					[
+						{
+							type: "\'header\'",
+							message: "\'Experience\'"
+						},
+						{
+							type: "\'text\'",
+							message: "\'My coding experience at a glance\'"
+						},
+						{
+							type: "\'experience\'",
+							date: "\'2016 - Present\'",
+							position: "\'Lead Developer\'",
+							location: "\'Tomorrow People\'",
+							message: "\'Creating and maintaining pixel-perfect web apps based on UX design and leading a team of web developers in a fast-paced digital agency for global clients predominantly in the technology sector.\'"
+						},
+						{
+							type: "\'experience\'",
+							date: "\'2013 - 2016\'",
+							position: "\'Junior Developer\'",
+							location: "\'Tomorrow People\'",
+							flipped: "\'yes\'",
+							message: "\'Building and maintaining high-performing responsive microsites and landing pages and working closely with digital designers to improve UX and drive conversions.\'"
+						},
+						{
+							type: "\'experience\'",
+							date: "\'2008 - 2012\'",
+							position: "\'BSc Computer Games Design\'",
+							location: "\'Staffordshire University\'",
+							message: "\'Using front end languages such as HTML, CSS & JavaScript to complete web-based projects as well as studying object oriented programming in Java and C++.\'"
+						
+						},
 					]
 				]
 			}
