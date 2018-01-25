@@ -99,11 +99,11 @@ class App extends React.Component {
 						},
 						{
 							type: "\'paragraph\'",
-							message: "\'I am a front-end developer with four years\\' professional experience creating and maintaining fully responsive web apps for a variety of global clients predominantly in the technology and ecommerce sectors.\'"
+							message: "\'I am a front-end developer with four years\\' professional experience creating and maintaining fully responsive web apps for a variety of global tech and ecommerce clients.\'"
 						},
 						{
 							type: "\'paragraph\'",
-							message: "\'I am dedicated to creating high-performing, reusable code and ensuring the best customer experience possible.  I have recently relocated to the Netherlands from the UK and am looking for exciting new opportunities.\'"
+							message: "\'I have recently relocated from the UK to Utrecht, NL. When I\\'m not coding, you\\'ll find me exploring the city with my headphones on or playing the next big thing on my PS4.\'"
 						},
 					],
 					[
