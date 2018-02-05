@@ -1,0 +1,3255 @@
+Last login: Sun Dec  3 14:14:35 on ttys002
+Patricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: d00547e4fa716c517a81
+Version: webpack 3.5.5
+Time: 4509ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 835 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+Hash: 5022c3c88c345638af36
+Version: webpack 3.5.5
+Time: 534ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 65881cd32af9d1d2572a
+Version: webpack 3.5.5
+Time: 245ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 55dc4643cdd101015ae6
+Version: webpack 3.5.5
+Time: 287ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: c9d130f7c9aa4189149e
+Version: webpack 3.5.5
+Time: 306ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 47862cb994f20152caf4
+Version: webpack 3.5.5
+Time: 273ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: a7bda9b86644dec02652
+Version: webpack 3.5.5
+Time: 288ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 89d8f909db7569bb927b
+Version: webpack 3.5.5
+Time: 316ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: d00547e4fa716c517a81
+Version: webpack 3.5.5
+Time: 270ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: b53dc65d46d7ce7f8997
+Version: webpack 3.5.5
+Time: 350ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: fe259415b454df9ac7ed
+Version: webpack 3.5.5
+Time: 374ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 7d7d98c1750b0069adca
+Version: webpack 3.5.5
+Time: 393ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 55b333ff8f3fd224b23a
+Version: webpack 3.5.5
+Time: 374ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 4fdd7dd33fa56bb2847a
+Version: webpack 3.5.5
+Time: 401ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 11892cb7a18f8d08957a
+Version: webpack 3.5.5
+Time: 404ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: a3a314fd5eefa1b8cf32
+Version: webpack 3.5.5
+Time: 389ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 2ece667bb4bb9f889124
+Version: webpack 3.5.5
+Time: 368ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: a3a314fd5eefa1b8cf32
+Version: webpack 3.5.5
+Time: 354ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 11892cb7a18f8d08957a
+Version: webpack 3.5.5
+Time: 360ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 25f95164d04aed5ee537
+Version: webpack 3.5.5
+Time: 339ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 6c372822a057aa30121b
+Version: webpack 3.5.5
+Time: 361ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: a3a314fd5eefa1b8cf32
+Version: webpack 3.5.5
+Time: 399ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 6c372822a057aa30121b
+Version: webpack 3.5.5
+Time: 337ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 340f2ae776ed975e69d0
+Version: webpack 3.5.5
+Time: 364ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: a3a314fd5eefa1b8cf32
+Version: webpack 3.5.5
+Time: 405ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 3fb5fce6f77f9852c074
+Version: webpack 3.5.5
+Time: 285ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 6122c146ef46ff477fef
+Version: webpack 3.5.5
+Time: 407ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 165f162a0bb2c51d5573
+Version: webpack 3.5.5
+Time: 419ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 0b301ab7eee46a0203ff
+Version: webpack 3.5.5
+Time: 392ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 188bd084dd9e3deed8c4
+Version: webpack 3.5.5
+Time: 398ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: c44e5e241006bb849853
+Version: webpack 3.5.5
+Time: 367ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 823ad692b70ebd1318c9
+Version: webpack 3.5.5
+Time: 399ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: cc4e5e70b2b3293f8558
+Version: webpack 3.5.5
+Time: 256ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: f512242a6cdddd18e197
+Version: webpack 3.5.5
+Time: 412ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: cc4e5e70b2b3293f8558
+Version: webpack 3.5.5
+Time: 409ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 4f94b285de8006012741
+Version: webpack 3.5.5
+Time: 385ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 5049ac9c6270d03903d9
+Version: webpack 3.5.5
+Time: 412ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 01d5cf2e8be8b28bc3cd
+Version: webpack 3.5.5
+Time: 225ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 4cba533a71d8ffd01086
+Version: webpack 3.5.5
+Time: 360ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 93daeb0c5f0cf134de90
+Version: webpack 3.5.5
+Time: 257ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 25a490d51f93bb253e9f
+Version: webpack 3.5.5
+Time: 354ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: f3d823a626f9a93e8f3b
+Version: webpack 3.5.5
+Time: 428ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+   216 modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd start
+
+
+Webpack is watching the files…
+
+Hash: c87ec53a20159f38d0b1
+Version: webpack 3.5.5
+Time: 5290ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+  [89] multi ./src/index.js start 40 bytes {0} [built]
+  [90] ./src/index.js 835 bytes {0} [built]
+ [197] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+
+ERROR in multi ./src/index.js start
+Module not found: Error: Can't resolve 'start' in '/Users/patrick/Documents/mysite/peejcom_v4'
+ @ multi ./src/index.js start
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd npm start
+
+
+Webpack is watching the files…
+
+Hash: 6909927ae41097d2203d
+Version: webpack 3.5.5
+Time: 4395ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+  [89] multi ./src/index.js npm start 52 bytes {0} [built]
+  [90] ./src/index.js 835 bytes {0} [built]
+ [197] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+
+ERROR in multi ./src/index.js npm start
+Module not found: Error: Can't resolve 'npm' in '/Users/patrick/Documents/mysite/peejcom_v4'
+ @ multi ./src/index.js npm start
+
+ERROR in multi ./src/index.js npm start
+Module not found: Error: Can't resolve 'start' in '/Users/patrick/Documents/mysite/peejcom_v4'
+ @ multi ./src/index.js npm start
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd nodemon --exec babel-node server.js --ignore public/
+
+webpack 3.5.5
+Usage: https://webpack.js.org/api/cli/
+Usage without config file: webpack <entry> [<entry>] <output>
+Usage with config file: webpack
+
+Config options:
+  --config       Path to the config file
+                         [string] [default: webpack.config.js or webpackfile.js]
+  --config-name  Name of the config to use                              [string]
+  --env          Environment passed to the config, when it is a function
+
+Basic options:
+  --context    The root directory for resolving entry point and stats
+                                       [string] [default: The current directory]
+  --entry      The entry point                                          [string]
+  --watch, -w  Watch the filesystem for changes                        [boolean]
+  --debug      Switch loaders to debug mode                            [boolean]
+  --devtool    Enable devtool for better debugging experience (Example:
+               --devtool eval-cheap-module-source-map)                  [string]
+  -d           shortcut for --debug --devtool eval-cheap-module-source-map
+               --output-pathinfo                                       [boolean]
+  -p           shortcut for --optimize-minimize --define
+               process.env.NODE_ENV="production"                       [boolean]
+  --progress   Print compilation progress in percentage                [boolean]
+
+Module options:
+  --module-bind       Bind an extension to a loader                     [string]
+  --module-bind-post                                                    [string]
+  --module-bind-pre                                                     [string]
+
+Output options:
+  --output-path                 The output path for compilation assets
+                                       [string] [default: The current directory]
+  --output-filename             The output filename of the bundle
+                                                   [string] [default: [name].js]
+  --output-chunk-filename       The output filename for additional chunks
+       [string] [default: filename with [id] instead of [name] or [id] prefixed]
+  --output-source-map-filename  The output filename for the SourceMap   [string]
+  --output-public-path          The public path for the assets          [string]
+  --output-jsonp-function       The name of the jsonp function used for chunk
+                                loading                                 [string]
+  --output-pathinfo             Include a comment with the request for every
+                                dependency (require, import, etc.)     [boolean]
+  --output-library              Expose the exports of the entry point as library
+                                                                        [string]
+  --output-library-target       The type for exposing the exports of the entry
+                                point as library                        [string]
+
+Advanced options:
+  --records-input-path       Path to the records file (reading)         [string]
+  --records-output-path      Path to the records file (writing)         [string]
+  --records-path             Path to the records file                   [string]
+  --define                   Define any free var in the bundle          [string]
+  --target                   The targeted execution environment         [string]
+  --cache                    Enable in memory caching
+                      [boolean] [default: It's enabled by default when watching]
+  --watch-stdin, --stdin     Exit the process when stdin is closed     [boolean]
+  --watch-aggregate-timeout  Timeout for gathering changes while watching
+  --watch-poll               The polling interval for watching (also enable
+                             polling)                                  [boolean]
+  --hot                      Enables Hot Module Replacement            [boolean]
+  --prefetch                 Prefetch this request (Example: --prefetch
+                             ./file.js)                                 [string]
+  --provide                  Provide these modules as free vars in all modules
+                             (Example: --provide jQuery=jquery)         [string]
+  --labeled-modules          Enables labeled modules                   [boolean]
+  --plugin                   Load this plugin                           [string]
+  --bail                     Abort the compilation on first error
+                                                       [boolean] [default: null]
+  --profile                  Profile the compilation and include information in
+                             stats                     [boolean] [default: null]
+
+Resolving options:
+  --resolve-alias         Setup a module alias for resolving (Example:
+                          jquery-plugin=jquery.plugin)                  [string]
+  --resolve-extensions    Setup extensions that should be used to resolve
+                          modules (Example: --resolve-extensions .es6,.js)
+                                                                         [array]
+  --resolve-loader-alias  Setup a loader alias for resolving            [string]
+
+Optimizing options:
+  --optimize-max-chunks      Try to keep the chunk count below a limit
+  --optimize-min-chunk-size  Try to keep the chunk size above a limit
+  --optimize-minimize        Minimize javascript and switches loaders to
+                             minimizing                                [boolean]
+
+Stats options:
+  --color, --colors               Enables/Disables colors on the console
+                                           [boolean] [default: (supports-color)]
+  --sort-modules-by               Sorts the modules list by property in module
+                                                                        [string]
+  --sort-chunks-by                Sorts the chunks list by property in chunk
+                                                                        [string]
+  --sort-assets-by                Sorts the assets list by property in asset
+                                                                        [string]
+  --hide-modules                  Hides info about modules             [boolean]
+  --display-exclude               Exclude modules in the output         [string]
+  --display-modules               Display even excluded modules in the output
+                                                                       [boolean]
+  --display-max-modules           Sets the maximum number of visible modules in
+                                  output                                [number]
+  --display-chunks                Display chunks in the output         [boolean]
+  --display-entrypoints           Display entry points in the output   [boolean]
+  --display-origins               Display origins of chunks in the output
+                                                                       [boolean]
+  --display-cached                Display also cached modules in the output
+                                                                       [boolean]
+  --display-cached-assets         Display also cached assets in the output
+                                                                       [boolean]
+  --display-reasons               Display reasons about module inclusion in the
+                                  output                               [boolean]
+  --display-depth                 Display distance from entry point for each
+                                  module                               [boolean]
+  --display-used-exports          Display information about used exports in
+                                  modules (Tree Shaking)               [boolean]
+  --display-provided-exports      Display information about exports provided
+                                  from modules                         [boolean]
+  --display-optimization-bailout  Display information about why optimization
+                                  bailed out for modules               [boolean]
+  --display-error-details         Display details about errors         [boolean]
+  --display                       Select display preset (verbose, detailed,
+                                  normal, minimal, errors-only, none)   [string]
+  --verbose                       Show more details                    [boolean]
+
+Options:
+  --help, -h     Show help                                             [boolean]
+  --version, -v  Show version number                                   [boolean]
+  --json, -j     Prints the result as JSON.                            [boolean]
+
+Unknown arguments: exec, ignore
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! patrickmanville.com@1.0.0 dev: `webpack -wd nodemon --exec babel-node server.js --ignore public/`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the patrickmanville.com@1.0.0 dev script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/patrick/.npm/_logs/2017-12-03T23_31_26_526Z-debug.log
+Patricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd; nodemon --exec babel-node server.js --ignore public/
+
+
+Webpack is watching the files…
+
+Hash: f3d823a626f9a93e8f3b
+Version: webpack 3.5.5
+Time: 4524ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 835 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd && nodemon --exec babel-node server.js --ignore public/
+
+
+Webpack is watching the files…
+
+Hash: f3d823a626f9a93e8f3b
+Version: webpack 3.5.5
+Time: 4507ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 835 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd && nodemon --exec babel-node server.js --ignore public/
+
+
+Webpack is watching the files…
+
+Hash: f3d823a626f9a93e8f3b
+Version: webpack 3.5.5
+Time: 4514ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 835 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: f3d823a626f9a93e8f3b
+Version: webpack 3.5.5
+Time: 4538ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 835 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: d961a5a0be90eb49e7ca
+Version: webpack 3.5.5
+Time: 4375ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 835 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+Hash: 34a81374b14a2a4da8f0
+Version: webpack 3.5.5
+Time: 425ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 9621e87cc6ca1642620c
+Version: webpack 3.5.5
+Time: 202ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 175aec1e241a2a45be1d
+Version: webpack 3.5.5
+Time: 143ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.04 MB       0  [emitted]  [big]  main
+   185 modules
+
+ERROR in ./src/components/App.js
+Module build failed: SyntaxError: this is a reserved word (400:5)
+
+  398 | 	render() {
+  399 | 		return (
+> 400 | 				{this.makePage()}
+      | 				 ^
+  401 | 		);
+  402 | 	}
+  403 | }
+
+ @ ./src/index.js 11:11-38
+Hash: 9621e87cc6ca1642620c
+Version: webpack 3.5.5
+Time: 731ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 61a7462e8dd068ec556f
+Version: webpack 3.5.5
+Time: 248ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 10d9c251a48a85698e71
+Version: webpack 3.5.5
+Time: 280ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 750321ed0758e5952e68
+Version: webpack 3.5.5
+Time: 321ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: a0943107b5338e72f5c3
+Version: webpack 3.5.5
+Time: 214ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 75586ea5deb100b06360
+Version: webpack 3.5.5
+Time: 108ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+    + 215 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: 7e8181f2846f38c3ca0a
+Version: webpack 3.5.5
+Time: 4118ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+Hash: 47324ea4da978e6d932b
+Version: webpack 3.5.5
+Time: 296ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 3e530e501bbd10e73f70
+Version: webpack 3.5.5
+Time: 293ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: cbceec303cb7ab477426
+Version: webpack 3.5.5
+Time: 294ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: cbceec303cb7ab477426
+Version: webpack 3.5.5
+Time: 4132ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ 
+Patricks-MBP:peejcom_v4 patrick$ 
+Patricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: cbceec303cb7ab477426
+Version: webpack 3.5.5
+Time: 4121ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ 
+Patricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: cbceec303cb7ab477426
+Version: webpack 3.5.5
+Time: 4179ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: cbceec303cb7ab477426
+Version: webpack 3.5.5
+Time: 4200ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: cbceec303cb7ab477426
+Version: webpack 3.5.5
+Time: 4249ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: cbceec303cb7ab477426
+Version: webpack 3.5.5
+Time: 4249ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: cbceec303cb7ab477426
+Version: webpack 3.5.5
+Time: 4478ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: cbceec303cb7ab477426
+Version: webpack 3.5.5
+Time: 4246ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: cbceec303cb7ab477426
+Version: webpack 3.5.5
+Time: 4097ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ 
+Patricks-MBP:peejcom_v4 patrick$ 
+Patricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: cbceec303cb7ab477426
+Version: webpack 3.5.5
+Time: 4087ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: cbceec303cb7ab477426
+Version: webpack 3.5.5
+Time: 4129ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: cbceec303cb7ab477426
+Version: webpack 3.5.5
+Time: 4250ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: cbceec303cb7ab477426
+Version: webpack 3.5.5
+Time: 3860ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: cbceec303cb7ab477426
+Version: webpack 3.5.5
+Time: 4202ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ 
+Patricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: cbceec303cb7ab477426
+Version: webpack 3.5.5
+Time: 4180ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: cbceec303cb7ab477426
+Version: webpack 3.5.5
+Time: 4275ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^[[A
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: cbceec303cb7ab477426
+Version: webpack 3.5.5
+Time: 4315ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+Hash: a903f13ea7af353f7943
+Version: webpack 3.5.5
+Time: 779ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 83f391e53cc228175fe5
+Version: webpack 3.5.5
+Time: 272ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: 83f391e53cc228175fe5
+Version: webpack 3.5.5
+Time: 4142ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: 83f391e53cc228175fe5
+Version: webpack 3.5.5
+Time: 4434ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: 6114495aac94bc8f0df1
+Version: webpack 3.5.5
+Time: 4061ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+Hash: 53a465bd677c8a88aefa
+Version: webpack 3.5.5
+Time: 422ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: 59c64b13b3929337f337
+Version: webpack 3.5.5
+Time: 4447ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+Hash: c0b03666ca5485b300f8
+Version: webpack 3.5.5
+Time: 440ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: c0b03666ca5485b300f8
+Version: webpack 3.5.5
+Time: 4405ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 574 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+Hash: 38770790ce389b1a4328
+Version: webpack 3.5.5
+Time: 250ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 509 bytes {0} [built]
+    + 215 hidden modules
+Hash: f44c630b71cb6713749e
+Version: webpack 3.5.5
+Time: 285ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 38770790ce389b1a4328
+Version: webpack 3.5.5
+Time: 292ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: f44c630b71cb6713749e
+Version: webpack 3.5.5
+Time: 281ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 484f036ad03b83868e54
+Version: webpack 3.5.5
+Time: 377ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 38770790ce389b1a4328
+Version: webpack 3.5.5
+Time: 289ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: f44c630b71cb6713749e
+Version: webpack 3.5.5
+Time: 287ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 0a98dd4d25646719cdd7
+Version: webpack 3.5.5
+Time: 277ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: a415fbdd3ce40dc8f332
+Version: webpack 3.5.5
+Time: 226ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 728cf624975062fb0bdc
+Version: webpack 3.5.5
+Time: 123ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.04 MB       0  [emitted]  [big]  main
+   185 modules
+
+ERROR in ./src/components/App.js
+Module build failed: SyntaxError: Expected corresponding JSX closing tag for <section> (396:7)
+
+  394 | 			var stuff = <div key={i} onClick={this.changePages.bind(this, i)} className={'App page-' + i + ' menu menu-' + i + this.activePage(i)}>
+  395 | 							<section className="background-section">
+> 396 | 							</div>
+      | 							^
+  397 | 							<section className="text-section">
+  398 | 								<div className="text-wrapper">
+  399 | 									{this.makeModule(i)}
+
+ @ ./src/index.js 11:11-38
+Hash: 8732f360a1f85285ff8a
+Version: webpack 3.5.5
+Time: 633ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: a415fbdd3ce40dc8f332
+Version: webpack 3.5.5
+Time: 230ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 2b0f800927f4c7f3c6a5
+Version: webpack 3.5.5
+Time: 289ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 7a79c74c8d5bf195689c
+Version: webpack 3.5.5
+Time: 320ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: b9dfedc4bd308bd9194d
+Version: webpack 3.5.5
+Time: 376ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: e7eceb31f3ee3b3cafb3
+Version: webpack 3.5.5
+Time: 298ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 8a9c57d813713b0611fa
+Version: webpack 3.5.5
+Time: 354ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: a329801e334d6936e58b
+Version: webpack 3.5.5
+Time: 300ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: e7eceb31f3ee3b3cafb3
+Version: webpack 3.5.5
+Time: 345ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 37847ad54c07008ecd25
+Version: webpack 3.5.5
+Time: 301ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 21e1d263b8155b12440a
+Version: webpack 3.5.5
+Time: 286ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 268d4381ef2236b4db9e
+Version: webpack 3.5.5
+Time: 312ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 537204ee92464dfc8f24
+Version: webpack 3.5.5
+Time: 317ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: fe72456d9f84d5bc622e
+Version: webpack 3.5.5
+Time: 107ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.21 MB       0  [emitted]  [big]  main
+   216 modules
+
+ERROR in ./src/components/Module.js
+Module build failed: SyntaxError: Unexpected token (91:7)
+
+  89 | 				newrating.push(<span key={i} className="star"></span>)
+  90 | 			}
+> 91 | 			var class = "skill";
+     | 			    ^
+  92 | 			if (this.props.rating = 5) class = "skill five-stars";
+  93 | 			return (
+  94 | 				<div className="skill">
+
+ @ ./src/components/App.js 15:14-33
+ @ ./src/index.js
+Hash: c1af47816d621d3f1f2e
+Version: webpack 3.5.5
+Time: 100ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.21 MB       0  [emitted]  [big]  main
+   216 modules
+
+ERROR in ./src/components/Module.js
+Module build failed: SyntaxError: Unexpected token (91:7)
+
+  89 | 				newrating.push(<span key={i} className="star"></span>)
+  90 | 			}
+> 91 | 			var class = "skill";
+     | 			    ^
+  92 | 			if (this.props.rating = 5) class = "skill five-stars";
+  93 | 			return (
+  94 | 				<div className={ class }>
+
+ @ ./src/components/App.js 15:14-33
+ @ ./src/index.js
+Hash: 1110f9670ac4f3e4cfd6
+Version: webpack 3.5.5
+Time: 100ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.21 MB       0  [emitted]  [big]  main
+   216 modules
+
+ERROR in ./src/components/Module.js
+Module build failed: SyntaxError: Unexpected token, expected { (94:27)
+
+  92 | 			if (this.props.rating = 5) thisclass = "skill five-stars";
+  93 | 			return (
+> 94 | 				<div className={ class }>
+     | 				                       ^
+  95 | 					<p className="text-center">
+  96 | 						{ newmessage }
+  97 | 					</p>
+
+ @ ./src/components/App.js 15:14-33
+ @ ./src/index.js
+Hash: a1c40a5f24bf8d32b197
+Version: webpack 3.5.5
+Time: 102ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.21 MB       0  [emitted]  [big]  main
+   216 modules
+
+ERROR in ./src/components/Module.js
+Module build failed: SyntaxError: Unexpected token, expected { (94:27)
+
+  92 | 			if (this.props.rating = 5)( thisclass = "skill five-stars" );
+  93 | 			return (
+> 94 | 				<div className={ class }>
+     | 				                       ^
+  95 | 					<p className="text-center">
+  96 | 						{ newmessage }
+  97 | 					</p>
+
+ @ ./src/components/App.js 15:14-33
+ @ ./src/index.js
+Hash: 1269d9b3e849518393dd
+Version: webpack 3.5.5
+Time: 205ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 4465f9d6868939c76126
+Version: webpack 3.5.5
+Time: 216ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 42670a68a5feaf061eb7
+Version: webpack 3.5.5
+Time: 227ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 45885946d70b50ca9006
+Version: webpack 3.5.5
+Time: 217ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 9aebd0dcd336f05f2d54
+Version: webpack 3.5.5
+Time: 479ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 0d5b6dc5867b08ba8705
+Version: webpack 3.5.5
+Time: 345ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: a2ecea9f6e3a379100cb
+Version: webpack 3.5.5
+Time: 316ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 0d5b6dc5867b08ba8705
+Version: webpack 3.5.5
+Time: 322ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: a3b170a2e2bae334696a
+Version: webpack 3.5.5
+Time: 326ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: d84e9101f7b766f63503
+Version: webpack 3.5.5
+Time: 344ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: 0d5b6dc5867b08ba8705
+Version: webpack 3.5.5
+Time: 429ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: a3b170a2e2bae334696a
+Version: webpack 3.5.5
+Time: 756ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: 8158c36dd1b97a1f68fc
+Version: webpack 3.5.5
+Time: 4183ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 509 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+Hash: 75dc2183e193fd500bcf
+Version: webpack 3.5.5
+Time: 476ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+Hash: f8e587c94d7b673c3653
+Version: webpack 3.5.5
+Time: 303ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+   216 modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: f8e587c94d7b673c3653
+Version: webpack 3.5.5
+Time: 4642ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.23 MB       0  [emitted]  [big]  main
+  [89] ./src/index.js 509 bytes {0} [built]
+ [196] ./src/api.js 1.13 kB {0} [built]
+    + 214 hidden modules
+^C
+
+
+   ╭─────────────────────────────────────╮
+   │                                     │
+   │   Update available 5.5.1 → 5.6.0    │
+   │     Run npm i -g npm to update      │
+   │                                     │
+   ╰─────────────────────────────────────╯
+
+
+
+Patricks-MBP:peejcom_v4 patrick$ npm install --save prop-types
++ prop-types@15.6.0
+added 1 package and updated 1 package in 5.879s
+Patricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: 662aee0a8e1b4d9c4987
+Version: webpack 3.5.5
+Time: 4467ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.24 MB       0  [emitted]  [big]  main
+  [92] ./src/index.js 509 bytes {0} [built]
+ [199] ./src/api.js 1.13 kB {0} [built]
+    + 217 hidden modules
+Hash: ca1e65d356aed4f19bfa
+Version: webpack 3.5.5
+Time: 320ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+   221 modules
+Hash: b3278d9efa87f479d2c2
+Version: webpack 3.5.5
+Time: 212ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+   221 modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: 983edcfe25a44714bfcc
+Version: webpack 3.5.5
+Time: 4281ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+  [94] ./src/index.js 509 bytes {0} [built]
+ [201] ./src/api.js 1.13 kB {0} [built]
+    + 219 hidden modules
+Hash: 244bec57dbd77d557b07
+Version: webpack 3.5.5
+Time: 358ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+   221 modules
+Hash: 88e07ed0e7ed8c165cd3
+Version: webpack 3.5.5
+Time: 132ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+   221 modules
+Hash: 53ddb8e753c40f92c668
+Version: webpack 3.5.5
+Time: 317ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+   221 modules
+Hash: 03115d5730e69741b60f
+Version: webpack 3.5.5
+Time: 284ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+   221 modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: d8e45affecd0bbc6e071
+Version: webpack 3.5.5
+Time: 4482ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+  [94] ./src/index.js 509 bytes {0} [built]
+ [201] ./src/api.js 1.13 kB {0} [built]
+    + 219 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: d8e45affecd0bbc6e071
+Version: webpack 3.5.5
+Time: 4492ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+  [94] ./src/index.js 509 bytes {0} [built]
+ [201] ./src/api.js 1.13 kB {0} [built]
+    + 219 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ 
+  [Restored 13 Dec 2017 at 14:26:38]
+Last login: Wed Dec 13 14:26:38 on ttys001
+Patricks-MBP:peejcom_v4 patrick$ ssh -i "patrickmanville.pem" ubuntu@ec2-18-217-156-159.us-east-2.compute.amazonaws.com
+Warning: Identity file patrickmanville.pem not accessible: No such file or directory.
+Permission denied (publickey).
+Patricks-MBP:peejcom_v4 patrick$ npm start
+
+> patrickmanville.com@1.0.0 start /Users/patrick/Documents/mysite/peejcom_v4
+> nodemon --exec babel-node server.js --ignore public/
+
+[nodemon] 1.11.0
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `babel-node server.js`
+Express listening on port  8080
+/Users/patrick/Documents/mysite/peejcom_v4/node_modules/mongodb/lib/mongo_client.js:421
+          throw err
+          ^
+
+AssertionError [ERR_ASSERTION]: null == 'MongoError: failed to connect to server [localhost:27017] on first connect [MongoError: connect ECONNREFUSED 127.0.0.1:27017]'
+    at /Users/patrick/Documents/mysite/peejcom_v4/api/index.js:10:9
+    at connectCallback (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/mongodb/lib/mongo_client.js:515:5)
+    at /Users/patrick/Documents/mysite/peejcom_v4/node_modules/mongodb/lib/mongo_client.js:418:11
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+[nodemon] app crashed - waiting for file changes before starting...
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: d8e45affecd0bbc6e071
+Version: webpack 3.5.5
+Time: 5001ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+  [94] ./src/index.js 509 bytes {0} [built]
+ [201] ./src/api.js 1.13 kB {0} [built]
+    + 219 hidden modules
+^CPatricks-MBP:peejcom_v4 patricknpm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: d8e45affecd0bbc6e071
+Version: webpack 3.5.5
+Time: 4304ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+  [94] ./src/index.js 509 bytes {0} [built]
+ [201] ./src/api.js 1.13 kB {0} [built]
+    + 219 hidden modules
+
+  [Restored 13 Dec 2017 at 15:00:19]
+Last login: Wed Dec 13 15:00:19 on ttys001
+Restored session: Wed 13 Dec 2017 14:48:06 GMT
+Patricks-MBP:peejcom_v4 patrick$ npm run prod
+
+> patrickmanville.com@1.0.0 prod /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd --config webpack.prod.js
+
+/Users/patrick/Documents/mysite/peejcom_v4/webpack.prod.js:1
+(function (exports, require, module, __filename, __dirname) { import merge from 'webpack-merge';
+                                                              ^^^^^^
+
+SyntaxError: Unexpected token import
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:599:28)
+    at Object.Module._extensions..js (module.js:646:10)
+    at Module.load (module.js:554:32)
+    at tryModuleLoad (module.js:497:12)
+    at Function.Module._load (module.js:489:3)
+    at Module.require (module.js:579:17)
+    at require (internal/module.js:11:18)
+    at requireConfig (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/webpack/bin/convert-argv.js:97:18)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! patrickmanville.com@1.0.0 prod: `webpack -wd --config webpack.prod.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the patrickmanville.com@1.0.0 prod script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/patrick/.npm/_logs/2017-12-13T16_09_30_051Z-debug.log
+Patricks-MBP:peejcom_v4 patrick$ 
+Patricks-MBP:peejcom_v4 patrick$ npm run prod
+
+> patrickmanville.com@1.0.0 prod /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd --config webpack.prod.js
+
+
+Webpack is watching the files…
+
+Hash: 7b5a1c2a8448d5ed27ae
+Version: webpack 3.5.5
+Time: 7156ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.26 MB       0  [emitted]  [big]  main
+  [94] ./src/index.js 511 bytes {0} [built]
+ [201] ./src/api.js 1.13 kB {0} [built]
+    + 219 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: d8e45affecd0bbc6e071
+Version: webpack 3.5.5
+Time: 4181ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+  [94] ./src/index.js 509 bytes {0} [built]
+ [201] ./src/api.js 1.13 kB {0} [built]
+    + 219 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run prod
+
+> patrickmanville.com@1.0.0 prod /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd --config webpack.prod.js
+
+/Users/patrick/Documents/mysite/peejcom_v4/webpack.prod.js:7
+		new UglifyJSPlugin();
+		                    ^
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:599:28)
+    at Object.Module._extensions..js (module.js:646:10)
+    at Module.load (module.js:554:32)
+    at tryModuleLoad (module.js:497:12)
+    at Function.Module._load (module.js:489:3)
+    at Module.require (module.js:579:17)
+    at require (internal/module.js:11:18)
+    at requireConfig (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/webpack/bin/convert-argv.js:97:18)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! patrickmanville.com@1.0.0 prod: `webpack -wd --config webpack.prod.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the patrickmanville.com@1.0.0 prod script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/patrick/.npm/_logs/2017-12-13T16_21_35_128Z-debug.log
+Patricks-MBP:peejcom_v4 patrick$ 
+Patricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: d8e45affecd0bbc6e071
+Version: webpack 3.5.5
+Time: 4383ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+  [94] ./src/index.js 509 bytes {0} [built]
+ [201] ./src/api.js 1.13 kB {0} [built]
+    + 219 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run prod
+
+> patrickmanville.com@1.0.0 prod /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd --config webpack.prod.js
+
+/Users/patrick/Documents/mysite/peejcom_v4/webpack.prod.js:7
+		new UglifyJSPlugin();
+		                    ^
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:599:28)
+    at Object.Module._extensions..js (module.js:646:10)
+    at Module.load (module.js:554:32)
+    at tryModuleLoad (module.js:497:12)
+    at Function.Module._load (module.js:489:3)
+    at Module.require (module.js:579:17)
+    at require (internal/module.js:11:18)
+    at requireConfig (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/webpack/bin/convert-argv.js:97:18)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! patrickmanville.com@1.0.0 prod: `webpack -wd --config webpack.prod.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the patrickmanville.com@1.0.0 prod script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/patrick/.npm/_logs/2017-12-13T16_25_08_232Z-debug.log
+Patricks-MBP:peejcom_v4 patrick$ 
+Patricks-MBP:peejcom_v4 patrick$ npm run prod
+
+> patrickmanville.com@1.0.0 prod /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd --config webpack.prod.js
+
+/Users/patrick/Documents/mysite/peejcom_v4/webpack.prod.js:7
+		new UglifyJSPlugin();
+		                    ^
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:599:28)
+    at Object.Module._extensions..js (module.js:646:10)
+    at Module.load (module.js:554:32)
+    at tryModuleLoad (module.js:497:12)
+    at Function.Module._load (module.js:489:3)
+    at Module.require (module.js:579:17)
+    at require (internal/module.js:11:18)
+    at requireConfig (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/webpack/bin/convert-argv.js:97:18)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! patrickmanville.com@1.0.0 prod: `webpack -wd --config webpack.prod.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the patrickmanville.com@1.0.0 prod script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/patrick/.npm/_logs/2017-12-13T16_26_39_452Z-debug.log
+Patricks-MBP:peejcom_v4 patrick$ npm run prod
+
+> patrickmanville.com@1.0.0 prod /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd --config webpack.prod.js
+
+
+Webpack is watching the files…
+
+Hash: d8e45affecd0bbc6e071
+Version: webpack 3.5.5
+Time: 5272ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.19 MB       0  [emitted]  [big]  main
+  [94] ./src/index.js 509 bytes {0} [built]
+ [201] ./src/api.js 1.13 kB {0} [built]
+    + 219 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run prod
+
+> patrickmanville.com@1.0.0 prod /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd --config webpack.prod.js
+
+
+Webpack is watching the files…
+
+Hash: d8e45affecd0bbc6e071
+Version: webpack 3.5.5
+Time: 5385ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.19 MB       0  [emitted]  [big]  main
+  [94] ./src/index.js 509 bytes {0} [built]
+ [201] ./src/api.js 1.13 kB {0} [built]
+    + 219 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run prod
+
+> patrickmanville.com@1.0.0 prod /Users/patrick/Documents/mysite/peejcom_v4
+> webpack --config webpack.prod.js
+
+Hash: 68fc8fe48390766fe991
+Version: webpack 3.5.5
+Time: 7963ms
+    Asset    Size  Chunks                    Chunk Names
+bundle.js  262 kB       0  [emitted]  [big]  main
+  [94] ./src/index.js 509 bytes {0} [built]
+ [201] ./src/api.js 1.13 kB {0} [built]
+    + 219 hidden modules
+Patricks-MBP:peejcom_v4 patrick$ npm run prod
+
+> patrickmanville.com@1.0.0 prod /Users/patrick/Documents/mysite/peejcom_v4
+> webpack --config webpack.prod.js
+
+Hash: 68fc8fe48390766fe991
+Version: webpack 3.5.5
+Time: 7709ms
+    Asset    Size  Chunks                    Chunk Names
+bundle.js  262 kB       0  [emitted]  [big]  main
+  [94] ./src/index.js 509 bytes {0} [built]
+ [201] ./src/api.js 1.13 kB {0} [built]
+    + 219 hidden modules
+Patricks-MBP:peejcom_v4 patrick$ env.NODE_ENV
+-bash: env.NODE_ENV: command not found
+Patricks-MBP:peejcom_v4 patrick$ NODE_ENV
+-bash: NODE_ENV: command not found
+Patricks-MBP:peejcom_v4 patrick$ env
+TERM_PROGRAM=Apple_Terminal
+TERM=xterm-256color
+SHELL=/bin/bash
+TMPDIR=/var/folders/4d/sz5c4tpj2jv0ngy6qtc6wk040000gn/T/
+Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.hAgWOH2Mmq/Render
+TERM_PROGRAM_VERSION=400
+TERM_SESSION_ID=D120FE25-1B62-4032-8E66-C14EB1CFD566
+USER=patrick
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.z3hBDmVUdu/Listeners
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:./node_modules/.bin
+PWD=/Users/patrick/Documents/mysite/peejcom_v4
+LANG=en_GB.UTF-8
+XPC_FLAGS=0x0
+XPC_SERVICE_NAME=0
+HOME=/Users/patrick
+SHLVL=1
+LOGNAME=patrick
+SECURITYSESSIONID=186a7
+_=/usr/bin/env
+Patricks-MBP:peejcom_v4 patrick$ process.env
+-bash: process.env: command not found
+Patricks-MBP:peejcom_v4 patrick$ npm run prod
+
+> patrickmanville.com@1.0.0 prod /Users/patrick/Documents/mysite/peejcom_v4
+> webpack --config webpack.prod.js
+
+Hash: 68fc8fe48390766fe991
+Version: webpack 3.5.5
+Time: 7658ms
+    Asset    Size  Chunks                    Chunk Names
+bundle.js  262 kB       0  [emitted]  [big]  main
+  [94] ./src/index.js 509 bytes {0} [built]
+ [201] ./src/api.js 1.13 kB {0} [built]
+    + 219 hidden modules
+Patricks-MBP:peejcom_v4 patrick$ npm run prod
+
+> patrickmanville.com@1.0.0 prod /Users/patrick/Documents/mysite/peejcom_v4
+> webpack --config webpack.prod.js
+
+/Users/patrick/Documents/mysite/peejcom_v4/webpack.prod.js:10
+			'process.env.NODE_ENV': JSON.stringify('production');
+			                                                    ^
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:599:28)
+    at Object.Module._extensions..js (module.js:646:10)
+    at Module.load (module.js:554:32)
+    at tryModuleLoad (module.js:497:12)
+    at Function.Module._load (module.js:489:3)
+    at Module.require (module.js:579:17)
+    at require (internal/module.js:11:18)
+    at requireConfig (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/webpack/bin/convert-argv.js:97:18)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! patrickmanville.com@1.0.0 prod: `webpack --config webpack.prod.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the patrickmanville.com@1.0.0 prod script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/patrick/.npm/_logs/2017-12-13T16_43_25_000Z-debug.log
+Patricks-MBP:peejcom_v4 patrick$ npm run prod
+
+> patrickmanville.com@1.0.0 prod /Users/patrick/Documents/mysite/peejcom_v4
+> webpack --config webpack.prod.js
+
+Hash: 4ac6cbe0d2f6383eab92
+Version: webpack 3.5.5
+Time: 6366ms
+    Asset    Size  Chunks             Chunk Names
+bundle.js  181 kB       0  [emitted]  main
+  [88] ./src/index.js 509 bytes {0} [built]
+ [187] ./src/api.js 1.13 kB {0} [built]
+    + 205 hidden modules
+Patricks-MBP:peejcom_v4 patrick$ 
+Patricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: d8e45affecd0bbc6e071
+Version: webpack 3.5.5
+Time: 4722ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+  [94] ./src/index.js 509 bytes {0} [built]
+ [201] ./src/api.js 1.13 kB {0} [built]
+    + 219 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run prod
+
+> patrickmanville.com@1.0.0 prod /Users/patrick/Documents/mysite/peejcom_v4
+> webpack --config webpack.prod.js
+
+Hash: 4ac6cbe0d2f6383eab92
+Version: webpack 3.5.5
+Time: 6892ms
+    Asset    Size  Chunks             Chunk Names
+bundle.js  181 kB       0  [emitted]  main
+  [88] ./src/index.js 509 bytes {0} [built]
+ [187] ./src/api.js 1.13 kB {0} [built]
+    + 205 hidden modules
+Patricks-MBP:peejcom_v4 patrick$ 
+Patricks-MBP:peejcom_v4 patrick$ npm run prod
+
+> patrickmanville.com@1.0.0 prod /Users/patrick/Documents/mysite/peejcom_v4
+> webpack --config webpack.prod.js
+
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: f4fed9f19c51625084c6
+Version: webpack 3.5.5
+Time: 4600ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+  [94] ./src/index.js 509 bytes {0} [built]
+ [201] ./src/api.js 1.13 kB {0} [built]
+    + 219 hidden modules
+^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: f4fed9f19c51625084c6
+Version: webpack 3.5.5
+Time: 4528ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+  [94] ./src/index.js 509 bytes {0} [built]
+ [201] ./src/api.js 1.13 kB {0} [built]
+    + 219 hidden modules
+Hash: 56c6eb55e61c0a7c5845
+Version: webpack 3.5.5
+Time: 439ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+   221 modules
+Hash: fbac2785485dc1771b3d
+Version: webpack 3.5.5
+Time: 266ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+   221 modules
+x^Xxc^CPatricks-MBP:peejcom_v4 patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/mysite/peejcom_v4
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: c32d2642f5f5e9d5d1c9
+Version: webpack 3.5.5
+Time: 4239ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+  [94] ./src/index.js 509 bytes {0} [built]
+ [201] ./src/api.js 1.13 kB {0} [built]
+    + 219 hidden modules
+Hash: 0afbc1070a2b6a24345d
+Version: webpack 3.5.5
+Time: 478ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+   221 modules
+Hash: f289da67d114b1b4edef
+Version: webpack 3.5.5
+Time: 261ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+   221 modules
+Hash: 0fcab71f611baedcd3c1
+Version: webpack 3.5.5
+Time: 306ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+   221 modules
+Hash: b790f16d5268ca57a387
+Version: webpack 3.5.5
+Time: 307ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+   221 modules
+Hash: 22f2624bd7753349c8c8
+Version: webpack 3.5.5
+Time: 293ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+   221 modules
+Hash: c756b74c39da7e06322a
+Version: webpack 3.5.5
+Time: 306ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+   221 modules
+Hash: 03f9a47af95e09e467fe
+Version: webpack 3.5.5
+Time: 316ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+   221 modules
+Hash: 1ae59d8457d0bff77a9c
+Version: webpack 3.5.5
+Time: 298ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+   221 modules
+Hash: f1c0be0f9070e4a5681f
+Version: webpack 3.5.5
+Time: 303ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+   221 modules
+Hash: ab66cdad540865120838
+Version: webpack 3.5.5
+Time: 293ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.25 MB       0  [emitted]  [big]  main
+   221 modules
+^C
+
+
+   ╭─────────────────────────────────────╮
+   │                                     │
+   │   Update available 5.5.1 → 5.6.0    │
+   │     Run npm i -g npm to update      │
+   │                                     │
+   ╰─────────────────────────────────────╯
+
+
+
+Patricks-MBP:peejcom_v4 patrick$ npm start
+
+> patrickmanville.com@1.0.0 start /Users/patrick/Documents/mysite/peejcom_v4
+> nodemon --exec babel-node server.js --ignore public/
+
+[nodemon] 1.11.0
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `babel-node server.js`
+Express listening on port  8080
+[nodemon] restarting due to changes...
+[nodemon] starting `babel-node server.js`
+Express listening on port  8080
+[nodemon] restarting due to changes...
+[nodemon] starting `babel-node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `babel-node server.js`
+Express listening on port  8080
+[nodemon] restarting due to changes...
+[nodemon] starting `babel-node server.js`
+Express listening on port  8080
+{ Error: Request failed with status code 500
+    at createError (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/axios/lib/core/settle.js:18:12)
+    at IncomingMessage.handleStreamEnd (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/axios/lib/adapters/http.js:191:11)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1056:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+  config: 
+   { adapter: [Function: httpAdapter],
+     transformRequest: { '0': [Function: transformRequest] },
+     transformResponse: { '0': [Function: transformResponse] },
+     timeout: 0,
+     xsrfCookieName: 'XSRF-TOKEN',
+     xsrfHeaderName: 'X-XSRF-TOKEN',
+     maxContentLength: -1,
+     validateStatus: [Function: validateStatus],
+     headers: 
+      { Accept: 'application/json, text/plain, */*',
+        'User-Agent': 'axios/0.16.2' },
+     method: 'get',
+     url: 'http://0.0.0.0:8080/api/contests/1',
+     data: undefined },
+  request: 
+   ClientRequest {
+     domain: null,
+     _events: 
+      { socket: [Function],
+        abort: [Function],
+        aborted: [Function],
+        error: [Function],
+        prefinish: [Function: requestOnPrefinish] },
+     _eventsCount: 5,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: true,
+     upgrading: false,
+     chunkedEncoding: false,
+     shouldKeepAlive: false,
+     useChunkedEncodingByDefault: false,
+     sendDate: false,
+     _removedConnection: false,
+     _removedContLen: false,
+     _removedTE: false,
+     _contentLength: 0,
+     _hasBody: true,
+     _trailer: '',
+     finished: true,
+     _headerSent: true,
+     socket: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 8,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        _bytesDispatched: 140,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Circular],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1,
+        [Symbol(asyncId)]: 12109,
+        [Symbol(bytesRead)]: 1684 },
+     connection: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 8,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        _bytesDispatched: 140,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Circular],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1,
+        [Symbol(asyncId)]: 12109,
+        [Symbol(bytesRead)]: 1684 },
+     _header: 'GET /api/contests/1 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nUser-Agent: axios/0.16.2\r\nHost: 0.0.0.0:8080\r\nConnection: close\r\n\r\n',
+     _onPendingData: [Function: noopPendingOutput],
+     agent: 
+      Agent {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        defaultPort: 80,
+        protocol: 'http:',
+        options: [Object],
+        requests: {},
+        sockets: [Object],
+        freeSockets: {},
+        keepAliveMsecs: 1000,
+        keepAlive: false,
+        maxSockets: Infinity,
+        maxFreeSockets: 256 },
+     socketPath: undefined,
+     timeout: undefined,
+     method: 'GET',
+     path: '/api/contests/1',
+     _ended: true,
+     res: 
+      IncomingMessage {
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        socket: [Object],
+        connection: [Object],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        upgrade: false,
+        url: '',
+        method: null,
+        statusCode: 500,
+        statusMessage: 'Internal Server Error',
+        client: [Object],
+        _consuming: true,
+        _dumped: false,
+        req: [Circular],
+        responseUrl: 'http://0.0.0.0:8080/api/contests/1',
+        read: [Function] },
+     aborted: undefined,
+     timeoutCb: null,
+     upgradeOrConnect: false,
+     parser: null,
+     maxHeadersCount: null,
+     _redirectable: 
+      Writable {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _redirectCount: 0,
+        _onNativeResponse: [Function],
+        _currentRequest: [Circular],
+        _currentUrl: 'http://0.0.0.0:8080/api/contests/1' },
+     [Symbol(outHeadersKey)]: { accept: [Array], 'user-agent': [Array], host: [Array] } },
+  response: 
+   { status: 500,
+     statusText: 'Internal Server Error',
+     headers: 
+      { 'x-powered-by': 'Express',
+        'content-security-policy': 'default-src \'self\'',
+        'x-content-type-options': 'nosniff',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1427',
+        date: 'Mon, 18 Dec 2017 03:12:59 GMT',
+        connection: 'close' },
+     config: 
+      { adapter: [Function: httpAdapter],
+        transformRequest: [Object],
+        transformResponse: [Object],
+        timeout: 0,
+        xsrfCookieName: 'XSRF-TOKEN',
+        xsrfHeaderName: 'X-XSRF-TOKEN',
+        maxContentLength: -1,
+        validateStatus: [Function: validateStatus],
+        headers: [Object],
+        method: 'get',
+        url: 'http://0.0.0.0:8080/api/contests/1',
+        data: undefined },
+     request: 
+      ClientRequest {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 5,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: false,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: 0,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [Object],
+        connection: [Object],
+        _header: 'GET /api/contests/1 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nUser-Agent: axios/0.16.2\r\nHost: 0.0.0.0:8080\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Object],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'GET',
+        path: '/api/contests/1',
+        _ended: true,
+        res: [Object],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        _redirectable: [Object],
+        [Symbol(outHeadersKey)]: [Object] },
+     data: '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<title>Error</title>\n</head>\n<body>\n<pre>Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters<br> &nbsp; &nbsp;at new ObjectID (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/bson/lib/bson/objectid.js:50:11)<br> &nbsp; &nbsp;at ObjectID (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/bson/lib/bson/objectid.js:31:42)<br> &nbsp; &nbsp;at /Users/patrick/Documents/mysite/peejcom_v4/api/index.js:39:19<br> &nbsp; &nbsp;at Layer.handle [as handle_request] (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/express/lib/router/layer.js:95:5)<br> &nbsp; &nbsp;at next (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/express/lib/router/route.js:137:13)<br> &nbsp; &nbsp;at Route.dispatch (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/express/lib/router/route.js:112:3)<br> &nbsp; &nbsp;at Layer.handle [as handle_request] (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/express/lib/router/layer.js:95:5)<br> &nbsp; &nbsp;at /Users/patrick/Documents/mysite/peejcom_v4/node_modules/express/lib/router/index.js:281:22<br> &nbsp; &nbsp;at param (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/express/lib/router/index.js:354:14)<br> &nbsp; &nbsp;at param (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/express/lib/router/index.js:365:14)</pre>\n</body>\n</html>\n' } }
+Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+    at new ObjectID (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/bson/lib/bson/objectid.js:50:11)
+    at ObjectID (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/bson/lib/bson/objectid.js:31:42)
+    at /Users/patrick/Documents/mysite/peejcom_v4/api/index.js:39:19
+    at Layer.handle [as handle_request] (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/patrick/Documents/mysite/peejcom_v4/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/patrick/Documents/mysite/peejcom_v4/node_modules/express/lib/router/index.js:365:14)
+^C
+
+
+   ╭─────────────────────────────────────╮
+   │                                     │
+   │   Update available 5.5.1 → 5.6.0    │
+   │     Run npm i -g npm to update      │
+   │                                     │
+   ╰─────────────────────────────────────╯
+
+
+
+Patricks-MBP:peejcom_v4 patrick$ 
+  [Restored 24 Dec 2017 at 15:24:55]
+Last login: Sun Dec 24 15:24:55 on ttys001
+Restored session: Sun 24 Dec 2017 15:23:55 GMT
+Patricks-MacBook-Pro:peejcom_v4 patrick$ mongo
+MongoDB shell version v3.4.9
+connecting to: mongodb://127.0.0.1:27017
+2018-01-07T16:25:04.758+0100 W NETWORK  [thread1] Failed to connect to 127.0.0.1:27017, in(checking socket for error after poll), reason: Connection refused
+2018-01-07T16:25:04.759+0100 E QUERY    [thread1] Error: couldn't connect to server 127.0.0.1:27017, connection attempt failed :
+connect@src/mongo/shell/mongo.js:237:13
+@(connect):1:6
+exception: connect failed
+Patricks-MacBook-Pro:peejcom_v4 patrick$ mongod
+2018-01-07T16:25:06.655+0100 I CONTROL  [initandlisten] MongoDB starting : pid=9398 port=27017 dbpath=/data/db 64-bit host=Patricks-MacBook-Pro.local
+2018-01-07T16:25:06.655+0100 I CONTROL  [initandlisten] db version v3.4.9
+2018-01-07T16:25:06.655+0100 I CONTROL  [initandlisten] git version: 876ebee8c7dd0e2d992f36a848ff4dc50ee6603e
+2018-01-07T16:25:06.655+0100 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2m  2 Nov 2017
+2018-01-07T16:25:06.655+0100 I CONTROL  [initandlisten] allocator: system
+2018-01-07T16:25:06.655+0100 I CONTROL  [initandlisten] modules: none
+2018-01-07T16:25:06.655+0100 I CONTROL  [initandlisten] build environment:
+2018-01-07T16:25:06.655+0100 I CONTROL  [initandlisten]     distarch: x86_64
+2018-01-07T16:25:06.655+0100 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-01-07T16:25:06.656+0100 I CONTROL  [initandlisten] options: {}
+2018-01-07T16:25:06.657+0100 W -        [initandlisten] Detected unclean shutdown - /data/db/mongod.lock is not empty.
+2018-01-07T16:25:06.657+0100 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-01-07T16:25:06.657+0100 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2018-01-07T16:25:06.657+0100 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2018-01-07T16:25:06.661+0100 E STORAGE  [initandlisten] WiredTiger error (13) [1515338706:661293][9398:0x7fffb8a41340], file:WiredTiger.wt, connection: /data/db/WiredTiger.turtle: handle-open: open: Permission denied
+2018-01-07T16:25:06.672+0100 I -        [initandlisten] Assertion: 28595:13: Permission denied src/mongo/db/storage/wiredtiger/wiredtiger_kv_engine.cpp 269
+2018-01-07T16:25:06.674+0100 I STORAGE  [initandlisten] exception in initAndListen: 28595 13: Permission denied, terminating
+2018-01-07T16:25:06.674+0100 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2018-01-07T16:25:06.674+0100 I NETWORK  [initandlisten] removing socket file: /tmp/mongodb-27017.sock
+2018-01-07T16:25:06.674+0100 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2018-01-07T16:25:06.675+0100 I CONTROL  [initandlisten] now exiting
+2018-01-07T16:25:06.675+0100 I CONTROL  [initandlisten] shutting down with code:100
+Patricks-MacBook-Pro:peejcom_v4 patrick$ sudo mongod
+Password:
+2018-01-07T16:25:16.586+0100 I CONTROL  [initandlisten] MongoDB starting : pid=9400 port=27017 dbpath=/data/db 64-bit host=Patricks-MacBook-Pro.local
+2018-01-07T16:25:16.587+0100 I CONTROL  [initandlisten] db version v3.4.9
+2018-01-07T16:25:16.587+0100 I CONTROL  [initandlisten] git version: 876ebee8c7dd0e2d992f36a848ff4dc50ee6603e
+2018-01-07T16:25:16.587+0100 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2m  2 Nov 2017
+2018-01-07T16:25:16.587+0100 I CONTROL  [initandlisten] allocator: system
+2018-01-07T16:25:16.587+0100 I CONTROL  [initandlisten] modules: none
+2018-01-07T16:25:16.587+0100 I CONTROL  [initandlisten] build environment:
+2018-01-07T16:25:16.587+0100 I CONTROL  [initandlisten]     distarch: x86_64
+2018-01-07T16:25:16.587+0100 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-01-07T16:25:16.587+0100 I CONTROL  [initandlisten] options: {}
+2018-01-07T16:25:16.587+0100 W -        [initandlisten] Detected unclean shutdown - /data/db/mongod.lock is not empty.
+2018-01-07T16:25:16.588+0100 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-01-07T16:25:16.588+0100 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2018-01-07T16:25:16.588+0100 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2018-01-07T16:25:16.906+0100 I CONTROL  [initandlisten] 
+2018-01-07T16:25:16.906+0100 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-01-07T16:25:16.906+0100 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-01-07T16:25:16.906+0100 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2018-01-07T16:25:16.906+0100 I CONTROL  [initandlisten] 
+2018-01-07T16:25:16.906+0100 I CONTROL  [initandlisten] 
+2018-01-07T16:25:16.906+0100 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2018-01-07T16:25:16.915+0100 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2018-01-07T16:25:16.915+0100 I NETWORK  [thread1] waiting for connections on port 27017
+2018-01-07T16:25:17.020+0100 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2018-01-07T16:25:26.258+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:55933 #1 (1 connection now open)
+2018-01-07T16:25:26.263+0100 I NETWORK  [conn1] received client metadata from 127.0.0.1:55933 conn1: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:31:17.574+0100 I -        [conn1] end connection 127.0.0.1:55933 (1 connection now open)
+2018-01-07T16:31:19.338+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57237 #2 (1 connection now open)
+2018-01-07T16:31:19.345+0100 I NETWORK  [conn2] received client metadata from 127.0.0.1:57237 conn2: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:31:25.929+0100 I -        [conn2] end connection 127.0.0.1:57237 (1 connection now open)
+2018-01-07T16:31:27.531+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57256 #3 (1 connection now open)
+2018-01-07T16:31:27.536+0100 I NETWORK  [conn3] received client metadata from 127.0.0.1:57256 conn3: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:31:52.265+0100 I -        [conn3] end connection 127.0.0.1:57256 (1 connection now open)
+2018-01-07T16:31:54.547+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57270 #4 (1 connection now open)
+2018-01-07T16:31:54.599+0100 I NETWORK  [conn4] received client metadata from 127.0.0.1:57270 conn4: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:32:03.356+0100 I -        [conn4] end connection 127.0.0.1:57270 (1 connection now open)
+2018-01-07T16:32:05.721+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57287 #5 (1 connection now open)
+2018-01-07T16:32:05.727+0100 I NETWORK  [conn5] received client metadata from 127.0.0.1:57287 conn5: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:32:06.352+0100 I -        [conn5] end connection 127.0.0.1:57287 (1 connection now open)
+2018-01-07T16:32:08.181+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57288 #6 (1 connection now open)
+2018-01-07T16:32:08.234+0100 I NETWORK  [conn6] received client metadata from 127.0.0.1:57288 conn6: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:32:30.147+0100 I -        [conn6] end connection 127.0.0.1:57288 (1 connection now open)
+2018-01-07T16:32:31.988+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57305 #7 (1 connection now open)
+2018-01-07T16:32:31.993+0100 I NETWORK  [conn7] received client metadata from 127.0.0.1:57305 conn7: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:32:37.104+0100 I -        [conn7] end connection 127.0.0.1:57305 (1 connection now open)
+2018-01-07T16:32:38.676+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57333 #8 (1 connection now open)
+2018-01-07T16:32:38.681+0100 I NETWORK  [conn8] received client metadata from 127.0.0.1:57333 conn8: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:32:50.674+0100 I -        [conn8] end connection 127.0.0.1:57333 (1 connection now open)
+2018-01-07T16:32:52.420+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57348 #9 (1 connection now open)
+2018-01-07T16:32:52.424+0100 I NETWORK  [conn9] received client metadata from 127.0.0.1:57348 conn9: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:32:54.743+0100 I -        [conn9] end connection 127.0.0.1:57348 (1 connection now open)
+2018-01-07T16:32:57.273+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57362 #10 (1 connection now open)
+2018-01-07T16:32:57.279+0100 I NETWORK  [conn10] received client metadata from 127.0.0.1:57362 conn10: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:33:02.626+0100 I -        [conn10] end connection 127.0.0.1:57362 (1 connection now open)
+2018-01-07T16:33:04.127+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57374 #11 (1 connection now open)
+2018-01-07T16:33:04.131+0100 I NETWORK  [conn11] received client metadata from 127.0.0.1:57374 conn11: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:33:07.187+0100 I -        [conn11] end connection 127.0.0.1:57374 (1 connection now open)
+2018-01-07T16:33:15.834+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57375 #12 (1 connection now open)
+2018-01-07T16:33:15.838+0100 I NETWORK  [conn12] received client metadata from 127.0.0.1:57375 conn12: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:33:18.070+0100 I -        [conn12] end connection 127.0.0.1:57375 (1 connection now open)
+2018-01-07T16:33:19.609+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57376 #13 (1 connection now open)
+2018-01-07T16:33:19.613+0100 I NETWORK  [conn13] received client metadata from 127.0.0.1:57376 conn13: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:34:30.288+0100 I -        [conn13] end connection 127.0.0.1:57376 (1 connection now open)
+2018-01-07T16:34:31.982+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57378 #14 (1 connection now open)
+2018-01-07T16:34:31.987+0100 I NETWORK  [conn14] received client metadata from 127.0.0.1:57378 conn14: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:34:34.724+0100 I -        [conn14] end connection 127.0.0.1:57378 (1 connection now open)
+2018-01-07T16:34:36.472+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57379 #15 (1 connection now open)
+2018-01-07T16:34:36.522+0100 I NETWORK  [conn15] received client metadata from 127.0.0.1:57379 conn15: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:34:50.592+0100 I -        [conn15] end connection 127.0.0.1:57379 (1 connection now open)
+2018-01-07T16:34:52.538+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57394 #16 (1 connection now open)
+2018-01-07T16:34:52.589+0100 I NETWORK  [conn16] received client metadata from 127.0.0.1:57394 conn16: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:35:16.322+0100 I -        [conn16] end connection 127.0.0.1:57394 (1 connection now open)
+2018-01-07T16:35:18.204+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57395 #17 (1 connection now open)
+2018-01-07T16:35:18.261+0100 I NETWORK  [conn17] received client metadata from 127.0.0.1:57395 conn17: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:35:28.433+0100 I -        [conn17] end connection 127.0.0.1:57395 (1 connection now open)
+2018-01-07T16:35:30.366+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57410 #18 (1 connection now open)
+2018-01-07T16:35:30.423+0100 I NETWORK  [conn18] received client metadata from 127.0.0.1:57410 conn18: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:35:31.640+0100 I -        [conn18] end connection 127.0.0.1:57410 (1 connection now open)
+2018-01-07T16:35:33.460+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57411 #19 (1 connection now open)
+2018-01-07T16:35:33.508+0100 I NETWORK  [conn19] received client metadata from 127.0.0.1:57411 conn19: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:35:44.846+0100 I -        [conn19] end connection 127.0.0.1:57411 (1 connection now open)
+2018-01-07T16:35:46.549+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57426 #20 (1 connection now open)
+2018-01-07T16:35:46.600+0100 I NETWORK  [conn20] received client metadata from 127.0.0.1:57426 conn20: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:35:51.502+0100 I -        [conn20] end connection 127.0.0.1:57426 (1 connection now open)
+2018-01-07T16:35:53.373+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57441 #21 (1 connection now open)
+2018-01-07T16:35:53.419+0100 I NETWORK  [conn21] received client metadata from 127.0.0.1:57441 conn21: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:36:33.058+0100 I -        [conn21] end connection 127.0.0.1:57441 (1 connection now open)
+2018-01-07T16:36:36.562+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57471 #22 (1 connection now open)
+2018-01-07T16:36:36.611+0100 I NETWORK  [conn22] received client metadata from 127.0.0.1:57471 conn22: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:36:56.701+0100 I -        [conn22] end connection 127.0.0.1:57471 (1 connection now open)
+2018-01-07T16:36:58.534+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57486 #23 (1 connection now open)
+2018-01-07T16:36:58.585+0100 I NETWORK  [conn23] received client metadata from 127.0.0.1:57486 conn23: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:37:01.993+0100 I -        [conn23] end connection 127.0.0.1:57486 (1 connection now open)
+2018-01-07T16:37:03.857+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57487 #24 (1 connection now open)
+2018-01-07T16:37:03.861+0100 I NETWORK  [conn24] received client metadata from 127.0.0.1:57487 conn24: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:37:18.161+0100 I -        [conn24] end connection 127.0.0.1:57487 (1 connection now open)
+2018-01-07T16:37:19.945+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57518 #25 (1 connection now open)
+2018-01-07T16:37:19.991+0100 I NETWORK  [conn25] received client metadata from 127.0.0.1:57518 conn25: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:37:28.470+0100 I -        [conn25] end connection 127.0.0.1:57518 (1 connection now open)
+2018-01-07T16:37:30.166+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57533 #26 (1 connection now open)
+2018-01-07T16:37:30.215+0100 I NETWORK  [conn26] received client metadata from 127.0.0.1:57533 conn26: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:37:31.330+0100 I -        [conn26] end connection 127.0.0.1:57533 (1 connection now open)
+2018-01-07T16:37:33.088+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57550 #27 (1 connection now open)
+2018-01-07T16:37:33.093+0100 I NETWORK  [conn27] received client metadata from 127.0.0.1:57550 conn27: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:40:44.054+0100 I -        [conn27] end connection 127.0.0.1:57550 (1 connection now open)
+2018-01-07T16:40:45.823+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57920 #28 (1 connection now open)
+2018-01-07T16:40:45.871+0100 I NETWORK  [conn28] received client metadata from 127.0.0.1:57920 conn28: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:41:08.126+0100 I -        [conn28] end connection 127.0.0.1:57920 (1 connection now open)
+2018-01-07T16:41:09.725+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57959 #29 (1 connection now open)
+2018-01-07T16:41:09.731+0100 I NETWORK  [conn29] received client metadata from 127.0.0.1:57959 conn29: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:41:44.128+0100 I -        [conn29] end connection 127.0.0.1:57959 (1 connection now open)
+2018-01-07T16:41:45.776+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:58020 #30 (1 connection now open)
+2018-01-07T16:41:45.781+0100 I NETWORK  [conn30] received client metadata from 127.0.0.1:58020 conn30: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:42:08.424+0100 I -        [conn30] end connection 127.0.0.1:58020 (1 connection now open)
+2018-01-07T16:42:10.868+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:58024 #31 (1 connection now open)
+2018-01-07T16:42:10.872+0100 I NETWORK  [conn31] received client metadata from 127.0.0.1:58024 conn31: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:42:30.270+0100 I -        [conn31] end connection 127.0.0.1:58024 (1 connection now open)
+2018-01-07T16:42:32.587+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:58039 #32 (1 connection now open)
+2018-01-07T16:42:32.592+0100 I NETWORK  [conn32] received client metadata from 127.0.0.1:58039 conn32: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:43:09.163+0100 I -        [conn32] end connection 127.0.0.1:58039 (1 connection now open)
+2018-01-07T16:43:10.715+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:58187 #33 (1 connection now open)
+2018-01-07T16:43:10.719+0100 I NETWORK  [conn33] received client metadata from 127.0.0.1:58187 conn33: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:43:19.764+0100 I -        [conn33] end connection 127.0.0.1:58187 (1 connection now open)
+2018-01-07T16:43:21.278+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:58245 #34 (1 connection now open)
+2018-01-07T16:43:21.282+0100 I NETWORK  [conn34] received client metadata from 127.0.0.1:58245 conn34: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:53:53.074+0100 I -        [conn34] end connection 127.0.0.1:58245 (1 connection now open)
+2018-01-07T16:53:54.697+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:60878 #35 (1 connection now open)
+2018-01-07T16:53:54.703+0100 I NETWORK  [conn35] received client metadata from 127.0.0.1:60878 conn35: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:54:09.991+0100 I -        [conn35] end connection 127.0.0.1:60878 (1 connection now open)
+2018-01-07T16:54:11.570+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:60977 #36 (1 connection now open)
+2018-01-07T16:54:11.618+0100 I NETWORK  [conn36] received client metadata from 127.0.0.1:60977 conn36: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:54:19.314+0100 I -        [conn36] end connection 127.0.0.1:60977 (1 connection now open)
+2018-01-07T16:54:21.137+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:61032 #37 (1 connection now open)
+2018-01-07T16:54:21.186+0100 I NETWORK  [conn37] received client metadata from 127.0.0.1:61032 conn37: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:54:27.659+0100 I -        [conn37] end connection 127.0.0.1:61032 (1 connection now open)
+2018-01-07T16:54:29.351+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:61079 #38 (1 connection now open)
+2018-01-07T16:54:29.399+0100 I NETWORK  [conn38] received client metadata from 127.0.0.1:61079 conn38: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:54:42.669+0100 I -        [conn38] end connection 127.0.0.1:61079 (1 connection now open)
+2018-01-07T16:54:44.371+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:61140 #39 (1 connection now open)
+2018-01-07T16:54:44.426+0100 I NETWORK  [conn39] received client metadata from 127.0.0.1:61140 conn39: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:55:02.235+0100 I -        [conn39] end connection 127.0.0.1:61140 (1 connection now open)
+2018-01-07T16:55:04.011+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:61231 #40 (1 connection now open)
+2018-01-07T16:55:04.062+0100 I NETWORK  [conn40] received client metadata from 127.0.0.1:61231 conn40: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:55:11.548+0100 I -        [conn40] end connection 127.0.0.1:61231 (1 connection now open)
+2018-01-07T16:55:13.150+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:61286 #41 (1 connection now open)
+2018-01-07T16:55:13.154+0100 I NETWORK  [conn41] received client metadata from 127.0.0.1:61286 conn41: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:55:36.521+0100 I -        [conn41] end connection 127.0.0.1:61286 (1 connection now open)
+2018-01-07T16:55:57.244+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:61476 #42 (1 connection now open)
+2018-01-07T16:55:57.249+0100 I NETWORK  [conn42] received client metadata from 127.0.0.1:61476 conn42: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:56:14.762+0100 I -        [conn42] end connection 127.0.0.1:61476 (1 connection now open)
+2018-01-07T16:56:16.306+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:61553 #43 (1 connection now open)
+2018-01-07T16:56:16.311+0100 I NETWORK  [conn43] received client metadata from 127.0.0.1:61553 conn43: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:56:21.749+0100 I -        [conn43] end connection 127.0.0.1:61553 (1 connection now open)
+2018-01-07T16:56:23.296+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:61596 #44 (1 connection now open)
+2018-01-07T16:56:23.300+0100 I NETWORK  [conn44] received client metadata from 127.0.0.1:61596 conn44: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:57:01.160+0100 I -        [conn44] end connection 127.0.0.1:61596 (1 connection now open)
+2018-01-07T16:57:02.690+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:61774 #45 (1 connection now open)
+2018-01-07T16:57:02.695+0100 I NETWORK  [conn45] received client metadata from 127.0.0.1:61774 conn45: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:57:13.003+0100 I -        [conn45] end connection 127.0.0.1:61774 (1 connection now open)
+2018-01-07T16:57:14.551+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:61825 #46 (1 connection now open)
+2018-01-07T16:57:14.556+0100 I NETWORK  [conn46] received client metadata from 127.0.0.1:61825 conn46: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:58:32.598+0100 I -        [conn46] end connection 127.0.0.1:61825 (1 connection now open)
+2018-01-07T16:58:34.187+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:62158 #47 (1 connection now open)
+2018-01-07T16:58:34.191+0100 I NETWORK  [conn47] received client metadata from 127.0.0.1:62158 conn47: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:58:36.418+0100 I -        [conn47] end connection 127.0.0.1:62158 (1 connection now open)
+2018-01-07T16:58:38.020+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:62175 #48 (1 connection now open)
+2018-01-07T16:58:38.025+0100 I NETWORK  [conn48] received client metadata from 127.0.0.1:62175 conn48: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:58:54.122+0100 I -        [conn48] end connection 127.0.0.1:62175 (1 connection now open)
+2018-01-07T16:58:57.119+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:62281 #49 (1 connection now open)
+2018-01-07T16:58:57.123+0100 I NETWORK  [conn49] received client metadata from 127.0.0.1:62281 conn49: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:59:09.675+0100 I -        [conn49] end connection 127.0.0.1:62281 (1 connection now open)
+2018-01-07T16:59:11.243+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:62355 #50 (1 connection now open)
+2018-01-07T16:59:11.247+0100 I NETWORK  [conn50] received client metadata from 127.0.0.1:62355 conn50: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:59:13.633+0100 I -        [conn50] end connection 127.0.0.1:62355 (1 connection now open)
+2018-01-07T16:59:15.171+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:62372 #51 (1 connection now open)
+2018-01-07T16:59:15.176+0100 I NETWORK  [conn51] received client metadata from 127.0.0.1:62372 conn51: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:59:29.427+0100 I -        [conn51] end connection 127.0.0.1:62372 (1 connection now open)
+2018-01-07T16:59:31.008+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:62451 #52 (1 connection now open)
+2018-01-07T16:59:31.013+0100 I NETWORK  [conn52] received client metadata from 127.0.0.1:62451 conn52: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T16:59:34.499+0100 I -        [conn52] end connection 127.0.0.1:62451 (1 connection now open)
+2018-01-07T16:59:36.112+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:62472 #53 (1 connection now open)
+2018-01-07T16:59:36.163+0100 I NETWORK  [conn53] received client metadata from 127.0.0.1:62472 conn53: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T17:00:10.681+0100 I -        [conn53] end connection 127.0.0.1:62472 (1 connection now open)
+2018-01-07T17:00:12.230+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:62631 #54 (1 connection now open)
+2018-01-07T17:00:12.235+0100 I NETWORK  [conn54] received client metadata from 127.0.0.1:62631 conn54: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T17:00:13.273+0100 I -        [conn54] end connection 127.0.0.1:62631 (1 connection now open)
+2018-01-07T17:00:14.861+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:62660 #55 (1 connection now open)
+2018-01-07T17:00:14.905+0100 I NETWORK  [conn55] received client metadata from 127.0.0.1:62660 conn55: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T17:02:23.641+0100 I -        [conn55] end connection 127.0.0.1:62660 (1 connection now open)
+2018-01-07T17:02:25.166+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:63262 #56 (1 connection now open)
+2018-01-07T17:02:25.171+0100 I NETWORK  [conn56] received client metadata from 127.0.0.1:63262 conn56: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T17:02:25.871+0100 I -        [conn56] end connection 127.0.0.1:63262 (1 connection now open)
+2018-01-07T17:02:27.455+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:63271 #57 (1 connection now open)
+2018-01-07T17:02:27.460+0100 I NETWORK  [conn57] received client metadata from 127.0.0.1:63271 conn57: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T17:04:10.142+0100 I -        [conn57] end connection 127.0.0.1:63271 (1 connection now open)
+2018-01-07T17:04:11.964+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:63721 #58 (1 connection now open)
+2018-01-07T17:04:12.015+0100 I NETWORK  [conn58] received client metadata from 127.0.0.1:63721 conn58: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T17:06:59.981+0100 I -        [conn58] end connection 127.0.0.1:63721 (1 connection now open)
+2018-01-07T17:07:01.613+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:64509 #59 (1 connection now open)
+2018-01-07T17:07:01.662+0100 I NETWORK  [conn59] received client metadata from 127.0.0.1:64509 conn59: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T17:08:00.549+0100 I -        [conn59] end connection 127.0.0.1:64509 (1 connection now open)
+2018-01-07T17:08:02.042+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:64797 #60 (1 connection now open)
+2018-01-07T17:08:02.047+0100 I NETWORK  [conn60] received client metadata from 127.0.0.1:64797 conn60: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T17:11:17.609+0100 I -        [conn60] end connection 127.0.0.1:64797 (1 connection now open)
+2018-01-07T17:11:19.198+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:65272 #61 (1 connection now open)
+2018-01-07T17:11:19.202+0100 I NETWORK  [conn61] received client metadata from 127.0.0.1:65272 conn61: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T17:11:37.489+0100 I -        [conn61] end connection 127.0.0.1:65272 (1 connection now open)
+2018-01-07T17:11:39.016+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:65377 #62 (1 connection now open)
+2018-01-07T17:11:39.022+0100 I NETWORK  [conn62] received client metadata from 127.0.0.1:65377 conn62: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T17:21:11.923+0100 I -        [conn62] end connection 127.0.0.1:65377 (1 connection now open)
+2018-01-07T17:21:13.350+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:51707 #63 (1 connection now open)
+2018-01-07T17:21:13.354+0100 I NETWORK  [conn63] received client metadata from 127.0.0.1:51707 conn63: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T17:45:45.854+0100 I -        [conn63] end connection 127.0.0.1:51707 (1 connection now open)
+2018-01-07T17:45:47.270+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:56677 #64 (1 connection now open)
+2018-01-07T17:45:47.275+0100 I NETWORK  [conn64] received client metadata from 127.0.0.1:56677 conn64: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T17:46:21.053+0100 I -        [conn64] end connection 127.0.0.1:56677 (1 connection now open)
+2018-01-07T17:46:22.581+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:56720 #65 (1 connection now open)
+2018-01-07T17:46:22.586+0100 I NETWORK  [conn65] received client metadata from 127.0.0.1:56720 conn65: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T17:47:36.021+0100 I -        [conn65] end connection 127.0.0.1:56720 (1 connection now open)
+2018-01-07T17:47:37.446+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:56746 #66 (1 connection now open)
+2018-01-07T17:47:37.453+0100 I NETWORK  [conn66] received client metadata from 127.0.0.1:56746 conn66: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T17:49:35.160+0100 I -        [conn66] end connection 127.0.0.1:56746 (1 connection now open)
+2018-01-07T17:49:36.670+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:56777 #67 (1 connection now open)
+2018-01-07T17:49:36.674+0100 I NETWORK  [conn67] received client metadata from 127.0.0.1:56777 conn67: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T17:50:47.822+0100 I -        [conn67] end connection 127.0.0.1:56777 (1 connection now open)
+2018-01-07T17:50:49.884+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:56796 #68 (1 connection now open)
+2018-01-07T17:50:49.889+0100 I NETWORK  [conn68] received client metadata from 127.0.0.1:56796 conn68: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T17:55:43.080+0100 I -        [conn68] end connection 127.0.0.1:56796 (1 connection now open)
+2018-01-07T17:55:51.913+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:56868 #69 (1 connection now open)
+2018-01-07T17:55:51.918+0100 I NETWORK  [conn69] received client metadata from 127.0.0.1:56868 conn69: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T17:57:13.819+0100 I -        [conn69] end connection 127.0.0.1:56868 (1 connection now open)
+2018-01-07T17:57:15.232+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:56910 #70 (1 connection now open)
+2018-01-07T17:57:15.237+0100 I NETWORK  [conn70] received client metadata from 127.0.0.1:56910 conn70: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T17:57:35.060+0100 I -        [conn70] end connection 127.0.0.1:56910 (1 connection now open)
+2018-01-07T17:57:36.548+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:56919 #71 (1 connection now open)
+2018-01-07T17:57:36.553+0100 I NETWORK  [conn71] received client metadata from 127.0.0.1:56919 conn71: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T17:57:47.658+0100 I -        [conn71] end connection 127.0.0.1:56919 (1 connection now open)
+2018-01-07T17:57:49.202+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:56933 #72 (1 connection now open)
+2018-01-07T17:57:49.208+0100 I NETWORK  [conn72] received client metadata from 127.0.0.1:56933 conn72: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T17:57:53.744+0100 I -        [conn72] end connection 127.0.0.1:56933 (1 connection now open)
+2018-01-07T17:57:55.251+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:56946 #73 (1 connection now open)
+2018-01-07T17:57:55.257+0100 I NETWORK  [conn73] received client metadata from 127.0.0.1:56946 conn73: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T19:38:20.336+0100 I -        [conn73] end connection 127.0.0.1:56946 (1 connection now open)
+2018-01-07T19:38:22.304+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:57728 #74 (1 connection now open)
+2018-01-07T19:38:22.354+0100 I NETWORK  [conn74] received client metadata from 127.0.0.1:57728 conn74: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T19:54:40.806+0100 I -        [conn74] end connection 127.0.0.1:57728 (1 connection now open)
+2018-01-07T19:54:43.439+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:58354 #75 (1 connection now open)
+2018-01-07T19:54:43.445+0100 I NETWORK  [conn75] received client metadata from 127.0.0.1:58354 conn75: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T19:55:10.668+0100 I -        [conn75] end connection 127.0.0.1:58354 (1 connection now open)
+2018-01-07T19:55:14.447+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:58375 #76 (1 connection now open)
+2018-01-07T19:55:14.452+0100 I NETWORK  [conn76] received client metadata from 127.0.0.1:58375 conn76: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T19:55:20.277+0100 I -        [conn76] end connection 127.0.0.1:58375 (1 connection now open)
+2018-01-07T19:55:23.190+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:58378 #77 (1 connection now open)
+2018-01-07T19:55:23.194+0100 I NETWORK  [conn77] received client metadata from 127.0.0.1:58378 conn77: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T19:55:29.213+0100 I -        [conn77] end connection 127.0.0.1:58378 (1 connection now open)
+2018-01-07T19:55:48.339+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:58388 #78 (1 connection now open)
+2018-01-07T19:55:48.344+0100 I NETWORK  [conn78] received client metadata from 127.0.0.1:58388 conn78: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-07T22:58:56.224+0100 I -        [conn78] end connection 127.0.0.1:58388 (1 connection now open)
+^C2018-01-07T22:58:58.951+0100 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt: 2), will terminate after current cmd ends
+2018-01-07T22:58:58.951+0100 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-01-07T22:58:58.951+0100 I NETWORK  [signalProcessingThread] closing listening socket: 6
+2018-01-07T22:58:58.951+0100 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2018-01-07T22:58:58.951+0100 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2018-01-07T22:58:58.952+0100 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2018-01-07T22:58:58.952+0100 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-01-07T22:58:58.953+0100 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+^X2018-01-07T22:58:59.036+0100 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-01-07T22:58:59.038+0100 I CONTROL  [signalProcessingThread] now exiting
+2018-01-07T22:58:59.038+0100 I CONTROL  [signalProcessingThread] shutting down with code:0
+Patricks-MacBook-Pro:peejcom_v4 patrick$ sudo mongod
+Password:
+2018-01-13T13:19:09.611+0100 I CONTROL  [initandlisten] MongoDB starting : pid=23599 port=27017 dbpath=/data/db 64-bit host=Patricks-MacBook-Pro.local
+2018-01-13T13:19:09.612+0100 I CONTROL  [initandlisten] db version v3.4.9
+2018-01-13T13:19:09.612+0100 I CONTROL  [initandlisten] git version: 876ebee8c7dd0e2d992f36a848ff4dc50ee6603e
+2018-01-13T13:19:09.612+0100 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2m  2 Nov 2017
+2018-01-13T13:19:09.612+0100 I CONTROL  [initandlisten] allocator: system
+2018-01-13T13:19:09.612+0100 I CONTROL  [initandlisten] modules: none
+2018-01-13T13:19:09.612+0100 I CONTROL  [initandlisten] build environment:
+2018-01-13T13:19:09.612+0100 I CONTROL  [initandlisten]     distarch: x86_64
+2018-01-13T13:19:09.612+0100 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-01-13T13:19:09.612+0100 I CONTROL  [initandlisten] options: {}
+2018-01-13T13:19:09.614+0100 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-01-13T13:19:09.614+0100 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2018-01-13T13:19:10.011+0100 I CONTROL  [initandlisten] 
+2018-01-13T13:19:10.011+0100 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-01-13T13:19:10.012+0100 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-01-13T13:19:10.012+0100 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2018-01-13T13:19:10.012+0100 I CONTROL  [initandlisten] 
+2018-01-13T13:19:10.012+0100 I CONTROL  [initandlisten] 
+2018-01-13T13:19:10.012+0100 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2018-01-13T13:19:10.020+0100 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2018-01-13T13:19:10.020+0100 I NETWORK  [thread1] waiting for connections on port 27017
+2018-01-13T13:19:15.604+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:59014 #1 (1 connection now open)
+2018-01-13T13:19:15.609+0100 I NETWORK  [conn1] received client metadata from 127.0.0.1:59014 conn1: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-13T13:26:18.371+0100 I -        [conn1] end connection 127.0.0.1:59014 (1 connection now open)
+2018-01-13T13:26:20.041+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:59042 #2 (1 connection now open)
+2018-01-13T13:26:20.046+0100 I NETWORK  [conn2] received client metadata from 127.0.0.1:59042 conn2: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-13T13:26:31.498+0100 I -        [conn2] end connection 127.0.0.1:59042 (1 connection now open)
+2018-01-13T13:26:32.938+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:59059 #3 (1 connection now open)
+2018-01-13T13:26:32.942+0100 I NETWORK  [conn3] received client metadata from 127.0.0.1:59059 conn3: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-14T14:21:25.259+0100 I -        [conn3] end connection 127.0.0.1:59059 (1 connection now open)
+2018-01-14T14:21:27.331+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:63688 #4 (1 connection now open)
+2018-01-14T14:21:27.335+0100 I NETWORK  [conn4] received client metadata from 127.0.0.1:63688 conn4: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-14T14:21:58.969+0100 I -        [conn4] end connection 127.0.0.1:63688 (1 connection now open)
+2018-01-14T14:22:01.228+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:63703 #5 (1 connection now open)
+2018-01-14T14:22:01.235+0100 I NETWORK  [conn5] received client metadata from 127.0.0.1:63703 conn5: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-14T14:22:31.254+0100 I -        [conn5] end connection 127.0.0.1:63703 (1 connection now open)
+2018-01-14T14:22:32.973+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:63708 #6 (1 connection now open)
+2018-01-14T14:22:32.980+0100 I NETWORK  [conn6] received client metadata from 127.0.0.1:63708 conn6: { driver: { name: "nodejs", version: "2.2.31" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.3.0" }, platform: "Node.js v8.9.0, LE, mongodb-core: 2.1.15" }
+2018-01-14T14:35:06.076+0100 I -        [conn6] end connection 127.0.0.1:63708 (1 connection now open)
+^C2018-01-14T14:35:10.021+0100 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt: 2), will terminate after current cmd ends
+2018-01-14T14:35:10.021+0100 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-01-14T14:35:10.021+0100 I NETWORK  [signalProcessingThread] closing listening socket: 6
+2018-01-14T14:35:10.022+0100 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2018-01-14T14:35:10.022+0100 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2018-01-14T14:35:10.022+0100 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2018-01-14T14:35:10.023+0100 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-01-14T14:35:10.026+0100 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-01-14T14:35:10.189+0100 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-01-14T14:35:10.194+0100 I CONTROL  [signalProcessingThread] now exiting
+2018-01-14T14:35:10.194+0100 I CONTROL  [signalProcessingThread] shutting down with code:0
+Patricks-MacBook-Pro:peejcom_v4 patrick$ cd ..
+Patricks-MacBook-Pro:Development patrick$ ls
+Angular			Swift			patrickmanville		peejcom_v4
+Archive			Templating		patrickmanville.pem	test.scss
+Patricks-MacBook-Pro:Development patrick$ cd peejcom_v4/
+Patricks-MacBook-Pro:peejcom_v4 patrick$ cd ..
+Patricks-MacBook-Pro:Development patrick$ ls
+Angular			Swift			package-lock.json	patrickmanville.pem	test.scss
+Archive			Templating		patrickmanville.com	peejcom_v4
+Patricks-MacBook-Pro:Development patrick$ cd patrickmanville.com/
+Patricks-MacBook-Pro:patrickmanville.com patrick$ npm start
+
+> patrickmanville.com@1.0.0 start /Users/patrick/Documents/Development/patrickmanville.com
+> nodemon --exec babel-node server.js --ignore public/
+
+[nodemon] 1.11.0
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `babel-node server.js`
+/Users/patrick/Documents/Development/patrickmanville.com/server.js:1
+(function (exports, require, module, __filename, __dirname) { import config from './config';
+                                                              ^^^^^^
+
+SyntaxError: Unexpected token import
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:599:28)
+    at loader (/Users/patrick/Documents/Development/patrickmanville.com/node_modules/babel-register/lib/node.js:144:5)
+    at Object.require.extensions.(anonymous function) [as .js] (/Users/patrick/Documents/Development/patrickmanville.com/node_modules/babel-register/lib/node.js:154:7)
+    at Module.load (module.js:554:32)
+    at tryModuleLoad (module.js:497:12)
+    at Function.Module._load (module.js:489:3)
+    at Function.Module.runMain (module.js:676:10)
+    at Object.<anonymous> (/Users/patrick/Documents/Development/patrickmanville.com/node_modules/babel-cli/lib/_babel-node.js:154:22)
+[nodemon] app crashed - waiting for file changes before starting...
+^CPatricks-MacBook-Pro:patrickmanville.com patrick$ ls
+LICENSE			loadTestData.js		public			src			webpack.prod.js
+README.md		node_modules		sass			updateTestData.js
+api			package-lock.json	server.js		views
+config.js		package.json		serverRender.js		webpack.config.js
+Patricks-MacBook-Pro:patrickmanville.com patrick$ cdc ..
+-bash: cdc: command not found
+Patricks-MacBook-Pro:patrickmanville.com patrick$ cd ..
+Patricks-MacBook-Pro:Development patrick$ ls
+Angular			Swift			package-lock.json	patrickmanville.pem	test.scss
+Archive			Templating		patrickmanville.com	peejcom_v4
+Patricks-MacBook-Pro:Development patrick$ cd peejcom_v4/
+Patricks-MacBook-Pro:peejcom_v4 patrick$ npm start
+
+> patrickmanville.com@1.0.0 start /Users/patrick/Documents/Development/peejcom_v4
+> nodemon --exec babel-node server.js --ignore public/
+
+[nodemon] 1.11.0
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `babel-node server.js`
+Express listening on port  8080
+/Users/patrick/Documents/Development/peejcom_v4/node_modules/mongodb/lib/mongo_client.js:421
+          throw err
+          ^
+
+AssertionError [ERR_ASSERTION]: null == 'MongoError: failed to connect to server [localhost:27017] on first connect [MongoError: connect ECONNREFUSED 127.0.0.1:27017]'
+    at /Users/patrick/Documents/Development/peejcom_v4/api/index.js:10:9
+    at connectCallback (/Users/patrick/Documents/Development/peejcom_v4/node_modules/mongodb/lib/mongo_client.js:515:5)
+    at /Users/patrick/Documents/Development/peejcom_v4/node_modules/mongodb/lib/mongo_client.js:418:11
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+[nodemon] app crashed - waiting for file changes before starting...
+^CPatricks-MacBook-Pro:peejcom_v4 patrick$ npm start
+
+> patrickmanville.com@1.0.0 start /Users/patrick/Documents/Development/peejcom_v4
+> nodemon --exec babel-node server.js --ignore public/
+
+[nodemon] 1.11.0
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `babel-node server.js`
+Express listening on port  8080
+^CPatricks-MacBook-Pro:peejcom_v4 patrick$ cd ..
+Patricks-MacBook-Pro:Development patrick$ ls
+Angular			Swift			package-lock.json	patrickmanville.pem	test.scss
+Archive			Templating		patrickmanville.com	peejcom_v4
+Patricks-MacBook-Pro:Development patrick$ cd patrickmanville.com/
+Patricks-MacBook-Pro:patrickmanville.com patrick$ npm start
+
+> patrickmanville.com@1.0.0 start /Users/patrick/Documents/Development/patrickmanville.com
+> nodemon --exec babel-node server.js --ignore public/
+
+[nodemon] 1.11.0
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `babel-node server.js`
+/Users/patrick/Documents/Development/patrickmanville.com/server.js:1
+(function (exports, require, module, __filename, __dirname) { import config from './config';
+                                                              ^^^^^^
+
+SyntaxError: Unexpected token import
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:599:28)
+    at loader (/Users/patrick/Documents/Development/patrickmanville.com/node_modules/babel-register/lib/node.js:144:5)
+    at Object.require.extensions.(anonymous function) [as .js] (/Users/patrick/Documents/Development/patrickmanville.com/node_modules/babel-register/lib/node.js:154:7)
+    at Module.load (module.js:554:32)
+    at tryModuleLoad (module.js:497:12)
+    at Function.Module._load (module.js:489:3)
+    at Function.Module.runMain (module.js:676:10)
+    at Object.<anonymous> (/Users/patrick/Documents/Development/patrickmanville.com/node_modules/babel-cli/lib/_babel-node.js:154:22)
+[nodemon] app crashed - waiting for file changes before starting...
+^CPatricks-MacBook-Pro:patrickmanville.com patrick$ npm start
+
+> patrickmanville.com@1.0.0 start /Users/patrick/Documents/Development/patrickmanville.com
+> nodemon --exec babel-node server.js --ignore public/
+
+[nodemon] 1.11.0
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `babel-node server.js`
+/Users/patrick/Documents/Development/patrickmanville.com/server.js:1
+(function (exports, require, module, __filename, __dirname) { import config from './config';
+                                                              ^^^^^^
+
+SyntaxError: Unexpected token import
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:599:28)
+    at loader (/Users/patrick/Documents/Development/patrickmanville.com/node_modules/babel-register/lib/node.js:144:5)
+    at Object.require.extensions.(anonymous function) [as .js] (/Users/patrick/Documents/Development/patrickmanville.com/node_modules/babel-register/lib/node.js:154:7)
+    at Module.load (module.js:554:32)
+    at tryModuleLoad (module.js:497:12)
+    at Function.Module._load (module.js:489:3)
+    at Function.Module.runMain (module.js:676:10)
+    at Object.<anonymous> (/Users/patrick/Documents/Development/patrickmanville.com/node_modules/babel-cli/lib/_babel-node.js:154:22)
+[nodemon] app crashed - waiting for file changes before starting...
+^CPatricks-MacBook-Pro:patrickmanville.com patrick$ npm start
+
+> patrickmanville.com@1.0.0 start /Users/patrick/Documents/Development/patrickmanville.com
+> nodemon --exec babel-node server.js --ignore public/
+
+[nodemon] 1.11.0
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `babel-node server.js`
+/Users/patrick/Documents/Development/patrickmanville.com/server.js:1
+(function (exports, require, module, __filename, __dirname) { import config from './config';
+                                                              ^^^^^^
+
+SyntaxError: Unexpected token import
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:599:28)
+    at loader (/Users/patrick/Documents/Development/patrickmanville.com/node_modules/babel-register/lib/node.js:144:5)
+    at Object.require.extensions.(anonymous function) [as .js] (/Users/patrick/Documents/Development/patrickmanville.com/node_modules/babel-register/lib/node.js:154:7)
+    at Module.load (module.js:554:32)
+    at tryModuleLoad (module.js:497:12)
+    at Function.Module._load (module.js:489:3)
+    at Function.Module.runMain (module.js:676:10)
+    at Object.<anonymous> (/Users/patrick/Documents/Development/patrickmanville.com/node_modules/babel-cli/lib/_babel-node.js:154:22)
+[nodemon] app crashed - waiting for file changes before starting...
+^CPatricks-MacBook-Pro:patrickmanville.com patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/Development/patrickmanville.com
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: 5865f10414987def06f0
+Version: webpack 3.5.5
+Time: 294ms
+    Asset     Size  Chunks             Chunk Names
+bundle.js  3.54 kB       0  [emitted]  main
+   [0] ./src/index.js 636 bytes {0} [built] [failed] [1 error]
+
+ERROR in ./src/index.js
+Module build failed: SyntaxError: Unexpected token (6:1)
+
+  4 | 
+  5 | ReactDOM.render(
+> 6 | 	<App />,
+    | 	^
+  7 | 	document.getElementById('root')
+  8 | );
+  9 | 
+
+^CPatricks-MacBook-Pro:patrickmanville.com patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/Development/patrickmanville.com
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: 5865f10414987def06f0
+Version: webpack 3.5.5
+Time: 370ms
+    Asset     Size  Chunks             Chunk Names
+bundle.js  3.54 kB       0  [emitted]  main
+   [0] ./src/index.js 636 bytes {0} [built] [failed] [1 error]
+
+ERROR in ./src/index.js
+Module build failed: SyntaxError: Unexpected token (6:1)
+
+  4 | 
+  5 | ReactDOM.render(
+> 6 | 	<App />,
+    | 	^
+  7 | 	document.getElementById('root')
+  8 | );
+  9 | 
+
+^CPatricks-MacBook-Pro:patrickmanville.com patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/Development/patrickmanville.com
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: 5865f10414987def06f0
+Version: webpack 3.5.5
+Time: 295ms
+    Asset     Size  Chunks             Chunk Names
+bundle.js  3.54 kB       0  [emitted]  main
+   [0] ./src/index.js 636 bytes {0} [built] [failed] [1 error]
+
+ERROR in ./src/index.js
+Module build failed: SyntaxError: Unexpected token (6:1)
+
+  4 | 
+  5 | ReactDOM.render(
+> 6 | 	<App />,
+    | 	^
+  7 | 	document.getElementById('root')
+  8 | );
+  9 | 
+
+^CPatricks-MacBook-Pro:patrickmanville.com patrick$ npm install
+removed 212 packages in 5.877s
+Patricks-MacBook-Pro:patrickmanville.com patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/Development/patrickmanville.com
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: 5865f10414987def06f0
+Version: webpack 3.5.5
+Time: 299ms
+    Asset     Size  Chunks             Chunk Names
+bundle.js  3.54 kB       0  [emitted]  main
+   [0] ./src/index.js 636 bytes {0} [built] [failed] [1 error]
+
+ERROR in ./src/index.js
+Module build failed: SyntaxError: Unexpected token (6:1)
+
+  4 | 
+  5 | ReactDOM.render(
+> 6 | 	<App />,
+    | 	^
+  7 | 	document.getElementById('root')
+  8 | );
+  9 | 
+
+^[[A
+^CPatricks-MacBook-Pro:patrickmanville.com patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/Development/patrickmanville.com
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: 5865f10414987def06f0
+Version: webpack 3.5.5
+Time: 291ms
+    Asset     Size  Chunks             Chunk Names
+bundle.js  3.54 kB       0  [emitted]  main
+   [0] ./src/index.js 636 bytes {0} [built] [failed] [1 error]
+
+ERROR in ./src/index.js
+Module build failed: SyntaxError: Unexpected token (6:1)
+
+  4 | 
+  5 | ReactDOM.render(
+> 6 | 	<App />,
+    | 	^
+  7 | 	document.getElementById('root')
+  8 | );
+  9 | 
+
+^CPatricks-MacBook-Pro:patrickmanville.com patrick$ npm install
+up to date in 3.957s
+Patricks-MacBook-Pro:patrickmanville.com patrick$ nano .babelrc
+Patricks-MacBook-Pro:patrickmanville.com patrick$ nano .gitignore
+Patricks-MacBook-Pro:patrickmanville.com patrick$ nano .eslintrc.js
+Patricks-MacBook-Pro:patrickmanville.com patrick$ npm run dev
+
+> patrickmanville.com@1.0.0 dev /Users/patrick/Documents/Development/patrickmanville.com
+> webpack -wd
+
+
+Webpack is watching the files…
+
+Hash: a277b284bfa0e2011f78
+Version: webpack 3.5.5
+Time: 3997ms
+    Asset     Size  Chunks                    Chunk Names
+bundle.js  2.11 MB       0  [emitted]  [big]  main
+  [87] ./src/index.js 478 bytes {0} [built]
+ [191] ./src/api.js 13 bytes {0} [built]
+    + 190 hidden modules
+^CPatricks-MacBook-Pro:patrickmanville.com patrick$ npm start
+
+> patrickmanville.com@1.0.0 start /Users/patrick/Documents/Development/patrickmanville.com
+> nodemon --exec babel-node server.js --ignore public/
+
+[nodemon] 1.11.0
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `babel-node server.js`
+Express listening on port  8080
+^CPatricks-MacBook-Pro:patrickmanville.com patrick$ 
+
+Patricks-MacBook-Pro:patrickmanville.com patrick$ it add *
+-bash: it: command not found
+Patricks-MacBook-Pro:patrickmanville.com patrick$ git *
+git: 'LICENSE' is not a git command. See 'git --help'.
+Patricks-MacBook-Pro:patrickmanville.com patrick$ git commit -m "init"
+git staOn branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+	deleted:    node_modules/.bin/browser-sync
+	deleted:    node_modules/.bin/dev-ip
+	deleted:    node_modules/.bin/gulp
+	deleted:    node_modules/.bin/lt
+	deleted:    node_modules/.bin/throttleproxy
+	deleted:    node_modules/.bin/weinre
+	deleted:    node_modules/after/.npmignore
+	deleted:    node_modules/after/.travis.yml
+	deleted:    node_modules/after/LICENCE
+	deleted:    node_modules/after/README.md
+	deleted:    node_modules/after/index.js
+	deleted:    node_modules/after/package.json
+	deleted:    node_modules/after/test/after-test.js
+	deleted:    node_modules/archy/.travis.yml
+	deleted:    node_modules/archy/LICENSE
+	deleted:    node_modules/archy/examples/beep.js
+	deleted:    node_modules/archy/examples/multi_line.js
+	deleted:    node_modules/archy/index.js
+	deleted:    node_modules/archy/package.json
+	deleted:    node_modules/archy/readme.markdown
+	deleted:    node_modules/archy/test/beep.js
+	deleted:    node_modules/archy/test/multi_line.js
+	deleted:    node_modules/archy/test/non_unicode.js
+	deleted:    node_modules/array-each/LICENSE
+	deleted:    node_modules/array-each/README.md
+	deleted:    node_modules/array-each/index.js
+	deleted:    node_modules/array-each/package.json
+	deleted:    node_modules/array-slice/LICENSE
+	deleted:    node_modules/array-slice/README.md
+	deleted:    node_modules/array-slice/index.js
+	deleted:    node_modules/array-slice/package.json
+	deleted:    node_modules/arraybuffer.slice/.npmignore
+	deleted:    node_modules/arraybuffer.slice/Makefile
+	deleted:    node_modules/arraybuffer.slice/README.md
+	deleted:    node_modules/arraybuffer.slice/index.js
+	deleted:    node_modules/arraybuffer.slice/package.json
+	deleted:    node_modules/arraybuffer.slice/test/slice-buffer.js
+	deleted:    node_modules/async-each-series/Readme.md
+	deleted:    node_modules/async-each-series/index.js
+	deleted:    node_modules/async-each-series/package.json
+	deleted:    node_modules/backo2/.npmignore
+	deleted:    node_modules/backo2/History.md
+	deleted:    node_modules/backo2/Makefile
+	deleted:    node_modules/backo2/Readme.md
+	deleted:    node_modules/backo2/component.json
+	deleted:    node_modules/backo2/index.js
+	deleted:    node_modules/backo2/package.json
+	deleted:    node_modules/backo2/test/index.js
+	deleted:    node_modules/base64-arraybuffer/.npmignore
+	deleted:    node_modules/base64-arraybuffer/.travis.yml
+	deleted:    node_modules/base64-arraybuffer/LICENSE-MIT
+	deleted:    node_modules/base64-arraybuffer/README.md
+	deleted:    node_modules/base64-arraybuffer/lib/base64-arraybuffer.js
+	deleted:    node_modules/base64-arraybuffer/package.json
+	deleted:    node_modules/base64id/.npmignore
+	deleted:    node_modules/base64id/README.md
+	deleted:    node_modules/base64id/lib/base64id.js
+	deleted:    node_modules/base64id/package.json
+	deleted:    node_modules/batch/.npmignore
+	deleted:    node_modules/batch/History.md
+	deleted:    node_modules/batch/Makefile
+	deleted:    node_modules/batch/Readme.md
+	deleted:    node_modules/batch/component.json
+	deleted:    node_modules/batch/index.js
+	deleted:    node_modules/batch/package.json
+	deleted:    node_modules/better-assert/.npmignore
+	deleted:    node_modules/better-assert/History.md
+	deleted:    node_modules/better-assert/Makefile
+	deleted:    node_modules/better-assert/Readme.md
+	deleted:    node_modules/better-assert/example.js
+	deleted:    node_modules/better-assert/index.js
+	deleted:    node_modules/better-assert/package.json
+	deleted:    node_modules/blob/.npmignore
+	deleted:    node_modules/blob/.zuul.yml
+	deleted:    node_modules/blob/Makefile
+	deleted:    node_modules/blob/README.md
+	deleted:    node_modules/blob/index.js
+	deleted:    node_modules/blob/package.json
+	deleted:    node_modules/blob/test/index.js
+	deleted:    node_modules/browser-sync-client/README.md
+	deleted:    node_modules/browser-sync-client/dist/.gitkeep
+	deleted:    node_modules/browser-sync-client/dist/index.js
+	deleted:    node_modules/browser-sync-client/dist/index.min.js
+	deleted:    node_modules/browser-sync-client/index.js
+	deleted:    node_modules/browser-sync-client/node_modules/fresh/HISTORY.md
+	deleted:    node_modules/browser-sync-client/node_modules/fresh/LICENSE
+	deleted:    node_modules/browser-sync-client/node_modules/fresh/README.md
+	deleted:    node_modules/browser-sync-client/node_modules/fresh/index.js
+	deleted:    node_modules/browser-sync-client/node_modules/fresh/package.json
+	deleted:    node_modules/browser-sync-client/package.json
+	deleted:    node_modules/browser-sync-ui/LICENSE
+	deleted:    node_modules/browser-sync-ui/README.md
+	deleted:    node_modules/browser-sync-ui/index.js
+	deleted:    node_modules/browser-sync-ui/lib/UI.js
+	deleted:    node_modules/browser-sync-ui/lib/async-tasks.js
+	deleted:    node_modules/browser-sync-ui/lib/async.js
+	deleted:    node_modules/browser-sync-ui/lib/client-elements.js
+	deleted:    node_modules/browser-sync-ui/lib/client-js.js
+	deleted:    node_modules/browser-sync-ui/lib/config.js
+	deleted:    node_modules/browser-sync-ui/lib/directive-stripper.js
+	deleted:    node_modules/browser-sync-ui/lib/hooks.js
+	deleted:    node_modules/browser-sync-ui/lib/opts.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/connections/connections.client.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/connections/connections.directive.html
+	deleted:    node_modules/browser-sync-ui/lib/plugins/connections/connections.html
+	deleted:    node_modules/browser-sync-ui/lib/plugins/connections/connections.plugin.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/connections/lib/connections.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/help/help.client.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/help/help.directive.html
+	deleted:    node_modules/browser-sync-ui/lib/plugins/help/help.html
+	deleted:    node_modules/browser-sync-ui/lib/plugins/help/help.plugin.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/history/history.client.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/history/history.directive.html
+	deleted:    node_modules/browser-sync-ui/lib/plugins/history/history.html
+	deleted:    node_modules/browser-sync-ui/lib/plugins/history/history.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/history/history.plugin.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/network-throttle/network-throttle.client.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/network-throttle/network-throttle.directive.html
+	deleted:    node_modules/browser-sync-ui/lib/plugins/network-throttle/network-throttle.html
+	deleted:    node_modules/browser-sync-ui/lib/plugins/network-throttle/network-throttle.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/network-throttle/network-throttle.plugin.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/network-throttle/targets.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/network-throttle/throttle-server.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/overview/overview.client.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/overview/overview.html
+	deleted:    node_modules/browser-sync-ui/lib/plugins/overview/overview.plugin.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/overview/snippet-info.html
+	deleted:    node_modules/browser-sync-ui/lib/plugins/overview/url-info.html
+	deleted:    node_modules/browser-sync-ui/lib/plugins/plugins/plugins.client.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/plugins/plugins.html
+	deleted:    node_modules/browser-sync-ui/lib/plugins/plugins/plugins.plugin.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/remote-debug/client-files.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/remote-debug/compression.html
+	deleted:    node_modules/browser-sync-ui/lib/plugins/remote-debug/compression.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/remote-debug/css/pesticide-depth.css
+	deleted:    node_modules/browser-sync-ui/lib/plugins/remote-debug/css/pesticide.css
+	deleted:    node_modules/browser-sync-ui/lib/plugins/remote-debug/css/pesticide.min.css
+	deleted:    node_modules/browser-sync-ui/lib/plugins/remote-debug/latency/latency.client.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/remote-debug/latency/latency.html
+	deleted:    node_modules/browser-sync-ui/lib/plugins/remote-debug/latency/latency.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/remote-debug/no-cache.html
+	deleted:    node_modules/browser-sync-ui/lib/plugins/remote-debug/no-cache.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/remote-debug/overlay-grid/css/grid-overlay-horizontal.css
+	deleted:    node_modules/browser-sync-ui/lib/plugins/remote-debug/overlay-grid/css/grid-overlay-vertical.css
+	deleted:    node_modules/browser-sync-ui/lib/plugins/remote-debug/overlay-grid/js/grid-overlay.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/remote-debug/overlay-grid/overlay-grid.client.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/remote-debug/overlay-grid/overlay-grid.html
+	deleted:    node_modules/browser-sync-ui/lib/plugins/remote-debug/overlay-grid/overlay-grid.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/remote-debug/remote-debug.client.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/remote-debug/remote-debug.html
+	deleted:    node_modules/browser-sync-ui/lib/plugins/remote-debug/remote-debug.plugin.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/remote-debug/weinre.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/sync-options/sync-options.client.js
+	deleted:    node_modules/browser-sync-ui/lib/plugins/sync-options/sync-options.html
+	deleted:    node_modules/browser-sync-ui/lib/plugins/sync-options/sync-options.plugin.js
+	deleted:    node_modules/browser-sync-ui/lib/resolve-plugins.js
+	deleted:    node_modules/browser-sync-ui/lib/server.js
+	deleted:    node_modules/browser-sync-ui/lib/transform.options.js
+	deleted:    node_modules/browser-sync-ui/lib/transforms.js
+	deleted:    node_modules/browser-sync-ui/lib/urls.js
+	deleted:    node_modules/browser-sync-ui/lib/utils.js
+	deleted:    node_modules/browser-sync-ui/package.json
+	deleted:    node_modules/browser-sync-ui/public/css/components.css
+	deleted:    node_modules/browser-sync-ui/public/css/core.css
+	deleted:    node_modules/browser-sync-ui/public/css/core.css.map
+	deleted:    node_modules/browser-sync-ui/public/css/core.min.css
+	deleted:    node_modules/browser-sync-ui/public/css/core.min.css.map
+	deleted:    node_modules/browser-sync-ui/public/favicon.ico
+	deleted:    node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-bold-webfont.eot
+	deleted:    node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-bold-webfont.svg
+	deleted:    node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-bold-webfont.ttf
+	deleted:    node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-bold-webfont.woff
+	deleted:    node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-bold-webfont.woff2
+	deleted:    node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-it-webfont.eot
+	deleted:    node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-it-webfont.svg
+	deleted:    node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-it-webfont.ttf
+	deleted:    node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-it-webfont.woff
+	deleted:    node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-it-webfont.woff2
+	deleted:    node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-regular-webfont.eot
+	deleted:    node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-regular-webfont.svg
+	deleted:    node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-regular-webfont.ttf
+	deleted:    node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-regular-webfont.woff
+	deleted:    node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-regular-webfont.woff2
+	deleted:    node_modules/browser-sync-ui/public/img/favicon.ico
+	deleted:    node_modules/browser-sync-ui/public/img/icons/icons.svg
+	deleted:    node_modules/browser-sync-ui/public/img/icons/preview.html
+	deleted:    node_modules/browser-sync-ui/public/img/logo.svg
+	deleted:    node_modules/browser-sync-ui/public/img/ps-bg.gif
+	deleted:    node_modules/browser-sync-ui/public/index.html
+	deleted:    node_modules/browser-sync-ui/public/js/app.js
+	deleted:    node_modules/browser-sync-ui/public/js/app.js.map
+	deleted:    node_modules/browser-sync-ui/public/js/app.min.js
+	deleted:    node_modules/browser-sync-ui/static/components.html
+	deleted:    node_modules/browser-sync-ui/static/components/button-bars.html
+	deleted:    node_modules/browser-sync-ui/static/components/buttons.html
+	deleted:    node_modules/browser-sync-ui/static/components/footer.html
+	deleted:    node_modules/browser-sync-ui/static/components/forms.html
+	deleted:    node_modules/browser-sync-ui/static/components/header.html
+	deleted:    node_modules/browser-sync-ui/static/components/heading.html
+	deleted:    node_modules/browser-sync-ui/static/components/help-content.html
+	deleted:    node_modules/browser-sync-ui/static/components/lists.html
+	deleted:    node_modules/browser-sync-ui/static/components/panels.html
+	deleted:    node_modules/browser-sync-ui/static/components/switches.html
+	deleted:    node_modules/browser-sync-ui/static/components/type.html
+	deleted:    node_modules/browser-sync-ui/static/content/help.content.html
+	deleted:    node_modules/browser-sync-ui/static/help.html
+	deleted:    node_modules/browser-sync-ui/static/history.html
+	deleted:    node_modules/browser-sync-ui/static/network-throttle.html
+	deleted:    node_modules/browser-sync-ui/static/plugins.html
+	deleted:    node_modules/browser-sync-ui/static/remote-debug.html
+	deleted:    node_modules/browser-sync-ui/static/server-info-snippet.html
+	deleted:    node_modules/browser-sync-ui/static/server-info.html
+	deleted:    node_modules/browser-sync-ui/static/sync-options.html
+	deleted:    node_modules/browser-sync-ui/templates/config.item.tmpl
+	deleted:    node_modules/browser-sync-ui/templates/config.tmpl
+	deleted:    node_modules/browser-sync-ui/templates/directives/bs-switch.html
+	deleted:    node_modules/browser-smodule.exports = {
+  "parser": 'babel-eslint',
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": [ "react" ],
+  "rules": {
+    "indent": ["error", 2],
+    "linebreak-style": ["error","unix"],
+    "quotes": ["error","single"],
+    "semi": ["error","always"],
+    "no-console": ["warn", { "allow": ["info", "error"] }]
+  }
+};
+

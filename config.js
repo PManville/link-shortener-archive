@@ -8,8 +8,9 @@ export const logStars = function(message) {
 	console.info('*********');
 };
 
+
+
 export default {
-	mongodbUri: 'mongodb://localhost:27017/mdb',
 	port: env.PORT || 8080,
 	host: env.HOST || '0.0.0.0',
 	get serverUrl(){
